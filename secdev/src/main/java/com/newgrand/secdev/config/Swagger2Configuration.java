@@ -20,19 +20,18 @@ public class Swagger2Configuration {
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-
+                .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage(SWAGGER_SCAN_BASE_PACKAGE))
-                .paths(PathSelectors.any()) // 可以根据url路径设置哪些请求加入文档，忽略哪些请求
+                .paths(PathSelectors.ant("/api/*")) // 可以根据url路径设置哪些请求加入文档，忽略哪些请求
                 .build();
     }
 
-//    private ApiInfo apiInfo() {
-//        return new ApiInfoBuilder()
-//                .title("单词计数服务") //设置文档的标题
-//                .description("单词计数服务 API 接口文档") // 设置文档的描述
-//                .version(VERSION) // 设置文档的版本信息-> 1.0.0 Version information
-//                .termsOfServiceUrl("http://www.baidu.com") // 设置文档的License信息->1.3 License information
-//                .build();
-//    }
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder()
+                .title("新中大云南建投二次开发") //设置文档的标题
+                .description("新中大云南建投二次开发 API 接口文档") // 设置文档的描述
+                .version(VERSION) // 设置文档的版本信息-> 1.0.0 Version information
+                .build();
+    }
 }
