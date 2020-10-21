@@ -30,13 +30,6 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>2.9.2</version>
         </dependency>
-
-        <!--提供了DruidDataSourceBuilder类-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.10</version>
-        </dependency>
         <!--提供getter/setter给私有字段字段生成get set方法, 自动给类添加log属性，在编译时执行-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -61,9 +54,20 @@
         </dependency>
         <!--oracle-->
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.oracle.database.jdbc/ojdbc6 -->
+        <dependency>
             <groupId>com.oracle.database.jdbc</groupId>
-            <artifactId>ojdbc8</artifactId>
-            <scope>runtime</scope>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.4</version>
+        </dependency>
+        <!--提供了DruidDataSourceBuilder类-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.10</version>
         </dependency>
         <!--测试框架-->
         <dependency>
@@ -77,16 +81,22 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--基础-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
         <!--json解析-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.73</version>
+        </dependency>
+        <!--httpclient-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.13</version>
         </dependency>
     </dependencies>
 
