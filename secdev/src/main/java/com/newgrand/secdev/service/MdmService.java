@@ -3,6 +3,7 @@ package com.newgrand.secdev.service;
 import com.alibaba.druid.util.StringUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.newgrand.secdev.domain.DataInfo;
 import com.newgrand.secdev.domain.WebRv;
 import com.newgrand.secdev.helper.EntityConverter;
 import com.newgrand.secdev.helper.I8Request;
@@ -37,64 +38,88 @@ public class MdmService extends ServiceBase {
      * @Author: xienb
      * @Date: 2020/10/21
      */
-    public String SaveProject(JSONObject pro) throws IOException {
-        String rv="";
-        String PcNo = pro.getString("DESC1");
-        Object[] params = new Object[] { PcNo };
-        Integer count = jdbcTemplate.queryForObject("select count(*) from project_table where pc_no=:PcNo",params, Integer.class);
-        if(count==0){
-            //新增
-            List<NameValuePair> urlParameters=new ArrayList<>();
-            urlParameters.add(new BasicNameValuePair("dmEmployee", "{\"table\":{\"key\":\"PhId\"}}"));
-            urlParameters.add(new BasicNameValuePair("dmCompany", "{\"table\":{\"key\":\"PhId\"}}"));
-            urlParameters.add(new BasicNameValuePair("dmWareHouse", "{\"table\":{\"key\":\"PhId\"}}"));
-            urlParameters.add(new BasicNameValuePair("dmDeliverName", "{\"table\":{\"key\":\"PhId\"}}"));
-            urlParameters.add(new BasicNameValuePair("dmPcmap", "{\"table\":{\"key\":\"PhId\"}}"));
-            urlParameters.add(new BasicNameValuePair("bustype", "ProjectTable"));
-            urlParameters.add(new BasicNameValuePair("isContinue", "false"));
-            urlParameters.add(new BasicNameValuePair("attchmentGuid", "0"));
-            urlParameters.add(new BasicNameValuePair("dmCorrect", dmCorrect));
-            HashMap<String,Object> map=new HashMap<String,Object>();
-            map.put("PcNo",pro.getString("DESC1"));//项目编码
-            map.put("ProjectName",pro.getString("DESC3"));//项目名称
-            String DESC13=pro.getString("DESC13");//项目类型
-            String PhIdType = GetPhidByCode("wbs_type","type_no",DESC13);
-            if(!StringUtils.isEmpty(PhIdType)) map.put("PhIdType",PhIdType);
-            String DESC66 = pro.getString("DESC66");//项目状态,后续沟通后调整
-            map.put("Stat",GetXmzt(DESC66));
-            map.put("StartDate",pro.getString("DESC77"));//计划开工日期
-            map.put("EndDate",pro.getString("DESC78"));//计划竣工日期
-            String DESC69 = pro.getString("DESC69");//管理组织
-            String CatPhId = GetPhidByCode("fg_orglist","ocode",DESC69);
-            if(!StringUtils.isEmpty(CatPhId))map.put("CatPhId",CatPhId);
-            urlParameters.add(new BasicNameValuePair("dmMain", entityConverter.SetField(dmMainBase,map)));
-            String i8rv = i8Request.PostFormSync("/PMS/PC/ProjectTable/save",urlParameters);
-            JSONObject i8rvJson = JSON.parseObject(i8rv);
-            if(i8rvJson!=null&&i8rvJson.getString("Status")=="success"){
-                rv="1";
+    public DataInfo SaveProject(JSONObject pro) throws IOException {
+        DataInfo rvInfo =new DataInfo();
+        rvInfo.setUuid(pro.getString("UUID"));
+        //rvInfo.setCode(pro.getString("CODE"));
+        rvInfo.setVersion("1");
+        try {
+            String PcNo = pro.getString("DESC1");
+            Object[] params = new Object[] { PcNo };
+            Integer count = jdbcTemplate.queryForObject("select count(*) from project_table where pc_no=:PcNo",params, Integer.class);
+            if(count.equals(0)){
+                //新增
+                List<NameValuePair> urlParameters=new ArrayList<>();
+                urlParameters.add(new BasicNameValuePair("dmEmployee", "{\"table\":{\"key\":\"PhId\"}}"));
+                urlParameters.add(new BasicNameValuePair("dmCompany", "{\"table\":{\"key\":\"PhId\"}}"));
+                urlParameters.add(new BasicNameValuePair("dmWareHouse", "{\"table\":{\"key\":\"PhId\"}}"));
+                urlParameters.add(new BasicNameValuePair("dmDeliverName", "{\"table\":{\"key\":\"PhId\"}}"));
+                urlParameters.add(new BasicNameValuePair("dmPcmap", "{\"table\":{\"key\":\"PhId\"}}"));
+                urlParameters.add(new BasicNameValuePair("bustype", "ProjectTable"));
+                urlParameters.add(new BasicNameValuePair("isContinue", "false"));
+                urlParameters.add(new BasicNameValuePair("attchmentGuid", "0"));
+                urlParameters.add(new BasicNameValuePair("dmCorrect", dmCorrect));
+                HashMap<String,Object> map=new HashMap<String,Object>();
+                map.put("PcNo",pro.getString("DESC1"));//项目编码
+                map.put("ProjectName",pro.getString("DESC3"));//项目名称
+                String DESC13=pro.getString("DESC13");//项目类型
+                String PhIdType = GetPhidByCode("wbs_type","type_no",DESC13);
+                if(!StringUtils.isEmpty(PhIdType)) map.put("PhIdType",PhIdType);
+                String DESC66 = pro.getString("DESC66");//项目状态,后续沟通后调整
+                map.put("Stat",GetXmzt(DESC66));
+                map.put("StartDate",pro.getString("DESC77"));//计划开工日期
+                map.put("EndDate",pro.getString("DESC78"));//计划竣工日期
+                String DESC69 = pro.getString("DESC69");//管理组织
+                String CatPhId = GetPhidByCode("fg_orglist","ocode",DESC69);
+                if(!StringUtils.isEmpty(CatPhId))map.put("CatPhId",CatPhId);
+                urlParameters.add(new BasicNameValuePair("dmMain", entityConverter.SetField(dmMainBase,map)));
+                String i8rv = i8Request.PostFormSync("/PMS/PC/ProjectTable/save",urlParameters);
+                JSONObject i8rvJson = JSON.parseObject(i8rv);
+                //
+                if(i8rvJson!=null&&i8rvJson.getString("Status").toLowerCase().equals("success")){
+                    rvInfo.setStatus("0");
+                    rvInfo.setCode("S");
+                    rvInfo.setErrorText("新增记录成功");
+                }
+                else {
+                    rvInfo.setStatus("1");
+                    rvInfo.setCode("E");
+                    rvInfo.setErrorText("新增记录失败");
+                }
             }
             else {
-                rv="0";
+                //更新
+                String pc_no = PcNo;
+                String project_name = pro.getString("DESC3");
+                String DESC13=pro.getString("DESC13");//项目类型
+                String phid_type = GetPhidByCode("wbs_type","type_no",DESC13);
+                String DESC66 = pro.getString("DESC66");//项目状态,后续沟通后调整
+                String stat = GetXmzt(DESC66);
+                String start_date = pro.getString("DESC77");
+                String end_date = pro.getString("DESC78");
+                String DESC69 = pro.getString("DESC69");//管理组织
+                String cat_phid = GetPhidByCode("fg_orglist","ocode",DESC69);
+                int rows = jdbcTemplate.update("update project_table set project_name=:project_name,phid_type=:phid_type,stat=:stat,start_date=:start_date,end_date=:end_date,cat_phid=:cat_phid where pc_no=:pc_no"
+                        ,new Object[]{pc_no,project_name,phid_type,stat,start_date,end_date,cat_phid});
+                if(rows>0){
+                    rvInfo.setStatus("0");
+                    rvInfo.setCode("S");
+                    rvInfo.setErrorText("更新记录成功");
+                }
+                else {
+                    rvInfo.setStatus("1");
+                    rvInfo.setCode("E");
+                    rvInfo.setErrorText("更新记录失败");
+                }
             }
+            return rvInfo;
         }
-        else {
-            //更新
-            String pc_no = PcNo;
-            String project_name = pro.getString("DESC3");
-            String DESC13=pro.getString("DESC13");//项目类型
-            String phid_type = GetPhidByCode("wbs_type","type_no",DESC13);
-            String DESC66 = pro.getString("DESC66");//项目状态,后续沟通后调整
-            String stat = GetXmzt(DESC66);
-            String start_date = pro.getString("DESC77");
-            String end_date = pro.getString("DESC78");
-            String DESC69 = pro.getString("DESC69");//管理组织
-            String cat_phid = GetPhidByCode("fg_orglist","ocode",DESC69);
-
-            int rows = jdbcTemplate.update("update project_table set project_name=:project_name,phid_type=:phid_type,stat=:stat,start_date=:start_date,end_date=:end_date,cat_phid=:cat_phid where pc_no=:pc_no"
-                    ,new Object[]{pc_no,project_name,phid_type,stat,start_date,end_date,cat_phid});
-            rv = rows>0?"1":"0";
+        catch (Exception ex){
+            rvInfo.setStatus("1");
+            rvInfo.setCode("E");
+            rvInfo.setErrorText(ex.getMessage());
+            return rvInfo;
         }
-        return  rv;
     }
 
     /*
@@ -104,124 +129,154 @@ public class MdmService extends ServiceBase {
      * @Author: xienb
      * @Date: 2020/10/21
      */
-    public String SaveEnterprise(JSONObject pro) {
-        String rv="";
-        String compno = pro.getString("DESC1");
-        Object[] params = new Object[] { compno };
-        Integer count = jdbcTemplate.queryForObject("select count(*) from fg3_enterprise where compno=:compno",params, Integer.class);
-        //SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-ddTHH:mm:ss");
-        Date now = new Date();
-        if(count==0){
-            String sqlInsert="insert into fg3_enterprise (" +
-                    "phid," +
-                    "fromtype," +
-                    "fromorg_id," +
-                    "compno," +
-                    "compname," +
-                    "simpname," +
-                    "oldname," +
-                    "person_flg," +
-                    "address," +
-                    "enternature_id," +
-                    "unisocialcredit," +
-                    "taxno," +
-                    "taxaddress," +
-                    "taxtelephone," +
-                    "accstop," +
-                    "relorg_id," +
-                    "nation_id," +
-                    "ng_insert_dt," +
-                    "ng_update_dt," +
-                    "ng_record_ver," +
-                    "ng_sv_search_key," +
-                    "ng_sd_search_key) " +
-                    " values(" +
-                    ":phid," +
-                    ":fromtype," +
-                    ":fromorg_id," +
-                    ":compno," +
-                    ":compname," +
-                    ":simpname," +
-                    ":oldname," +
-                    ":person_flg," +
-                    ":address," +
-                    ":enternature_id," +
-                    ":unisocialcredit," +
-                    ":taxno," +
-                    ":taxaddress," +
-                    ":taxtelephone," +
-                    ":accstop," +
-                    ":relorg_id," +
-                    ":nation_id," +
-                    ":ng_insert_dt," +
-                    ":ng_update_dt," +
-                    ":ng_record_ver," +
-                    ":ng_sv_search_key," +
-                    ":ng_sd_search_key" +
-                    ")";
-            SnowflakeIdWorker idWorker = new SnowflakeIdWorker(0, 0);
-            long phid = idWorker.nextId();
-            String fromtype="org";
-            String fromorg_id="105200927000002";//目前串固定值，云南建投，后续调整
-            String compname=pro.getString("DESC2");
-            String simpname="";
-            String oldname="";
-            String person_flg="4";
-            String address=pro.getString("DESC14");
-            String enternature_id="0";
-            String unisocialcredit=pro.getString("DESC6");
-            String taxno="";
-            String taxaddress="";
-            String taxtelephone="";
-            String accstop="0";
-            String relorg_id="0";
-            String nation_id="0";
-            Date ng_insert_dt=now;
-            Date ng_update_dt=now;
-            String ng_record_ver="1";
-            String ng_sv_search_key="10";
-            String ng_sd_search_key="105200927000002";
-            Object[] paramsInsert = new Object[] { phid,
-                    fromtype,
-                    fromorg_id,
-                    compno,
-                    compname,
-                    simpname,
-                    oldname,
-                    person_flg,
-                    address,
-                    enternature_id,
-                    unisocialcredit,
-                    taxno,
-                    taxaddress,
-                    taxtelephone,
-                    accstop,
-                    relorg_id,
-                    nation_id,
-                    ng_insert_dt,
-                    ng_update_dt,
-                    ng_record_ver,
-                    ng_sv_search_key,
-                    ng_sd_search_key };
-            int rows = jdbcTemplate.update(sqlInsert,paramsInsert);
-            rv = rows>0?"1":"0";
+    public DataInfo SaveEnterprise(JSONObject pro) {
+        DataInfo rvInfo =new DataInfo();
+        rvInfo.setUuid(pro.getString("UUID"));
+        //rvInfo.setCode(pro.getString("CODE"));
+        rvInfo.setVersion("1");
+        try {
+            String rv="";
+            String compno = pro.getString("DESC1");
+            Object[] params = new Object[] { compno };
+            Integer count = jdbcTemplate.queryForObject("select count(*) from fg3_enterprise where compno=:compno",params, Integer.class);
+            //SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-ddTHH:mm:ss");
+            Date now = new Date();
+            if(count.equals(0)){
+                String sqlInsert="insert into fg3_enterprise (" +
+                        "phid," +
+                        "fromtype," +
+                        "fromorg_id," +
+                        "compno," +
+                        "compname," +
+                        "simpname," +
+                        "oldname," +
+                        "person_flg," +
+                        "address," +
+                        "enternature_id," +
+                        "unisocialcredit," +
+                        "taxno," +
+                        "taxaddress," +
+                        "taxtelephone," +
+                        "accstop," +
+                        "relorg_id," +
+                        "nation_id," +
+                        "ng_insert_dt," +
+                        "ng_update_dt," +
+                        "ng_record_ver," +
+                        "ng_sv_search_key," +
+                        "ng_sd_search_key) " +
+                        " values(" +
+                        ":phid," +
+                        ":fromtype," +
+                        ":fromorg_id," +
+                        ":compno," +
+                        ":compname," +
+                        ":simpname," +
+                        ":oldname," +
+                        ":person_flg," +
+                        ":address," +
+                        ":enternature_id," +
+                        ":unisocialcredit," +
+                        ":taxno," +
+                        ":taxaddress," +
+                        ":taxtelephone," +
+                        ":accstop," +
+                        ":relorg_id," +
+                        ":nation_id," +
+                        ":ng_insert_dt," +
+                        ":ng_update_dt," +
+                        ":ng_record_ver," +
+                        ":ng_sv_search_key," +
+                        ":ng_sd_search_key" +
+                        ")";
+                SnowflakeIdWorker idWorker = new SnowflakeIdWorker(0, 0);
+                long phid = idWorker.nextId();
+                String fromtype="org";
+                String fromorg_id="105200927000002";//目前串固定值，云南建投，后续调整
+                String compname=pro.getString("DESC2");
+                String simpname="";
+                String oldname="";
+                String person_flg="4";
+                String address=pro.getString("DESC14");
+                String enternature_id="0";
+                String unisocialcredit=pro.getString("DESC6");
+                String taxno="";
+                String taxaddress="";
+                String taxtelephone="";
+                String accstop="0";
+                String relorg_id="0";
+                String nation_id="0";
+                Date ng_insert_dt=now;
+                Date ng_update_dt=now;
+                String ng_record_ver="1";
+                String ng_sv_search_key="10";
+                String ng_sd_search_key="105200927000002";
+                Object[] paramsInsert = new Object[] { phid,
+                        fromtype,
+                        fromorg_id,
+                        compno,
+                        compname,
+                        simpname,
+                        oldname,
+                        person_flg,
+                        address,
+                        enternature_id,
+                        unisocialcredit,
+                        taxno,
+                        taxaddress,
+                        taxtelephone,
+                        accstop,
+                        relorg_id,
+                        nation_id,
+                        ng_insert_dt,
+                        ng_update_dt,
+                        ng_record_ver,
+                        ng_sv_search_key,
+                        ng_sd_search_key };
+                int rows = jdbcTemplate.update(sqlInsert,paramsInsert);
+                if(rows>0){
+                    rvInfo.setStatus("0");
+                    rvInfo.setCode("S");
+                    rvInfo.setErrorText("新增记录成功");
+                }
+                else {
+                    rvInfo.setStatus("1");
+                    rvInfo.setCode("E");
+                    rvInfo.setErrorText("新增记录失败");
+                }
+            }
+            else {
+                String sqlUpdate="update fg3_enterprise set " +
+                        " compname=:compname," +
+                        " address=:address," +
+                        " unisocialcredit=:unisocialcredit" +
+                        " where compno=:compno ";
+                String compname=pro.getString("DESC2");
+                String address=pro.getString("DESC14");
+                String unisocialcredit=pro.getString("DESC6");
+                Object[] paramsUpdate = new Object[] {
+                        compname,address,unisocialcredit,compno
+                };
+                int rows = jdbcTemplate.update(sqlUpdate,paramsUpdate);
+                if(rows>0){
+                    rvInfo.setStatus("0");
+                    rvInfo.setCode("S");
+                    rvInfo.setErrorText("更新记录成功");
+                }
+                else {
+                    rvInfo.setStatus("1");
+                    rvInfo.setCode("E");
+                    rvInfo.setErrorText("更新记录失败");
+                }
+            }
+            return rvInfo;
         }
-        else {
-            String sqlUpdate="update fg3_enterprise set " +
-                    " compname=:compname," +
-                    " address=:address," +
-                    " unisocialcredit=:unisocialcredit" +
-                    " where compno=:compno ";
-            String compname=pro.getString("DESC2");
-            String address=pro.getString("DESC14");
-            String unisocialcredit=pro.getString("DESC6");
-            Object[] paramsUpdate = new Object[] {
-                    compname,address,unisocialcredit,compno
-            };
-            int rows = jdbcTemplate.update(sqlUpdate,paramsUpdate);
-            rv = rows>0?"1":"0";
+        catch (Exception ex){
+            rvInfo.setStatus("1");
+            rvInfo.setCode("E");
+            rvInfo.setErrorText(ex.getMessage());
+            return rvInfo;
         }
-        return rv;
     }
 
     /*
@@ -233,16 +288,16 @@ public class MdmService extends ServiceBase {
      */
     private  String GetXmzt(String zt){
         String rv="sts";
-        if(zt=="在建工程"){
+        if(zt.equals("在建工程")){
 
         }
-        else if(zt=="竣工未结算"){
+        else if(zt.equals("竣工未结算")){
 
         }
-        else if(zt=="竣工已结算"){
+        else if(zt.equals("竣工已结算")){
 
         }
-        else if(zt=="签订合同"){
+        else if(zt.equals("签订合同")){
 
         }
         return rv;
