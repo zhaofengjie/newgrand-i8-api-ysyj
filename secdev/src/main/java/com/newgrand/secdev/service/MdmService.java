@@ -41,7 +41,7 @@ public class MdmService extends ServiceBase {
     public DataInfo SaveProject(JSONObject pro) throws IOException {
         DataInfo rvInfo =new DataInfo();
         rvInfo.setUuid(pro.getString("UUID"));
-        //rvInfo.setCode(pro.getString("CODE"));
+        rvInfo.setCode(pro.getString("DESC1"));
         rvInfo.setVersion("1");
         try {
             String PcNo = pro.getString("DESC1");
@@ -78,13 +78,11 @@ public class MdmService extends ServiceBase {
                 //
                 if(i8rvJson!=null&&i8rvJson.getString("Status").toLowerCase().equals("success")){
                     rvInfo.setStatus("0");
-                    rvInfo.setCode("S");
                     rvInfo.setErrorText("新增记录成功");
                 }
                 else {
                     rvInfo.setStatus("1");
-                    rvInfo.setCode("E");
-                    rvInfo.setErrorText("新增记录失败");
+                    rvInfo.setErrorText(i8rv);
                 }
             }
             else {
@@ -103,12 +101,10 @@ public class MdmService extends ServiceBase {
                         ,new Object[]{pc_no,project_name,phid_type,stat,start_date,end_date,cat_phid});
                 if(rows>0){
                     rvInfo.setStatus("0");
-                    rvInfo.setCode("S");
                     rvInfo.setErrorText("更新记录成功");
                 }
                 else {
                     rvInfo.setStatus("1");
-                    rvInfo.setCode("E");
                     rvInfo.setErrorText("更新记录失败");
                 }
             }
@@ -116,7 +112,6 @@ public class MdmService extends ServiceBase {
         }
         catch (Exception ex){
             rvInfo.setStatus("1");
-            rvInfo.setCode("E");
             rvInfo.setErrorText(ex.getMessage());
             return rvInfo;
         }
@@ -132,10 +127,9 @@ public class MdmService extends ServiceBase {
     public DataInfo SaveEnterprise(JSONObject pro) {
         DataInfo rvInfo =new DataInfo();
         rvInfo.setUuid(pro.getString("UUID"));
-        //rvInfo.setCode(pro.getString("CODE"));
+        rvInfo.setCode(pro.getString("DESC1"));
         rvInfo.setVersion("1");
         try {
-            String rv="";
             String compno = pro.getString("DESC1");
             Object[] params = new Object[] { compno };
             Integer count = jdbcTemplate.queryForObject("select count(*) from fg3_enterprise where compno=:compno",params, Integer.class);
@@ -236,12 +230,10 @@ public class MdmService extends ServiceBase {
                 int rows = jdbcTemplate.update(sqlInsert,paramsInsert);
                 if(rows>0){
                     rvInfo.setStatus("0");
-                    rvInfo.setCode("S");
                     rvInfo.setErrorText("新增记录成功");
                 }
                 else {
                     rvInfo.setStatus("1");
-                    rvInfo.setCode("E");
                     rvInfo.setErrorText("新增记录失败");
                 }
             }
@@ -260,12 +252,10 @@ public class MdmService extends ServiceBase {
                 int rows = jdbcTemplate.update(sqlUpdate,paramsUpdate);
                 if(rows>0){
                     rvInfo.setStatus("0");
-                    rvInfo.setCode("S");
                     rvInfo.setErrorText("更新记录成功");
                 }
                 else {
                     rvInfo.setStatus("1");
-                    rvInfo.setCode("E");
                     rvInfo.setErrorText("更新记录失败");
                 }
             }
@@ -273,7 +263,6 @@ public class MdmService extends ServiceBase {
         }
         catch (Exception ex){
             rvInfo.setStatus("1");
-            rvInfo.setCode("E");
             rvInfo.setErrorText(ex.getMessage());
             return rvInfo;
         }

@@ -45,6 +45,9 @@ public class I8Request {
     @Value("${i8.database}")
     private String i8database;
 
+    private void console(String str){
+        System.out.println(str);
+    }
 
     public String PostFormSync(String url, List<NameValuePair> formdata) throws IOException {
         boolean islogin=true;
@@ -53,6 +56,7 @@ public class I8Request {
             islogin = DoLogin();
         }
         if(islogin){//登录成功
+            console("cookie中键值个数："+_cookieVal.size());
             PostRv postRv=DoPost(url,formdata);
             if(postRv.getSuccess()==false){//会话失效的情况
                 islogin = DoLogin();//做一次登录
@@ -74,9 +78,12 @@ public class I8Request {
         PostRv rv=new PostRv();
         rv.setSuccess(true);
         String postUrl = i8url+url;
+        console("业务请求地址："+postUrl);
         HttpPost httpPost  = new HttpPost(postUrl);
         httpPost.setConfig(requestConfig);
-        httpPost.addHeader("Cookie",GetCookie());
+        String cookie=GetCookie();
+        console("业务请求cookie值："+cookie);
+        httpPost.addHeader("Cookie",cookie);
         HttpEntity entity = new UrlEncodedFormEntity(formdata,"utf-8");
         httpPost.setEntity(entity);
         CloseableHttpResponse response = null;
@@ -87,6 +94,7 @@ public class I8Request {
             return rv;
         }
         catch(Exception e){
+            console("业务请求报错："+e.getMessage());
             httpPost.abort();
             rv.setSuccess(false);
             return rv;
@@ -100,23 +108,25 @@ public class I8Request {
 
     public boolean DoLogin() throws IOException {
         String resout =  DoLoginFirst(false);
+        console("第一次登录返回："+resout);
         LoginRt secrv = JSON.parseObject(resout, LoginRt.class);
         //{ success: false,msg:'{"Message":"您使用的用户名已在[::ffff:172.20.0.172]登录，是否强行登录并清除[::ffff:172.20.0.172]上的登录信息？","IpAddress":"::ffff:172.20.0.172","Devicetype":"1","UserId":"ngsecdev","SessionID":"6399a970-07a4-e978-e442-d54d477adbaa"}'}
         //{ success: false,msg:'登录失败！密码不正确！您还有4次登录机会'}
         //{ success: true,msg:''}
         // 网络错误
         if(secrv==null){
-            log.warn("登录接口返回："+resout);
             return false;
         }
         else {
             if(secrv.getSuccess()==false){
+                console("登录失败，需要踢人");
                 KillMsg km = JSON.parseObject(secrv.getMsg(), KillMsg.class);
                 if(km!=null){
                     boolean isKill = KillUser(km);
                     if(isKill){
                         //重新登录
-                        DoLoginFirst(true);
+                        String dologinagin = DoLoginFirst(true);
+                        console("踢人成功以后再次登录返回："+dologinagin);
                         return true;
                     }
                     else {
@@ -186,6 +196,7 @@ public class I8Request {
         try {
             response = httpClient.execute(httpPost);
             result = ResponseHandle(response);
+            console("踢人接口返回："+result);
             return true;
         }
         catch(Exception e){
