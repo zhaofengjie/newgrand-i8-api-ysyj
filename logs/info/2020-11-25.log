@@ -1,0 +1,117 @@
+[12:31:10:754] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-P8KLK6S with PID 21808 (E:\NewGrandWork\GitYunNan\newgrand-i8-3rdIntegration\secdev\target\classes started by 18362 in E:\NewGrandWork\GitYunNan\newgrand-i8-3rdIntegration)
+[12:31:10:767] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[12:31:12:217] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[12:31:12:233] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[12:31:12:234] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[12:31:12:235] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[12:31:12:343] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[12:31:12:344] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1476 ms
+[12:31:13:228] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[12:31:13:676] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[12:31:13:796] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[12:31:14:011] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[12:31:14:028] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9080 is already in use
+[12:31:14:030] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[12:31:14:040] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Pausing ProtocolHandler ["http-nio-9080"]
+[12:31:14:041] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[12:31:14:080] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping ProtocolHandler ["http-nio-9080"]
+[12:31:14:081] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Destroying ProtocolHandler ["http-nio-9080"]
+[12:31:14:087] [INFO] - org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener.logMessage(ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[12:31:14:094] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9080 or configure this application to listen on another port.
+
+[12:35:14:330] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-P8KLK6S with PID 17416 (E:\NewGrandWork\GitYunNan\newgrand-i8-3rdIntegration\secdev\target\classes started by 18362 in E:\NewGrandWork\GitYunNan\newgrand-i8-3rdIntegration)
+[12:35:14:337] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[12:35:15:701] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[12:35:15:710] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[12:35:15:710] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[12:35:15:711] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[12:35:15:802] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[12:35:15:802] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1381 ms
+[12:35:16:611] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[12:35:16:998] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[12:35:17:079] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[12:35:17:254] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[12:35:17:268] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9080 is already in use
+[12:35:17:269] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[12:35:17:275] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Pausing ProtocolHandler ["http-nio-9080"]
+[12:35:17:275] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[12:35:17:311] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping ProtocolHandler ["http-nio-9080"]
+[12:35:17:311] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Destroying ProtocolHandler ["http-nio-9080"]
+[12:35:17:377] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9080 or configure this application to listen on another port.
+
+[12:35:55:498] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-P8KLK6S with PID 13272 (E:\NewGrandWork\GitYunNan\newgrand-i8-3rdIntegration\secdev\target\classes started by 18362 in E:\NewGrandWork\GitYunNan\newgrand-i8-3rdIntegration)
+[12:35:55:504] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[12:35:56:986] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[12:35:56:995] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[12:35:56:996] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[12:35:56:996] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[12:35:57:094] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[12:35:57:094] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1489 ms
+[12:35:58:118] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[12:35:58:696] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[12:35:58:864] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[12:35:59:056] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[12:35:59:069] [WARN] - org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9080 is already in use
+[12:35:59:070] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[12:35:59:078] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Pausing ProtocolHandler ["http-nio-9080"]
+[12:35:59:078] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping service [Tomcat]
+[12:35:59:145] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Stopping ProtocolHandler ["http-nio-9080"]
+[12:35:59:146] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Destroying ProtocolHandler ["http-nio-9080"]
+[12:35:59:200] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9080 or configure this application to listen on another port.
+
+[12:40:00:780] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-P8KLK6S with PID 16668 (E:\NewGrandWork\GitYunNan\newgrand-i8-3rdIntegration\secdev\target\classes started by 18362 in E:\NewGrandWork\GitYunNan\newgrand-i8-3rdIntegration)
+[12:40:00:796] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[12:40:02:340] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 8087 (http)
+[12:40:02:351] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8087"]
+[12:40:02:352] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[12:40:02:352] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[12:40:02:450] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[12:40:02:450] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1543 ms
+[12:40:03:264] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[12:40:03:710] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[12:40:03:789] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[12:40:03:970] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8087"]
+[12:40:03:997] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 8087 (http) with context path '/secdev'
+[12:40:03:999] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[12:40:04:022] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[12:40:04:057] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[12:40:04:083] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 3.813 seconds (JVM running for 6.072)
+[21:28:43:752] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
