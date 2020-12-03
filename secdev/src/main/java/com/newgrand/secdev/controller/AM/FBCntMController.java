@@ -3,6 +3,7 @@ package com.newgrand.secdev.controller.AM;
 
 import com.newgrand.secdev.domain.AM.FBCntMModel;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import lombok.var;
@@ -12,12 +13,15 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
 
 @Slf4j
-
+@RestController
+@RequestMapping("/fbCntMApi")
+@Api("周材租入合同API接口")
 public class FBCntMController {
 
     @Autowired
