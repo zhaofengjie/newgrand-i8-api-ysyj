@@ -1,14 +1,8 @@
 package com.newgrand.secdev.controller.AM;
 
-import com.alibaba.cloudapi.sdk.model.HttpClientBuilderParams;
-import com.alibaba.cloudapi.sdk.constant.SdkConstant;
-import com.alibaba.cloudapi.sdk.model.ApiCallback;
-import com.alibaba.cloudapi.sdk.model.ApiRequest;
-import com.alibaba.cloudapi.sdk.model.ApiResponse;
-import com.alibaba.cloudapi.sdk.model.HttpClientBuilderParams;
+
 import com.newgrand.secdev.domain.AM.FBCntMModel;
-import com.newgrand.secdev.domain.DataInfo;
-import com.newgrand.secdev.domain.EDB.CntModel;
+
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import lombok.var;
@@ -20,8 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.Resource;
-import javax.print.DocFlavor;
-import java.io.IOException;
 import java.util.List;
 
 @Slf4j
@@ -31,16 +23,6 @@ public class FBCntMController {
     @Autowired
     @Resource(name = "jdbcTemplateOrcle")
     protected JdbcTemplate jdbcTemplate;
-
-
-    static{
-        //HTTP Client init
-        HttpClientBuilderParams httpParam = new HttpClientBuilderParams();
-        httpParam.setAppKey("");
-        httpParam.setAppSecret("");
-        HttpApiClientNewGrand.getInstance().init(httpParam);
-    }
-
 
     @ApiOperation(value = "推送周材租入合同数据到铝模系统", notes = "推送周材租入合同数据到铝模系统", produces = "application/json")
     @RequestMapping(value = "/postCntM", method = RequestMethod.POST)
@@ -67,7 +49,7 @@ public class FBCntMController {
             log.info("推送周材租入合同数据开始");
             RowMapper<FBCntMModel> rowMapper=new BeanPropertyRowMapper(FBCntMModel.class);
             List<FBCntMModel> dbDt= jdbcTemplate.query(sql, rowMapper);
-            /*for(int i = 0;i<dbDt.size();i++) {
+            for(int i = 0;i<dbDt.size();i++) {
                 var id = dbDt.get(i).getPhid();//主键
                 var agent = dbDt.get(i).getJBR();//经办人
                 var contractCode = dbDt.get(i).getHTBM();//合同编码
@@ -78,77 +60,10 @@ public class FBCntMController {
                 var contractSignDeptName = dbDt.get(i).getDeptName();//合同签订部门
                 var description = dbDt.get(i).getRemarks();//描述
                 var estimateAllBetonArea = dbDt.get(i).getEstimateAllBetonArea();//预估总混凝土接触面积(㎡)
-            }*/
+            }
         } catch (Exception ex) {
             log.error(ex.getMessage());
         }
         return "测试成功";
-    }
-
-    public static void MDM_TO_NEWGRAND_XMDAHttpTest(){
-        HttpApiClientNewGrand.getInstance().MDM_TO_NEWGRAND_XMDA("default".getBytes(SdkConstant.CLOUDAPI_ENCODING) , new ApiCallback() {
-            @Override
-            public void onFailure(ApiRequest request, Exception e) {
-                e.printStackTrace();
-            }
-
-            @Override
-            public void onResponse(ApiRequest request, ApiResponse response) {
-                try {
-                    System.out.println(getResultString(response));
-                }catch (Exception ex){
-                    ex.printStackTrace();
-                }
-            }
-        });
-    }
-
-    public static void MDM_TO_NEWGRAND_XMDAHttpSyncTest(){
-        ApiResponse response = HttpApiClientNewGrand.getInstance().MDM_TO_NEWGRAND_XMDASyncMode("default".getBytes(SdkConstant.CLOUDAPI_ENCODING));
-        try {
-            System.out.println(getResultString(response));
-        }catch (Exception ex){
-            ex.printStackTrace();
-        }
-    }
-
-    public static void MDM_TO_NEWGRAND_KSDAHttpTest(){
-        HttpApiClientNewGrand.getInstance().MDM_TO_NEWGRAND_KSDA("default".getBytes(SdkConstant.CLOUDAPI_ENCODING) , new ApiCallback() {
-            @Override
-            public void onFailure(ApiRequest request, Exception e) {
-                e.printStackTrace();
-            }
-
-            @Override
-            public void onResponse(ApiRequest request, ApiResponse response) {
-                try {
-                    System.out.println(getResultString(response));
-                }catch (Exception ex){
-                    ex.printStackTrace();
-                }
-            }
-        });
-    }
-
-    public static void MDM_TO_NEWGRAND_KSDAHttpSyncTest(){
-        ApiResponse response = HttpApiClientNewGrand.getInstance().MDM_TO_NEWGRAND_KSDASyncMode("default".getBytes(SdkConstant.CLOUDAPI_ENCODING));
-        try {
-            System.out.println(getResultString(response));
-        }catch (Exception ex){
-            ex.printStackTrace();
-        }
-    }
-
-    private static String getResultString(ApiResponse response) throws IOException {
-        StringBuilder result = new StringBuilder();
-        result.append("Response from backend server").append(SdkConstant.CLOUDAPI_LF).append(SdkConstant.CLOUDAPI_LF);
-        result.append("ResultCode:").append(SdkConstant.CLOUDAPI_LF).append(response.getCode()).append(SdkConstant.CLOUDAPI_LF).append(SdkConstant.CLOUDAPI_LF);
-        if(response.getCode() != 200){
-            result.append("Error description:").append(response.getHeaders().get("X-Ca-Error-Message")).append(SdkConstant.CLOUDAPI_LF).append(SdkConstant.CLOUDAPI_LF);
-        }
-
-        result.append("ResultBody:").append(SdkConstant.CLOUDAPI_LF).append(new String(response.getBody() , SdkConstant.CLOUDAPI_ENCODING));
-
-        return result.toString();
     }
 }
