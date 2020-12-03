@@ -40,7 +40,7 @@ public class ShippingInfoController {
         try {
             JSONObject res = JSON.parseObject(str);
             re.put("code", "1");
-            re.put("message", "保存成功");
+            re.put("message", "测试成功");
             log.info(res.toString());
             return re;
             /* //项目信息
@@ -68,8 +68,8 @@ public class ShippingInfoController {
             */
         } catch (Exception ex) {
             re.put("code", "0");
-            re.put("message", "保存失败," + ex.getMessage());
-            log.error("保存失败,原因");
+            re.put("message", "测试失败," + ex.getMessage());
+            log.error("测试失败,原因" + ex.getMessage());
         }
         return re;
     }
