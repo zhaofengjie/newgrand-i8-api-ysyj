@@ -1,13 +1,12 @@
-package com.newgrand.secdev.domain.AM;
+package com.newgrand.secdev.domain.LM;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class FBCntMModel {
+public class ZCCntMModel {
     /**
      * 主键
      */
@@ -83,37 +82,37 @@ public class FBCntMModel {
     /**
      * 乙方名称（页面 PhidSenComp）
      */
-    @JSONField(name = "partA")
-    private String senCompName;
+    @JSONField(name = "partB")
+    private String senComp;
 
     /**
      * 乙方联系人（页面 PhidSenEmp）
      */
-    @JSONField(name = "partAContacts")
+    @JSONField(name = "partBContacts")
     private String senEmp;
 
     /**
      * 乙方联系人电话（页面 user_yfdblxfs）
      */
-    @JSONField(name = "partAContactsPhone")
+    @JSONField(name = "partBContactsPhone")
     private String senLink;
 
     /**
      * 甲方名称（页面 PhIdRecComp）
      */
-    @JSONField(name = "partB")
+    @JSONField(name = "partA")
     private String recComp;
 
     /**
      * 甲方联系人（页面 SenEmp）
      */
-    @JSONField(name = "partBContacts")
+    @JSONField(name = "partAContacts")
     private String recEmp;
 
     /**
      * 甲方联系人电话（页面 user_jfdblxfs）
      */
-    @JSONField(name = "partBContactsPhone")
+    @JSONField(name = "partAContactsPhone")
     private String recLink;
 
     /**

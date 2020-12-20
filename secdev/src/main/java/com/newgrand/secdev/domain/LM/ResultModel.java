@@ -1,4 +1,4 @@
-package com.newgrand.secdev.domain.AM;
+package com.newgrand.secdev.domain.LM;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -26,6 +26,7 @@ public class ResultModel {
      * 消息(保存成功/或失败)
      */
     private String message;
+
 
     public ResultModel() {
 
