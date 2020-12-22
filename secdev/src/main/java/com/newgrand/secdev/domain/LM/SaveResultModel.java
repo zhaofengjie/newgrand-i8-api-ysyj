@@ -34,5 +34,5 @@ public class SaveResultModel {
     private String status;
 
     @JSONField(name = "Data")
-    private String data = "";
+    private Object data = "";
 }

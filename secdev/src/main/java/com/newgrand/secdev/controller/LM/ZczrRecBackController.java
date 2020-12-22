@@ -61,7 +61,7 @@ public class ZczrRecBackController {
     /**
      * 根据报文获取发货单Id,并发送请求到铝模系统，获取发货明细数据
      * @param str 请求报文
-     * @return
+     * @return9
      * @throws Exception
      */
     private JSONObject getDataFromYSYJ(String str) throws Exception {
@@ -133,7 +133,7 @@ public class ZczrRecBackController {
             result.setErrorIs(false);
             result.setResBillNoOrIdEntity(null);
             result.setSaveRows(0);
-            result.setData(res.toJSONString());
+            result.setData(res);
         }
         catch (Exception ex){
             result.setStatus("error");
@@ -153,7 +153,7 @@ public class ZczrRecBackController {
      * @return
      */
     private JSONObject MainForm(String contractId, String projectId, String projectName, String logisticsId) {
-        //SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+        //SimpleDateFormat df = new SimpleDateFormat("yyyyMM");//设置日期格式
         SimpleDateFormat day = new SimpleDateFormat("yyyy-MM-dd");//设置日期格式
         Calendar now = Calendar.getInstance();
         String mainFormStr = "{\"PhId\":\"\",\"BillType\":1,\"BillCode\":\"\",\"BillName\":\"\",\"BillDate\":\"\",\"PhidWouse\":\"\",\"PhidItemName\":\"\",\"PhidTreaty\":\"\",\"PhidTreatyName\":\"\",\"PhidBatchNoName\":\"\",\"RentOutName\":\"\",\"RentInName\":\"\",\"RentInDeptName\":\"\",\"RentMode\":\"\",\"PhidRentProj\":\"\",\"PhidRentProjName\":\"\",\"FreightMode\":\"\",\"PhidWorkCycle\":\"\",\"PhidFcur\":\"\",\"ExchRate\":1,\"HaveAmtFc\":\"\",\"FreightAmtFc\":\"\",\"TotalAmt\":\"\",\"TotalAmtFc\":\"\",\"Remark\":\"\",\"AttFlag\":0,\"PhidSchemeid\":\"\",\"ImpInfo\":\"\",\"RestAmt\":\"\",\"RestAmtFc\":\"\",\"ControlAmt\":\"\",\"ControlAmtFc\":\"\",\"PhidSourcemid\":\"\",\"ItemResource\":\"\",\"ResourceType\":\"\",\"PhidTeam\":\"\",\"PhidManager\":\"\",\"PhidDept\":\"\"}";
@@ -171,7 +171,7 @@ public class ZczrRecBackController {
         //默认收（1:收;2:退）
         String BillType = "1";
         //收货⽇期（默认接口产生时间）
-        String BillDate = day.format(new Date());// new Date()为获取当前系统时间
+        String BillDate = day.format(new Date()); // new Date()为获取当前系统时间
         //单据名称
         String BillName = (now.get(Calendar.MONTH) + 1) + "月" + now.get(Calendar.DAY_OF_MONTH) + "日" + title + "周材进场单";
         //仓库
@@ -204,7 +204,8 @@ public class ZczrRecBackController {
         String PhIdFcur = "CNY";
 
         HashMap<String, Object> map = new HashMap<>();
-        //map.put("BillCode", "");//单据编码
+        map.put("PhId", ""); //主键
+        map.put("BillCode", ""); //单据编码
         map.put("BillName", BillName); //单据名称
         map.put("BillType", BillType); //单据类型（1:收;2:退,默认 收）
         map.put("BillDate", BillDate); //单据日期
@@ -238,23 +239,31 @@ public class ZczrRecBackController {
      */
     private JSONArray DetailForm(String projectId, JSONArray detailList) throws Exception {
         String detailStr = "[{\"row\":{\"SortId\":0,\"PhidRentProj\":\"\",\"PhidRentProjName\":\"\",\"PhidItem\":\"\",\"PhidItemNo\":\"\",\"PhidItemName\":\"\",\"Spec\":\"\",\"PhidMsUnit\":\"\",\"PhidMsUnitName\":0,\"Qty\":0,\"RestQty\":\"\",\"ActQtyRec\":\"\",\"ActSquareRec\":\"\",\"PhidResBs\":\"\",\"PhidResBsNo\":\"\",\"PhidResBsName\":\"\",\"PhidCbsName\":\"\",\"PhidWbsName\":\"\",\"UnitTaxPrice\":0,\"UnitTaxPriceFc\":0,\"PhidResBs\":0,\"PhidResBsNo\":\"\",\"PhidResBsName\":\"\"}}]";
-        ArrayList<HashMap<String, Object>> list = new ArrayList<>();
+        ArrayList<HashMap<String, Object>> list = new ArrayList<HashMap<String, Object>>();
         //遍历明细
         for (int i = 0; i < detailList.size(); i++) {
             String ItemNo = detailList.getJSONObject(i).getString("codeNum"); //物料编码
+            String sql = "select phid,itemname from itemdata left join res_bs on ITEMDATA.PHID_RESBS = RES_BS.PHID  left join msunit on msunit.phid=itemdata.phid_msunit where itemno = '" + ItemNo + "'";
+            var dataList = jdbcTemplate.queryForList(sql);
+
             String QTY = detailList.getJSONObject(i).getString("specNum"); //数量
             String ActQtyRec = detailList.getJSONObject(i).getString("specNum"); //实际收获数量 (默认等于数量)
             String ActSquareRec = detailList.getJSONObject(i).getString("specArea"); //实际收获面积
             String PhidRentProj = projectId; //租入方项目
-            String PhidRentProjName = "";//租入方项目名称
+            //String PhidRentProjName = ""; //租入方项目名称
             HashMap<String, Object> map = new HashMap<String, Object>();
             map.put("QTY", QTY); //数量
             map.put("ActQtyRec", ActQtyRec); //实际收获数量
             map.put("ActSquareRec", ActSquareRec); //实际收获面积
             map.put("SortId",i); //排序号
             map.put("PhidRentProj",projectId); //项目id
-            map.put("PhidItem",projectId); //物料id
+            map.put("PhidItem",dataList.get(0).get("phid").toString()); //物料phid(主键)
             map.put("PhidItemNo",ItemNo); //物料编码
+            map.put("PhidItemName",dataList.get(0).get("itemname").toString()); //物料名称
+            //map.put("PhidMsUnit",ItemNo); //计量单位名称phid(主键)  主数据尚未对接，后续调整
+            //map.put("PhidMsUnitName",ItemNo); //计量单位名称,帮助id:pms3.p_msunit  主数据尚未对接，后续调整
+            map.put("PhidRentProj",PhidRentProj); //租入方项目
+            //map.put("PhidRentProjName",PhidRentProjName); //租入方项目名称
             list.add(map);
         }
         return entityConverter.SetTableRowEx(detailStr,list);

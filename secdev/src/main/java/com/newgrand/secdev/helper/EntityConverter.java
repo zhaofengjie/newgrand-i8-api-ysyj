@@ -55,13 +55,14 @@ public class EntityConverter {
     public JSONArray SetTableRowEx(String rowDataTmp, ArrayList<HashMap<String,Object>> list) throws Exception {
         JSONArray rvarr = new JSONArray();
         JSONArray jaa = JSON.parseArray(rowDataTmp);
-        JSONObject jo= jaa.getJSONObject(0).getJSONObject("row");
         for(int i=0;i<list.size();i++){
+            JSONObject jo = (JSONObject) jaa.getJSONObject(0).getJSONObject("row").clone(); //特殊写法（原有写法，引用地址相同，导致赋值相同问题）
             for (String key: list.get(i).keySet()) {
                 jo.put(key,list.get(i).get(key));
             }
             JSONObject joo= new JSONObject();
-            rvarr.add(jo);
+            joo.put("row",jo);
+            rvarr.add(joo);
         }
         return rvarr;
     }

@@ -49,5 +49,28 @@ public class SSOWLController {
         resp.sendRedirect(url);
     }
 
+    @ResponseBody
+    @GetMapping(path = "getSSOUrl")
+    public String GetSSOUrl(HttpServletRequest request, HttpServletResponse resp) throws IOException {
+        //发货单号
+        String orderGID = request.getParameter("orderGID");
+        //String objStr = JSON.toJSONString(request.getParameterMap());
+        //JSONObject obj = JSON.parseObject(objStr);
+        //String order = obj.getString("orderGID");
+        //JSONArray arr = JSON.parseArray(order);
+        //String orderGID = arr.getString(0); //发货单号
 
+        String url = "";
+        BackMsgModel back = requestHelper.GetWLUrl(orderGID);
+        if(back.getResult() == "true")
+        {
+            url = back.getData().toString();
+        }
+        else
+        {
+            //url = "重定向访问失败,原因 :" + back.getMessage();
+            url = "获取物料追踪链接失败,原因 :" + back.getMessage();
+        }
+       return url;
+    }
 }

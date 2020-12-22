@@ -1,6 +1,8 @@
 package com.newgrand.secdev.controller.LM;
 
 
+import com.alibaba.druid.util.StringUtils;
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.newgrand.secdev.domain.LM.ResultModel;
@@ -42,9 +44,15 @@ public class ZCCntMController {
 
     public JSONObject sendFBInfo(@RequestBody String str) throws IOException {
         JSONObject res = new JSONObject();
-
+        JSONObject obj = JSON.parseObject(str);
         //合同类型为周材租入的合同
         //select phid from PCM3_CNT_TYPE where cnt_mode = '11'
+        //过滤条件
+        String filter = "";
+        String phId = obj.getString("phId");
+        if(!StringUtils.isEmpty(phId)){
+            filter = " and T1.phid = '" + phId + "'";
+        }
 
         var sql = "select \n" +
                 "T1.phid,\n" +
@@ -67,7 +75,9 @@ public class ZCCntMController {
                 "left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp\n" +
                 "left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp \n" +
                 "left join project_table T6 on T6.phid = T1.phid_pc\n" +
-                "where T1.bill_type = '11' and T1.phid = '635201217000004'";  //推送 T1.chk_flg = '1' 的标记
+                "where T1.bill_type = '11' and (T1.user_tblmflag is null or  T1.user_tblmflag  = '0')" +
+                " " + filter;
+        //user_tblmflag 为空 或者 为 0, 为未同步或者同步失败状态
         try {
             log.info("推送周材租入合同数据开始");
             RowMapper<ZCCntMModel> rowMapper=new BeanPropertyRowMapper(ZCCntMModel.class);
@@ -77,7 +87,8 @@ public class ZCCntMController {
                 //Map<String, Object> params = null;
                 ZCCntMModel fbModel = new ZCCntMModel();
                 String A = JSONObject.toJSONString(fbModel);
-                fbModel.setPhid(dbDt.get(i).getPhid());//主键
+                String mainPhId = dbDt.get(i).getPhid();//主键
+                fbModel.setPhid(mainPhId);
                 fbModel.setJBR(dbDt.get(i).getJBR());//经办人
                 fbModel.setHTBM(dbDt.get(i).getHTBM());//合同编码
                 fbModel.setCntMoney(dbDt.get(i).getCntMoney());//合同金额
@@ -105,12 +116,19 @@ public class ZCCntMController {
                 res.put("message",back.getMessage());
                 res.put("code",back.getCode());
                 res.put("result",back.getResult());
+                if(back.getResult() == "true"){
+                    //标识推送成功
+                    jdbcTemplate.update("update pcm3_cnt_m set user_tblmflag = '1' where phid = '"+mainPhId+"'");
+                }else {
+                    //标识未推送成功
+                    jdbcTemplate.update("update pcm3_cnt_m set user_tblmflag = '0' where phid = '"+mainPhId+"'");
+                }
             }
         } catch (Exception ex) {
             log.error(ex.getMessage());
-            res.put("message","推送失败");
-            res.put("code","0");
-            res.put("result","false");
+            res.put("message", "推送失败，原因：" + ex.getMessage());
+            res.put("code", "0");
+            res.put("result", "false");
         }
         return res;
     }

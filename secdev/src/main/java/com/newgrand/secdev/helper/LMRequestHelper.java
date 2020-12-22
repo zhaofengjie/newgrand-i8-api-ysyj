@@ -124,12 +124,15 @@ public class LMRequestHelper {
         log.info("推送数据的的报文 = " + param);
         try {
             //获取铝模系统access_token
-            String token = Token();
-            if (token == "" || token == null) {
-                backMsg.setCode("0");
-                backMsg.setMessage("推送数据失败,原因 = 获取token失败");
+            BackMsgModel tokenBack = Token();
+            if(tokenBack.getResult() == "false"){
                 backMsg.setResult("false");
+                backMsg.setMessage("获取数据失败,原因:" + tokenBack.getMessage());
+                backMsg.setCode("0");
+                return backMsg;
             }
+            //获取token成功则返回token值
+            String token = tokenBack.getData().toString();
 
             //请求地址 = "服务器ip" + "对应接口路由地址"
             String URL = url + funcName;
@@ -191,10 +194,11 @@ public class LMRequestHelper {
      * @return
      * @throws IOException
      */
-    public String Token() throws IOException {
+    public BackMsgModel Token() throws IOException {
 
         String body = "";
         String token = "";
+        BackMsgModel back = new BackMsgModel();
         try {
             //创建httpclient对象
             CloseableHttpClient client = HttpClients.createDefault();
@@ -221,14 +225,20 @@ public class LMRequestHelper {
                 body = EntityUtils.toString(entity2);
                 JSONObject str = JSON.parseObject(body);
                 token = str.getString("access_token");
+                back.setResult("true");
+                back.setMessage("获取token数据成功");
+                back.setData(token);
             }
             EntityUtils.consume(entity2);
             //释放链接
             response.close();
         } catch (Exception ex) {
             log.error("铝模系统token获取异常，原因 = " + ex.getMessage());
+            back.setResult("false");
+            back.setMessage("铝模系统token获取异常，原因 = " + ex.getMessage());
+            back.setData(null);
         }
-        return token;
+        return back;
     }
 
     /**
@@ -256,7 +266,16 @@ public class LMRequestHelper {
         String body = "";
         BackMsgModel back = new BackMsgModel();
         try {
-            String token = Token();
+            BackMsgModel tokenBack = Token();
+            if(tokenBack.getResult() == "false"){
+                back.setResult("false");
+                back.setMessage("获取数据失败,原因:" + tokenBack.getMessage());
+                back.setData(body);
+                return back;
+            }
+            //获取token成功则返回token值
+            String token = tokenBack.getData().toString();
+
             funcName = funcName.trim();
             //创建httpclient对象
             CloseableHttpClient client = HttpClients.createDefault();
@@ -354,7 +373,6 @@ public class LMRequestHelper {
      * @param orderGID
      * @return
      */
-
     public BackMsgModel GetWLInfo(String orderGID,String token) {
         BackMsgModel back = new BackMsgModel();
         try {
@@ -411,6 +429,11 @@ public class LMRequestHelper {
         return back;
     }
 
+    /**
+     * 获取物料追踪链接
+     * @param orderGID
+     * @return
+     */
     public BackMsgModel GetWLUrl(String orderGID) {
         BackMsgModel back = GetWLToken();
 
@@ -442,7 +465,13 @@ public class LMRequestHelper {
         return result;
     }
 
-    public String  GetWLBody(String orderGID ,String token) {
+    /**
+     * 拼接物料请求报文
+     * @param orderGID
+     * @param token
+     * @return
+     */
+    public String GetWLBody(String orderGID ,String token) {
         /** 截取字符串 . 后面数字*/
         String orderID = orderGID.substring(orderGID.lastIndexOf(".") + 1);
 
