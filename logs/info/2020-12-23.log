@@ -1,0 +1,411 @@
+[09:24:39:771] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 7456 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[09:24:39:790] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[09:24:41:396] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[09:24:41:406] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[09:24:41:406] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[09:24:41:406] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[09:24:41:533] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[09:24:41:534] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1684 ms
+[09:24:43:018] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[09:24:43:611] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[09:24:43:724] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[09:24:43:989] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[09:24:44:026] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 9080 (http) with context path '/secdev'
+[09:24:44:028] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[09:24:44:059] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[09:24:44:115] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[09:24:44:152] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 4.646 seconds (JVM running for 8.143)
+[14:12:21:752] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[14:12:28:235] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 11036 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[14:12:28:254] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:12:29:517] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[14:12:29:525] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[14:12:29:525] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:12:29:526] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[14:12:29:644] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:12:29:644] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1314 ms
+[14:12:30:500] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[14:12:30:836] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[14:12:30:892] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[14:12:30:997] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[14:12:31:015] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 9080 (http) with context path '/secdev'
+[14:12:31:016] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[14:12:31:029] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[14:12:31:054] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[14:12:31:069] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 3.114 seconds (JVM running for 4.798)
+[14:13:48:314] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:13:48:314] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:13:48:319] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
+[14:13:51:447] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"Search":{"PageInfo":{"TotalCount":"0","SortDirection":"DESC","PageSize":"10","CurrentPage":"1","SortField":"CREATED_DATE","IsPaging":true,"IsGetTotalCount":true,"SkipCount":"0"},"QueryModel":{"Items":[{"Field":"ORDER_ID","Value":"OT2010230002","Method":"Equal"}]}},"token":"ec9575c481db4efb94319e6df4a937dd"}
+[14:13:51:447] [ERROR] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:96) - 保存失败,原因null
+[14:13:56:358] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"Search":{"PageInfo":{"TotalCount":"0","SortDirection":"DESC","PageSize":"10","CurrentPage":"1","SortField":"CREATED_DATE","IsPaging":true,"IsGetTotalCount":true,"SkipCount":"0"},"QueryModel":{"Items":[{"Field":"ORDER_ID","Value":"OT2010230002","Method":"Equal"}]}},"token":"ec9575c481db4efb94319e6df4a937dd"}
+[14:13:56:359] [ERROR] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:96) - 保存失败,原因null
+[14:14:11:382] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"Search":{"PageInfo":{"TotalCount":"0","SortDirection":"DESC","PageSize":"10","CurrentPage":"1","SortField":"CREATED_DATE","IsPaging":true,"IsGetTotalCount":true,"SkipCount":"0"},"QueryModel":{"Items":[{"Field":"ORDER_ID","Value":"OT2010230002","Method":"Equal"}]}},"token":"ec9575c481db4efb94319e6df4a937dd"}
+[14:15:49:191] [ERROR] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:96) - 保存失败,原因null
+[14:15:49:196] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"data":{"sendOrder":{"carNumber":"浙A*4548D","orderCode":"123123123211","id":"545615615615122","sendTime":"2020-12-14 15:42:00"},"sendOrderDetail":{"area":"","code":"","specCode":"","num":1},"projectContract":{"projectContractCode":"20201213001","projectContractId":"598201213000008"},"project":{"projectCode":"202012120005","projectName":"XG测试项目(202012120005)","projectId":"631201212000006"}}}
+[14:15:49:196] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"data":{"sendOrder":{"carNumber":"浙A*4548D","orderCode":"123123123211","id":"545615615615122","sendTime":"2020-12-14 15:42:00"},"sendOrderDetail":{"area":"","code":"","specCode":"","num":1},"projectContract":{"projectContractCode":"20201213001","projectContractId":"598201213000008"},"project":{"projectCode":"202012120005","projectName":"XG测试项目(202012120005)","projectId":"631201212000006"}}}
+[14:15:49:253] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[14:15:52:216] [ERROR] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:96) - 保存失败,原因Failed to obtain JDBC Connection; nested exception is java.sql.SQLException
+[14:15:52:216] [ERROR] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:96) - 保存失败,原因Failed to obtain JDBC Connection; nested exception is java.sql.SQLException
+[14:15:52:231] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[14:15:52:234] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[14:15:58:130] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 27296 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[14:15:58:140] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:15:59:163] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[14:15:59:170] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[14:15:59:170] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:15:59:170] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[14:15:59:288] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:15:59:289] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1087 ms
+[14:16:00:172] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[14:16:00:491] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[14:16:00:553] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[14:16:00:677] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[14:16:00:700] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 9080 (http) with context path '/secdev'
+[14:16:00:701] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[14:16:00:715] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[14:16:00:741] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[14:16:00:758] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 2.928 seconds (JVM running for 4.641)
+[14:16:04:663] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:16:04:663] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:16:04:671] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 8 ms
+[14:16:08:570] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"data":{"sendOrder":{"carNumber":"浙A*4548D","orderCode":"123123123211","id":"545615615615122","sendTime":"2020-12-14 15:42:00"},"sendOrderDetail":{"area":"","code":"","specCode":"","num":1},"projectContract":{"projectContractCode":"20201213001","projectContractId":"598201213000008"},"project":{"projectCode":"202012120005","projectName":"XG测试项目(202012120005)","projectId":"631201212000006"}}}
+[14:16:11:771] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[14:16:32:851] [ERROR] - com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2471) - create connection SQLException, url: jdbc:oracle:thin:@172.16.23.84:1521/ngsoft.ynjt.com, errorCode 17002, state 08006
+java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) [druid-1.1.10.jar:1.1.10]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:439) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	... 10 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_221]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:149) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:405) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	... 10 more
+[14:16:53:889] [ERROR] - com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2471) - create connection SQLException, url: jdbc:oracle:thin:@172.16.23.84:1521/ngsoft.ynjt.com, errorCode 17002, state 08006
+java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) [druid-1.1.10.jar:1.1.10]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:439) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	... 10 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_221]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:149) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:405) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	... 10 more
+[14:17:15:433] [ERROR] - com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2471) - create connection SQLException, url: jdbc:oracle:thin:@172.16.23.84:1521/ngsoft.ynjt.com, errorCode 17002, state 08006
+java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) [druid-1.1.10.jar:1.1.10]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:439) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	... 10 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_221]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:149) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:405) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	... 10 more
+[14:17:32:974] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"data":{"sendOrder":{"carNumber":"浙A*4548D","orderCode":"123123123211","id":"545615615615122","sendTime":"2020-12-14 15:42:00"},"sendOrderDetail":{"area":"","code":"","specCode":"","num":1},"projectContract":{"projectContractCode":"20201213001","projectContractId":"598201213000008"},"project":{"projectCode":"202012120005","projectName":"XG测试项目(202012120005)","projectId":"631201212000006"}}}
+[14:17:36:988] [ERROR] - com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2471) - create connection SQLException, url: jdbc:oracle:thin:@172.16.23.84:1521/ngsoft.ynjt.com, errorCode 17002, state 08006
+java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:156) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:218) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:150) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1560) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623) ~[druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468) [druid-1.1.10.jar:1.1.10]
+Caused by: oracle.net.ns.NetException: The Network Adapter could not establish the connection
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:439) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	... 10 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_221]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_221]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_221]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_221]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_221]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_221]
+	at oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:149) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnOption.connect(ConnOption.java:133) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:405) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:454) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:693) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:251) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	... 10 more
+[14:17:54:227] [ERROR] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:96) - 保存失败,原因Failed to obtain JDBC Connection; nested exception is java.sql.SQLException
+[14:17:54:227] [ERROR] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:96) - 保存失败,原因Failed to obtain JDBC Connection; nested exception is java.sql.SQLException
+[14:17:54:295] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[14:17:54:298] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[14:18:55:261] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 2784 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[14:18:55:278] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:18:56:317] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[14:18:56:325] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[14:18:56:325] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:18:56:325] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[14:18:56:463] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:18:56:463] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1125 ms
+[14:18:57:394] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[14:18:57:795] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[14:18:57:877] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[14:18:58:011] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[14:18:58:032] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 9080 (http) with context path '/secdev'
+[14:18:58:033] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[14:18:58:049] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[14:18:58:084] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[14:18:58:084] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[14:18:58:084] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[14:18:58:089] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
+[14:18:58:103] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 3.123 seconds (JVM running for 4.814)
+[14:19:00:981] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"data":{"sendOrder":{"carNumber":"浙A*4548D","orderCode":"123123123211","id":"545615615615122","sendTime":"2020-12-14 15:42:00"},"sendOrderDetail":{"area":"","code":"","specCode":"","num":1},"projectContract":{"projectContractCode":"20201213001","projectContractId":"598201213000008"},"project":{"projectCode":"202012120005","projectName":"XG测试项目(202012120005)","projectId":"631201212000006"}}}
+[14:19:03:534] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[14:22:43:552] [INFO] - com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:52) - {"data":{"sendOrder":{"carNumber":"浙A*4548D","orderCode":"123123123211","id":"545615615615122","sendTime":"2020-12-14 15:42:00"},"sendOrderDetail":{"area":"","code":"","specCode":"","num":1},"projectContract":{"projectContractCode":"20201213001","projectContractId":"598201213000008"},"project":{"projectCode":"202012120005","projectName":"XG测试项目(202012120005)","projectId":"631201212000006"}}}
+[14:23:45:187] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[14:23:45:215] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:18:43:648] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 22908 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:18:43:717] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:18:45:242] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[15:18:45:251] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[15:18:45:252] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:18:45:252] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:18:45:598] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:18:45:599] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1810 ms
+[15:18:46:764] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:18:47:098] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:18:47:156] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:18:47:428] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[15:18:47:451] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 9080 (http) with context path '/secdev'
+[15:18:47:452] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:18:47:468] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:18:47:495] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:18:47:512] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 4.253 seconds (JVM running for 6.713)
+[15:19:33:309] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:19:33:310] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:19:33:318] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
+[15:20:16:317] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:31:43:803] [ERROR] - com.alibaba.druid.util.JdbcUtils.close(JdbcUtils.java:86) - close statement error
+java.sql.SQLRecoverableException: 关闭的连接
+	at oracle.jdbc.driver.PhysicalConnection.needLine(PhysicalConnection.java:5416) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleStatement.closeOrCache(OracleStatement.java:1585) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleStatement.close(OracleStatement.java:1570) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.close(OracleStatementWrapper.java:94) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
+	at com.alibaba.druid.util.JdbcUtils.close(JdbcUtils.java:84) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.vendor.OracleValidConnectionChecker.isValidConnection(OracleValidConnectionChecker.java:88) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.testConnectionInternal(DruidAbstractDataSource.java:1400) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.getConnectionDirect(DruidDataSource.java:1299) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(FilterChainImpl.java:5007) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.stat.StatFilter.dataSource_getConnection(StatFilter.java:680) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.filter.FilterChainImpl.dataSource_connect(FilterChainImpl.java:5003) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1233) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1225) [druid-1.1.10.jar:1.1.10]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90) [druid-1.1.10.jar:1.1.10]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:371) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:490) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at com.newgrand.secdev.controller.LM.ZczrRecBackController.MainForm(ZczrRecBackController.java:162) [classes/:?]
+	at com.newgrand.secdev.controller.LM.ZczrRecBackController.sendDataToApp(ZczrRecBackController.java:125) [classes/:?]
+	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:95) [classes/:?]
+	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) [druid-1.1.10.jar:1.1.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
+[15:32:00:402] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:32:00:412] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:32:46:778] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 4568 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:32:46:795] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:32:47:830] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[15:32:47:838] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[15:32:47:838] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:32:47:838] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:32:47:971] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:32:47:971] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1115 ms
+[15:32:48:878] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:32:49:168] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:32:49:226] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:32:49:339] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[15:32:49:357] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 9080 (http) with context path '/secdev'
+[15:32:49:359] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:32:49:372] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:32:49:397] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:32:49:412] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 2.908 seconds (JVM running for 4.621)
+[15:32:51:729] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:32:51:730] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:32:51:735] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[15:33:59:475] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:34:00:231] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:34:00:245] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:49:07:022] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 8652 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:49:07:038] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:49:08:077] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 9080 (http)
+[15:49:08:084] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9080"]
+[15:49:08:085] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:49:08:085] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:49:08:201] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:49:08:202] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1107 ms
+[15:49:09:112] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:49:09:460] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:49:09:533] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:49:09:658] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9080"]
+[15:49:09:680] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 9080 (http) with context path '/secdev'
+[15:49:09:681] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:49:09:695] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:49:09:725] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:49:09:742] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 2.991 seconds (JVM running for 4.749)
+[15:49:13:312] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:49:13:313] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:49:13:318] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
+[15:49:16:036] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.GetWLInfo(LMRequestHelper.java:402) - 接收反馈的报文 = {"data":{"pageCount":0,"pageIndex":1,"list":[{"ORDER_ID":"OT2010230002","STATUS":"已计划","LIFE_CYCLE":null,"STATUS_CODE":"40","APPOINT_STATUS":"不预约","IMAGE_FLAG":"N|N|N|N","C_ORDER_NO":"DSF2020102300005","RELEASE_FROM_TYPE_PSC":"OMS出库单","ORDER_RELEASE_TYPE_PSC":"采自提销包送","SERVICE_TYPE":null,"CUSTOMER_GID":"zttest.PUBLIC.CO00000401","CUSTOMER_ID":"CO00000401","CUSTOMER_NAME":"云南建投物流有限公司","LATE_PICKUP_DATE":"2020-10-23T23:59:59","LATE_DELIVERY_DATE":"2020-10-23T23:59:59","FORECAST_ARRIVE_DATE":"0001-01-01T00:00:00","PLAN_TM_ID":null,"PLAN_TM_GID":null,"PLAN_SP_GID":null,"PLAN_SP_ID":"手动选择","PLAN_SP_NAME":null,"CARRIER_BY":null,"PACKAGING_COUNT":15.000000,"NET_WEIGHT":0.000000,"GROSS_WEIGHT":0.000000,"GROSS_VOLUME":0.000000,"AUTO_RUN_FLAG":"","ERROR_MSG":"","CREATED_DATE":"2020-10-23T15:49:49","CREATED_BY":"zttest","SALESMAN_NAME":null,"SALESMAN_EMAIL":null,"SALESMAN_CONTACT":null,"SALESMAN_DEPT":null,"UDF1":null,"UDF2":"project2020050188700","UDF3":"中国人民解放军77200部队八公里干休所住房改造工程","UDF4":"9862061","UDF5":null,"UDF6":null,"UDF7":null,"UDF8":null,"UDF9":null,"UDF10":null,"UDF11":null,"UDF12":null,"UDF13":null,"UDF14":null,"UDF15":null,"UDF16":null,"UDF17":null,"UDF18":null,"UDF19":null,"UDF20":null,"UDF_N1":0.0,"UDF_N2":0.0,"UDF_D1":null,"UDF_D2":null,"CUSTOMS_DECLARE_PLACE":null,"INVOICE_NO":null,"ORDER_GID":"PUBLIC.OT2010230002","DOMAIN_NAME":"PUBLIC","TEMPERATURE_PSC":null,"EXT_WAYBII_NO":null,"INCO_TERM_PSC":null,"INCO_TERM2":null,"APPOINTMENT_DATE":null,"APPOINTMENT_CONTENT":null,"INSURED_AMOUNT":0.00,"IS_SPLIT":null,"PARENT_ORDER_ID":null,"PRINT_RECORD":null,"DELIVERY":null,"ORDER_INFO_REMARK":null,"UPDATED_DATE":"2020-10-30T10:27:04","UPDATED_BY":"zttest","AGENCY_FUND":0.00,"IS_WAIT_CANCEL":null,"SERVICE_LEVEL_PSC":null,"ITEM_VALUE":0.00,"DISPATCH_TYPE":null,"KILOMETERS":0.000000,"API_RECEIPT":null,"EQUIPMENT_TYPE_ID":"","CONFIRM_DATE":"2020-10-23T16:00:09","WARNING_TIME":"-1455.82","COMPANY_GID":null,"COMPANY_ID":null,"FACTORY_GID":null,"FACTORY_ID":null,"COST_CENTER_GID":null,"COST_CENTER_ID":null,"PROJECT_GID":null,"PROJECT_ID":null,"WAREHOUSE_GID":null,"WAREHOUSE_ID":null,"ACTUAL_PICKUP_DATE":null,"ACTUAL_ARIVALL_DATE":null,"BU_ID":"CO00000401","BU_NAME":"云南建投物流有限公司","OI_PK_NUMBER":null,"PICKUP_PACKAGE_COUNT":0.0,"PICKUP_NET_WEIGHT":0.0,"PICKUP_OLI_WEIGHT":0.0,"PICKUP_VOLUME":0.0,"ARRIVAL_PACKAGE_COUNT":0.0,"ARRIVAL_NET_WEIGHT":0.0,"ARRIVAL_OLI_WEIGHT":0.0,"ARRIVAL_VOLUME":0.0,"RECEIVABLE_AMOUNT":0.00,"ORA_PACKAGE_COUNT":15.000000,"ORA_WEIGHT":0.000000,"ORA_NET_WEIGHT":0.000000,"ORA_VOLUME":0.000000,"EQUIPMENT_ID":"云K222,","ADDRESS_GUID":null,"SRC_LOCATION_GID":"zttest.PUBLIC.AD-2020092500035","SRC_LOCATION_ID":"AD-2020092500035","SRC_COUNTRY_CODE_ID":"CHN","SRC_LOCATION_NAME":"小板桥街道子君村","SRC_PROVINCE":"云南省","SRC_CITY":"昆明市","SRC_COUNTY_ID":"官渡区","SRC_POST_CODE":null,"SRC_ZONE1_GID":null,"SRC_ZONE2_GID":null,"SRC_ZONE1":null,"SRC_ZONE2":null,"SRC_ADDRESS":"小板桥街道子君村","SRC_REMARK":null,"SRC_FLOOR":0.0,"SRC_EMAIL":null,"SRC_PERIOD":null,"SRC_CONTACT_NAME":"徐鹏","SRC_CONTACT_PHONE":"18213558498","SRC_REGION":null,"SRC_LATITUED":"24.844327","SRC_LONGITUDE":"102.858319","DEST_LOCATION_GID":"zttest.PUBLIC.523","DEST_LOCATION_ID":"523","DEST_LOCATION_NAME":"中国人民解放军77200部队八公里干休所住房改造工程云南省昆明市呈贡区","DEST_COUNTRY_CODE_ID":"CHN","DEST_PROVINCE":"云南省","DEST_CITY":"昆明市","DEST_COUNTY_ID":"呈贡区","DEST_POST_CODE":null,"DEST_ZONE1_GID":null,"DEST_ZONE1":null,"DEST_ZONE2":null,"DEST_ZONE2_GID":null,"DEST_ADDRESS":"云南省昆明市呈贡区春融东路","DEST_CONTACT_NAME":"姜涩琪","DEST_CONTACT_PHONE":"13358454851","DEST_REGION":null,"DEST_LATITUED":"24.844327","DEST_LONGITUDE":"102.858319","DEST_REMARK":null,"DEST_PERIOD":null,"DEST_EMAIL":null,"DEST_FLOOR":0.0,"DESC_LATITUED":null,"DESC_LONGITUDE":null,"ListUdfRecords":null,"ListUdfDisplays":null,"ListSubModules":null}],"total":1},"resultCode":0,"flag":true,"msgCode":null,"msg":"","token":"23dd7449ed81478296695e152ba273ad","ttid":null,"domain":null,"transactionId":"6374433535670116958675"}
+[15:59:26:365] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.GetWLInfo(LMRequestHelper.java:402) - 接收反馈的报文 = {"data":{"pageCount":0,"pageIndex":1,"list":[{"ORDER_ID":"OT2010230002","STATUS":"已计划","LIFE_CYCLE":null,"STATUS_CODE":"40","APPOINT_STATUS":"不预约","IMAGE_FLAG":"N|N|N|N","C_ORDER_NO":"DSF2020102300005","RELEASE_FROM_TYPE_PSC":"OMS出库单","ORDER_RELEASE_TYPE_PSC":"采自提销包送","SERVICE_TYPE":null,"CUSTOMER_GID":"zttest.PUBLIC.CO00000401","CUSTOMER_ID":"CO00000401","CUSTOMER_NAME":"云南建投物流有限公司","LATE_PICKUP_DATE":"2020-10-23T23:59:59","LATE_DELIVERY_DATE":"2020-10-23T23:59:59","FORECAST_ARRIVE_DATE":"0001-01-01T00:00:00","PLAN_TM_ID":null,"PLAN_TM_GID":null,"PLAN_SP_GID":null,"PLAN_SP_ID":"手动选择","PLAN_SP_NAME":null,"CARRIER_BY":null,"PACKAGING_COUNT":15.000000,"NET_WEIGHT":0.000000,"GROSS_WEIGHT":0.000000,"GROSS_VOLUME":0.000000,"AUTO_RUN_FLAG":"","ERROR_MSG":"","CREATED_DATE":"2020-10-23T15:49:49","CREATED_BY":"zttest","SALESMAN_NAME":null,"SALESMAN_EMAIL":null,"SALESMAN_CONTACT":null,"SALESMAN_DEPT":null,"UDF1":null,"UDF2":"project2020050188700","UDF3":"中国人民解放军77200部队八公里干休所住房改造工程","UDF4":"9862061","UDF5":null,"UDF6":null,"UDF7":null,"UDF8":null,"UDF9":null,"UDF10":null,"UDF11":null,"UDF12":null,"UDF13":null,"UDF14":null,"UDF15":null,"UDF16":null,"UDF17":null,"UDF18":null,"UDF19":null,"UDF20":null,"UDF_N1":0.0,"UDF_N2":0.0,"UDF_D1":null,"UDF_D2":null,"CUSTOMS_DECLARE_PLACE":null,"INVOICE_NO":null,"ORDER_GID":"PUBLIC.OT2010230002","DOMAIN_NAME":"PUBLIC","TEMPERATURE_PSC":null,"EXT_WAYBII_NO":null,"INCO_TERM_PSC":null,"INCO_TERM2":null,"APPOINTMENT_DATE":null,"APPOINTMENT_CONTENT":null,"INSURED_AMOUNT":0.00,"IS_SPLIT":null,"PARENT_ORDER_ID":null,"PRINT_RECORD":null,"DELIVERY":null,"ORDER_INFO_REMARK":null,"UPDATED_DATE":"2020-10-30T10:27:04","UPDATED_BY":"zttest","AGENCY_FUND":0.00,"IS_WAIT_CANCEL":null,"SERVICE_LEVEL_PSC":null,"ITEM_VALUE":0.00,"DISPATCH_TYPE":null,"KILOMETERS":0.000000,"API_RECEIPT":null,"EQUIPMENT_TYPE_ID":"","CONFIRM_DATE":"2020-10-23T16:00:09","WARNING_TIME":"-1455.98","COMPANY_GID":null,"COMPANY_ID":null,"FACTORY_GID":null,"FACTORY_ID":null,"COST_CENTER_GID":null,"COST_CENTER_ID":null,"PROJECT_GID":null,"PROJECT_ID":null,"WAREHOUSE_GID":null,"WAREHOUSE_ID":null,"ACTUAL_PICKUP_DATE":null,"ACTUAL_ARIVALL_DATE":null,"BU_ID":"CO00000401","BU_NAME":"云南建投物流有限公司","OI_PK_NUMBER":null,"PICKUP_PACKAGE_COUNT":0.0,"PICKUP_NET_WEIGHT":0.0,"PICKUP_OLI_WEIGHT":0.0,"PICKUP_VOLUME":0.0,"ARRIVAL_PACKAGE_COUNT":0.0,"ARRIVAL_NET_WEIGHT":0.0,"ARRIVAL_OLI_WEIGHT":0.0,"ARRIVAL_VOLUME":0.0,"RECEIVABLE_AMOUNT":0.00,"ORA_PACKAGE_COUNT":15.000000,"ORA_WEIGHT":0.000000,"ORA_NET_WEIGHT":0.000000,"ORA_VOLUME":0.000000,"EQUIPMENT_ID":"云K222,","ADDRESS_GUID":null,"SRC_LOCATION_GID":"zttest.PUBLIC.AD-2020092500035","SRC_LOCATION_ID":"AD-2020092500035","SRC_COUNTRY_CODE_ID":"CHN","SRC_LOCATION_NAME":"小板桥街道子君村","SRC_PROVINCE":"云南省","SRC_CITY":"昆明市","SRC_COUNTY_ID":"官渡区","SRC_POST_CODE":null,"SRC_ZONE1_GID":null,"SRC_ZONE2_GID":null,"SRC_ZONE1":null,"SRC_ZONE2":null,"SRC_ADDRESS":"小板桥街道子君村","SRC_REMARK":null,"SRC_FLOOR":0.0,"SRC_EMAIL":null,"SRC_PERIOD":null,"SRC_CONTACT_NAME":"徐鹏","SRC_CONTACT_PHONE":"18213558498","SRC_REGION":null,"SRC_LATITUED":"24.844327","SRC_LONGITUDE":"102.858319","DEST_LOCATION_GID":"zttest.PUBLIC.523","DEST_LOCATION_ID":"523","DEST_LOCATION_NAME":"中国人民解放军77200部队八公里干休所住房改造工程云南省昆明市呈贡区","DEST_COUNTRY_CODE_ID":"CHN","DEST_PROVINCE":"云南省","DEST_CITY":"昆明市","DEST_COUNTY_ID":"呈贡区","DEST_POST_CODE":null,"DEST_ZONE1_GID":null,"DEST_ZONE1":null,"DEST_ZONE2":null,"DEST_ZONE2_GID":null,"DEST_ADDRESS":"云南省昆明市呈贡区春融东路","DEST_CONTACT_NAME":"姜涩琪","DEST_CONTACT_PHONE":"13358454851","DEST_REGION":null,"DEST_LATITUED":"24.844327","DEST_LONGITUDE":"102.858319","DEST_REMARK":null,"DEST_PERIOD":null,"DEST_EMAIL":null,"DEST_FLOOR":0.0,"DESC_LATITUED":null,"DESC_LONGITUDE":null,"ListUdfRecords":null,"ListUdfDisplays":null,"ListSubModules":null}],"total":1},"resultCode":0,"flag":true,"msgCode":null,"msg":"","token":"c740d9b867e34a9a9b5b508ec5567f5c","ttid":null,"domain":null,"transactionId":"6374433596707604348744"}
+[16:01:36:723] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.GetWLInfo(LMRequestHelper.java:402) - 接收反馈的报文 = {"data":{"pageCount":0,"pageIndex":1,"list":[{"ORDER_ID":"OT2010230002","STATUS":"已计划","LIFE_CYCLE":null,"STATUS_CODE":"40","APPOINT_STATUS":"不预约","IMAGE_FLAG":"N|N|N|N","C_ORDER_NO":"DSF2020102300005","RELEASE_FROM_TYPE_PSC":"OMS出库单","ORDER_RELEASE_TYPE_PSC":"采自提销包送","SERVICE_TYPE":null,"CUSTOMER_GID":"zttest.PUBLIC.CO00000401","CUSTOMER_ID":"CO00000401","CUSTOMER_NAME":"云南建投物流有限公司","LATE_PICKUP_DATE":"2020-10-23T23:59:59","LATE_DELIVERY_DATE":"2020-10-23T23:59:59","FORECAST_ARRIVE_DATE":"0001-01-01T00:00:00","PLAN_TM_ID":null,"PLAN_TM_GID":null,"PLAN_SP_GID":null,"PLAN_SP_ID":"手动选择","PLAN_SP_NAME":null,"CARRIER_BY":null,"PACKAGING_COUNT":15.000000,"NET_WEIGHT":0.000000,"GROSS_WEIGHT":0.000000,"GROSS_VOLUME":0.000000,"AUTO_RUN_FLAG":"","ERROR_MSG":"","CREATED_DATE":"2020-10-23T15:49:49","CREATED_BY":"zttest","SALESMAN_NAME":null,"SALESMAN_EMAIL":null,"SALESMAN_CONTACT":null,"SALESMAN_DEPT":null,"UDF1":null,"UDF2":"project2020050188700","UDF3":"中国人民解放军77200部队八公里干休所住房改造工程","UDF4":"9862061","UDF5":null,"UDF6":null,"UDF7":null,"UDF8":null,"UDF9":null,"UDF10":null,"UDF11":null,"UDF12":null,"UDF13":null,"UDF14":null,"UDF15":null,"UDF16":null,"UDF17":null,"UDF18":null,"UDF19":null,"UDF20":null,"UDF_N1":0.0,"UDF_N2":0.0,"UDF_D1":null,"UDF_D2":null,"CUSTOMS_DECLARE_PLACE":null,"INVOICE_NO":null,"ORDER_GID":"PUBLIC.OT2010230002","DOMAIN_NAME":"PUBLIC","TEMPERATURE_PSC":null,"EXT_WAYBII_NO":null,"INCO_TERM_PSC":null,"INCO_TERM2":null,"APPOINTMENT_DATE":null,"APPOINTMENT_CONTENT":null,"INSURED_AMOUNT":0.00,"IS_SPLIT":null,"PARENT_ORDER_ID":null,"PRINT_RECORD":null,"DELIVERY":null,"ORDER_INFO_REMARK":null,"UPDATED_DATE":"2020-10-30T10:27:04","UPDATED_BY":"zttest","AGENCY_FUND":0.00,"IS_WAIT_CANCEL":null,"SERVICE_LEVEL_PSC":null,"ITEM_VALUE":0.00,"DISPATCH_TYPE":null,"KILOMETERS":0.000000,"API_RECEIPT":null,"EQUIPMENT_TYPE_ID":"","CONFIRM_DATE":"2020-10-23T16:00:09","WARNING_TIME":"-1456.02","COMPANY_GID":null,"COMPANY_ID":null,"FACTORY_GID":null,"FACTORY_ID":null,"COST_CENTER_GID":null,"COST_CENTER_ID":null,"PROJECT_GID":null,"PROJECT_ID":null,"WAREHOUSE_GID":null,"WAREHOUSE_ID":null,"ACTUAL_PICKUP_DATE":null,"ACTUAL_ARIVALL_DATE":null,"BU_ID":"CO00000401","BU_NAME":"云南建投物流有限公司","OI_PK_NUMBER":null,"PICKUP_PACKAGE_COUNT":0.0,"PICKUP_NET_WEIGHT":0.0,"PICKUP_OLI_WEIGHT":0.0,"PICKUP_VOLUME":0.0,"ARRIVAL_PACKAGE_COUNT":0.0,"ARRIVAL_NET_WEIGHT":0.0,"ARRIVAL_OLI_WEIGHT":0.0,"ARRIVAL_VOLUME":0.0,"RECEIVABLE_AMOUNT":0.00,"ORA_PACKAGE_COUNT":15.000000,"ORA_WEIGHT":0.000000,"ORA_NET_WEIGHT":0.000000,"ORA_VOLUME":0.000000,"EQUIPMENT_ID":"云K222,","ADDRESS_GUID":null,"SRC_LOCATION_GID":"zttest.PUBLIC.AD-2020092500035","SRC_LOCATION_ID":"AD-2020092500035","SRC_COUNTRY_CODE_ID":"CHN","SRC_LOCATION_NAME":"小板桥街道子君村","SRC_PROVINCE":"云南省","SRC_CITY":"昆明市","SRC_COUNTY_ID":"官渡区","SRC_POST_CODE":null,"SRC_ZONE1_GID":null,"SRC_ZONE2_GID":null,"SRC_ZONE1":null,"SRC_ZONE2":null,"SRC_ADDRESS":"小板桥街道子君村","SRC_REMARK":null,"SRC_FLOOR":0.0,"SRC_EMAIL":null,"SRC_PERIOD":null,"SRC_CONTACT_NAME":"徐鹏","SRC_CONTACT_PHONE":"18213558498","SRC_REGION":null,"SRC_LATITUED":"24.844327","SRC_LONGITUDE":"102.858319","DEST_LOCATION_GID":"zttest.PUBLIC.523","DEST_LOCATION_ID":"523","DEST_LOCATION_NAME":"中国人民解放军77200部队八公里干休所住房改造工程云南省昆明市呈贡区","DEST_COUNTRY_CODE_ID":"CHN","DEST_PROVINCE":"云南省","DEST_CITY":"昆明市","DEST_COUNTY_ID":"呈贡区","DEST_POST_CODE":null,"DEST_ZONE1_GID":null,"DEST_ZONE1":null,"DEST_ZONE2":null,"DEST_ZONE2_GID":null,"DEST_ADDRESS":"云南省昆明市呈贡区春融东路","DEST_CONTACT_NAME":"姜涩琪","DEST_CONTACT_PHONE":"13358454851","DEST_REGION":null,"DEST_LATITUED":"24.844327","DEST_LONGITUDE":"102.858319","DEST_REMARK":null,"DEST_PERIOD":null,"DEST_EMAIL":null,"DEST_FLOOR":0.0,"DESC_LATITUED":null,"DESC_LONGITUDE":null,"ListUdfRecords":null,"ListUdfDisplays":null,"ListSubModules":null}],"total":1},"resultCode":0,"flag":true,"msgCode":null,"msg":"","token":"c740d9b867e34a9a9b5b508ec5567f5c","ttid":null,"domain":null,"transactionId":"6374433609749082079482"}
+[16:01:45:840] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.GetWLInfo(LMRequestHelper.java:402) - 接收反馈的报文 = {"data":{"pageCount":0,"pageIndex":1,"list":[{"ORDER_ID":"OT2010230002","STATUS":"已计划","LIFE_CYCLE":null,"STATUS_CODE":"40","APPOINT_STATUS":"不预约","IMAGE_FLAG":"N|N|N|N","C_ORDER_NO":"DSF2020102300005","RELEASE_FROM_TYPE_PSC":"OMS出库单","ORDER_RELEASE_TYPE_PSC":"采自提销包送","SERVICE_TYPE":null,"CUSTOMER_GID":"zttest.PUBLIC.CO00000401","CUSTOMER_ID":"CO00000401","CUSTOMER_NAME":"云南建投物流有限公司","LATE_PICKUP_DATE":"2020-10-23T23:59:59","LATE_DELIVERY_DATE":"2020-10-23T23:59:59","FORECAST_ARRIVE_DATE":"0001-01-01T00:00:00","PLAN_TM_ID":null,"PLAN_TM_GID":null,"PLAN_SP_GID":null,"PLAN_SP_ID":"手动选择","PLAN_SP_NAME":null,"CARRIER_BY":null,"PACKAGING_COUNT":15.000000,"NET_WEIGHT":0.000000,"GROSS_WEIGHT":0.000000,"GROSS_VOLUME":0.000000,"AUTO_RUN_FLAG":"","ERROR_MSG":"","CREATED_DATE":"2020-10-23T15:49:49","CREATED_BY":"zttest","SALESMAN_NAME":null,"SALESMAN_EMAIL":null,"SALESMAN_CONTACT":null,"SALESMAN_DEPT":null,"UDF1":null,"UDF2":"project2020050188700","UDF3":"中国人民解放军77200部队八公里干休所住房改造工程","UDF4":"9862061","UDF5":null,"UDF6":null,"UDF7":null,"UDF8":null,"UDF9":null,"UDF10":null,"UDF11":null,"UDF12":null,"UDF13":null,"UDF14":null,"UDF15":null,"UDF16":null,"UDF17":null,"UDF18":null,"UDF19":null,"UDF20":null,"UDF_N1":0.0,"UDF_N2":0.0,"UDF_D1":null,"UDF_D2":null,"CUSTOMS_DECLARE_PLACE":null,"INVOICE_NO":null,"ORDER_GID":"PUBLIC.OT2010230002","DOMAIN_NAME":"PUBLIC","TEMPERATURE_PSC":null,"EXT_WAYBII_NO":null,"INCO_TERM_PSC":null,"INCO_TERM2":null,"APPOINTMENT_DATE":null,"APPOINTMENT_CONTENT":null,"INSURED_AMOUNT":0.00,"IS_SPLIT":null,"PARENT_ORDER_ID":null,"PRINT_RECORD":null,"DELIVERY":null,"ORDER_INFO_REMARK":null,"UPDATED_DATE":"2020-10-30T10:27:04","UPDATED_BY":"zttest","AGENCY_FUND":0.00,"IS_WAIT_CANCEL":null,"SERVICE_LEVEL_PSC":null,"ITEM_VALUE":0.00,"DISPATCH_TYPE":null,"KILOMETERS":0.000000,"API_RECEIPT":null,"EQUIPMENT_TYPE_ID":"","CONFIRM_DATE":"2020-10-23T16:00:09","WARNING_TIME":"-1456.02","COMPANY_GID":null,"COMPANY_ID":null,"FACTORY_GID":null,"FACTORY_ID":null,"COST_CENTER_GID":null,"COST_CENTER_ID":null,"PROJECT_GID":null,"PROJECT_ID":null,"WAREHOUSE_GID":null,"WAREHOUSE_ID":null,"ACTUAL_PICKUP_DATE":null,"ACTUAL_ARIVALL_DATE":null,"BU_ID":"CO00000401","BU_NAME":"云南建投物流有限公司","OI_PK_NUMBER":null,"PICKUP_PACKAGE_COUNT":0.0,"PICKUP_NET_WEIGHT":0.0,"PICKUP_OLI_WEIGHT":0.0,"PICKUP_VOLUME":0.0,"ARRIVAL_PACKAGE_COUNT":0.0,"ARRIVAL_NET_WEIGHT":0.0,"ARRIVAL_OLI_WEIGHT":0.0,"ARRIVAL_VOLUME":0.0,"RECEIVABLE_AMOUNT":0.00,"ORA_PACKAGE_COUNT":15.000000,"ORA_WEIGHT":0.000000,"ORA_NET_WEIGHT":0.000000,"ORA_VOLUME":0.000000,"EQUIPMENT_ID":"云K222,","ADDRESS_GUID":null,"SRC_LOCATION_GID":"zttest.PUBLIC.AD-2020092500035","SRC_LOCATION_ID":"AD-2020092500035","SRC_COUNTRY_CODE_ID":"CHN","SRC_LOCATION_NAME":"小板桥街道子君村","SRC_PROVINCE":"云南省","SRC_CITY":"昆明市","SRC_COUNTY_ID":"官渡区","SRC_POST_CODE":null,"SRC_ZONE1_GID":null,"SRC_ZONE2_GID":null,"SRC_ZONE1":null,"SRC_ZONE2":null,"SRC_ADDRESS":"小板桥街道子君村","SRC_REMARK":null,"SRC_FLOOR":0.0,"SRC_EMAIL":null,"SRC_PERIOD":null,"SRC_CONTACT_NAME":"徐鹏","SRC_CONTACT_PHONE":"18213558498","SRC_REGION":null,"SRC_LATITUED":"24.844327","SRC_LONGITUDE":"102.858319","DEST_LOCATION_GID":"zttest.PUBLIC.523","DEST_LOCATION_ID":"523","DEST_LOCATION_NAME":"中国人民解放军77200部队八公里干休所住房改造工程云南省昆明市呈贡区","DEST_COUNTRY_CODE_ID":"CHN","DEST_PROVINCE":"云南省","DEST_CITY":"昆明市","DEST_COUNTY_ID":"呈贡区","DEST_POST_CODE":null,"DEST_ZONE1_GID":null,"DEST_ZONE1":null,"DEST_ZONE2":null,"DEST_ZONE2_GID":null,"DEST_ADDRESS":"云南省昆明市呈贡区春融东路","DEST_CONTACT_NAME":"姜涩琪","DEST_CONTACT_PHONE":"13358454851","DEST_REGION":null,"DEST_LATITUED":"24.844327","DEST_LONGITUDE":"102.858319","DEST_REMARK":null,"DEST_PERIOD":null,"DEST_EMAIL":null,"DEST_FLOOR":0.0,"DESC_LATITUED":null,"DESC_LONGITUDE":null,"ListUdfRecords":null,"ListUdfDisplays":null,"ListSubModules":null}],"total":1},"resultCode":0,"flag":true,"msgCode":null,"msg":"","token":"c740d9b867e34a9a9b5b508ec5567f5c","ttid":null,"domain":null,"transactionId":"6374433610661602858303"}
+[16:02:05:760] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.GetWLInfo(LMRequestHelper.java:402) - 接收反馈的报文 = {"data":{"pageCount":0,"pageIndex":1,"list":[{"ORDER_ID":"OT2010230002","STATUS":"已计划","LIFE_CYCLE":null,"STATUS_CODE":"40","APPOINT_STATUS":"不预约","IMAGE_FLAG":"N|N|N|N","C_ORDER_NO":"DSF2020102300005","RELEASE_FROM_TYPE_PSC":"OMS出库单","ORDER_RELEASE_TYPE_PSC":"采自提销包送","SERVICE_TYPE":null,"CUSTOMER_GID":"zttest.PUBLIC.CO00000401","CUSTOMER_ID":"CO00000401","CUSTOMER_NAME":"云南建投物流有限公司","LATE_PICKUP_DATE":"2020-10-23T23:59:59","LATE_DELIVERY_DATE":"2020-10-23T23:59:59","FORECAST_ARRIVE_DATE":"0001-01-01T00:00:00","PLAN_TM_ID":null,"PLAN_TM_GID":null,"PLAN_SP_GID":null,"PLAN_SP_ID":"手动选择","PLAN_SP_NAME":null,"CARRIER_BY":null,"PACKAGING_COUNT":15.000000,"NET_WEIGHT":0.000000,"GROSS_WEIGHT":0.000000,"GROSS_VOLUME":0.000000,"AUTO_RUN_FLAG":"","ERROR_MSG":"","CREATED_DATE":"2020-10-23T15:49:49","CREATED_BY":"zttest","SALESMAN_NAME":null,"SALESMAN_EMAIL":null,"SALESMAN_CONTACT":null,"SALESMAN_DEPT":null,"UDF1":null,"UDF2":"project2020050188700","UDF3":"中国人民解放军77200部队八公里干休所住房改造工程","UDF4":"9862061","UDF5":null,"UDF6":null,"UDF7":null,"UDF8":null,"UDF9":null,"UDF10":null,"UDF11":null,"UDF12":null,"UDF13":null,"UDF14":null,"UDF15":null,"UDF16":null,"UDF17":null,"UDF18":null,"UDF19":null,"UDF20":null,"UDF_N1":0.0,"UDF_N2":0.0,"UDF_D1":null,"UDF_D2":null,"CUSTOMS_DECLARE_PLACE":null,"INVOICE_NO":null,"ORDER_GID":"PUBLIC.OT2010230002","DOMAIN_NAME":"PUBLIC","TEMPERATURE_PSC":null,"EXT_WAYBII_NO":null,"INCO_TERM_PSC":null,"INCO_TERM2":null,"APPOINTMENT_DATE":null,"APPOINTMENT_CONTENT":null,"INSURED_AMOUNT":0.00,"IS_SPLIT":null,"PARENT_ORDER_ID":null,"PRINT_RECORD":null,"DELIVERY":null,"ORDER_INFO_REMARK":null,"UPDATED_DATE":"2020-10-30T10:27:04","UPDATED_BY":"zttest","AGENCY_FUND":0.00,"IS_WAIT_CANCEL":null,"SERVICE_LEVEL_PSC":null,"ITEM_VALUE":0.00,"DISPATCH_TYPE":null,"KILOMETERS":0.000000,"API_RECEIPT":null,"EQUIPMENT_TYPE_ID":"","CONFIRM_DATE":"2020-10-23T16:00:09","WARNING_TIME":"-1456.03","COMPANY_GID":null,"COMPANY_ID":null,"FACTORY_GID":null,"FACTORY_ID":null,"COST_CENTER_GID":null,"COST_CENTER_ID":null,"PROJECT_GID":null,"PROJECT_ID":null,"WAREHOUSE_GID":null,"WAREHOUSE_ID":null,"ACTUAL_PICKUP_DATE":null,"ACTUAL_ARIVALL_DATE":null,"BU_ID":"CO00000401","BU_NAME":"云南建投物流有限公司","OI_PK_NUMBER":null,"PICKUP_PACKAGE_COUNT":0.0,"PICKUP_NET_WEIGHT":0.0,"PICKUP_OLI_WEIGHT":0.0,"PICKUP_VOLUME":0.0,"ARRIVAL_PACKAGE_COUNT":0.0,"ARRIVAL_NET_WEIGHT":0.0,"ARRIVAL_OLI_WEIGHT":0.0,"ARRIVAL_VOLUME":0.0,"RECEIVABLE_AMOUNT":0.00,"ORA_PACKAGE_COUNT":15.000000,"ORA_WEIGHT":0.000000,"ORA_NET_WEIGHT":0.000000,"ORA_VOLUME":0.000000,"EQUIPMENT_ID":"云K222,","ADDRESS_GUID":null,"SRC_LOCATION_GID":"zttest.PUBLIC.AD-2020092500035","SRC_LOCATION_ID":"AD-2020092500035","SRC_COUNTRY_CODE_ID":"CHN","SRC_LOCATION_NAME":"小板桥街道子君村","SRC_PROVINCE":"云南省","SRC_CITY":"昆明市","SRC_COUNTY_ID":"官渡区","SRC_POST_CODE":null,"SRC_ZONE1_GID":null,"SRC_ZONE2_GID":null,"SRC_ZONE1":null,"SRC_ZONE2":null,"SRC_ADDRESS":"小板桥街道子君村","SRC_REMARK":null,"SRC_FLOOR":0.0,"SRC_EMAIL":null,"SRC_PERIOD":null,"SRC_CONTACT_NAME":"徐鹏","SRC_CONTACT_PHONE":"18213558498","SRC_REGION":null,"SRC_LATITUED":"24.844327","SRC_LONGITUDE":"102.858319","DEST_LOCATION_GID":"zttest.PUBLIC.523","DEST_LOCATION_ID":"523","DEST_LOCATION_NAME":"中国人民解放军77200部队八公里干休所住房改造工程云南省昆明市呈贡区","DEST_COUNTRY_CODE_ID":"CHN","DEST_PROVINCE":"云南省","DEST_CITY":"昆明市","DEST_COUNTY_ID":"呈贡区","DEST_POST_CODE":null,"DEST_ZONE1_GID":null,"DEST_ZONE1":null,"DEST_ZONE2":null,"DEST_ZONE2_GID":null,"DEST_ADDRESS":"云南省昆明市呈贡区春融东路","DEST_CONTACT_NAME":"姜涩琪","DEST_CONTACT_PHONE":"13358454851","DEST_REGION":null,"DEST_LATITUED":"24.844327","DEST_LONGITUDE":"102.858319","DEST_REMARK":null,"DEST_PERIOD":null,"DEST_EMAIL":null,"DEST_FLOOR":0.0,"DESC_LATITUED":null,"DESC_LONGITUDE":null,"ListUdfRecords":null,"ListUdfDisplays":null,"ListSubModules":null}],"total":1},"resultCode":0,"flag":true,"msgCode":null,"msg":"","token":"c740d9b867e34a9a9b5b508ec5567f5c","ttid":null,"domain":null,"transactionId":"6374433612655395522963"}
+[18:03:47:689] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'

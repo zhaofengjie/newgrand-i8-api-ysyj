@@ -1,0 +1,305 @@
+[14:45:32:488] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 10680 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[14:45:32:515] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[14:45:34:819] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 8087 (http)
+[14:45:34:828] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8087"]
+[14:45:34:829] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[14:45:34:829] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[14:45:34:973] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[14:45:34:974] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 2374 ms
+[14:45:36:220] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[14:45:38:243] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[14:45:38:396] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[14:45:38:681] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8087"]
+[14:45:38:745] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 8087 (http) with context path '/secdev'
+[14:45:38:747] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[14:45:38:791] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[14:45:38:876] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[14:45:38:928] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 6.839 seconds (JVM running for 11.525)
+[15:19:45:408] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:19:45:408] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:19:45:420] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 12 ms
+[15:19:45:545] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:19:45:638] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:19:46:209] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:19:58:627] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:19:58:651] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:20:12:739] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:21:17:535] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:21:18:343] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:21:18:353] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:21:24:846] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 27852 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:21:24:856] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:21:25:918] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 8087 (http)
+[15:21:25:925] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8087"]
+[15:21:25:925] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:21:25:926] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:21:26:030] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:21:26:031] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1096 ms
+[15:21:27:369] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:21:29:348] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:21:29:494] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:21:29:779] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8087"]
+[15:21:29:841] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 8087 (http) with context path '/secdev'
+[15:21:29:843] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:21:29:883] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:21:29:980] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:21:30:037] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 5.522 seconds (JVM running for 7.485)
+[15:21:30:278] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:21:30:279] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:21:30:289] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 10 ms
+[15:21:32:155] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:21:32:242] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:21:32:787] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:21:47:502] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:21:53:804] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:21:54:545] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:21:54:558] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:22:16:668] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 22232 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:22:16:677] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:22:17:694] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 8087 (http)
+[15:22:17:702] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8087"]
+[15:22:17:703] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:22:17:703] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:22:17:813] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:22:17:813] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1062 ms
+[15:22:18:861] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:22:20:529] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:22:20:660] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:22:20:918] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8087"]
+[15:22:20:967] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 8087 (http) with context path '/secdev'
+[15:22:20:969] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:22:21:000] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:22:21:068] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:22:21:121] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 4.771 seconds (JVM running for 6.505)
+[15:22:21:268] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:22:21:269] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:22:21:282] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 12 ms
+[15:22:22:600] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:22:24:501] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:23:28:146] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere T1.phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:23:29:113] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:23:29:124] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:23:35:484] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 16756 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:23:35:494] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:23:36:671] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 8087 (http)
+[15:23:36:680] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8087"]
+[15:23:36:680] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:23:36:681] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:23:36:794] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:23:36:794] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1218 ms
+[15:23:37:899] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:23:39:316] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:23:39:440] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:23:39:672] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8087"]
+[15:23:39:722] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 8087 (http) with context path '/secdev'
+[15:23:39:724] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:23:39:756] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:23:39:815] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:23:39:851] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 4.769 seconds (JVM running for 6.625)
+[15:23:44:824] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:23:44:825] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:23:44:836] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 11 ms
+[15:23:46:894] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:23:47:829] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:26:17:057] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:26:17:071] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:28:22:040] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 12100 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:28:22:048] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:28:23:053] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 8087 (http)
+[15:28:23:061] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8087"]
+[15:28:23:061] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:28:23:061] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:28:23:170] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:28:23:170] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1054 ms
+[15:28:24:177] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:28:25:332] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:28:25:440] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:28:25:650] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8087"]
+[15:28:25:694] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 8087 (http) with context path '/secdev'
+[15:28:25:696] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:28:25:724] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:28:25:779] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:28:25:817] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 4.044 seconds (JVM running for 5.714)
+[15:28:27:740] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:28:27:741] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:28:27:752] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 10 ms
+[15:28:29:738] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:28:31:954] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:28:52:684] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:28:52:694] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:29:19:439] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 28252 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:29:19:447] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:29:20:418] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 8087 (http)
+[15:29:20:426] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8087"]
+[15:29:20:426] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:29:20:426] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:29:20:522] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:29:20:522] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1006 ms
+[15:29:21:464] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:29:22:607] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:29:22:716] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:29:22:927] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8087"]
+[15:29:22:969] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 8087 (http) with context path '/secdev'
+[15:29:22:971] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:29:22:999] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:29:23:058] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:29:23:091] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 3.93 seconds (JVM running for 5.563)
+[15:29:26:090] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:29:26:090] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:29:26:099] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 9 ms
+[15:29:28:662] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:29:29:337] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:29:53:845] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:30:17:343] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:32:21:345] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:32:21:363] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
+[15:32:29:048] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 7352 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
+[15:32:29:056] [INFO] - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:651) - No active profile set, falling back to default profiles: default
+[15:32:30:155] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:108) - Tomcat initialized with port(s): 8087 (http)
+[15:32:30:164] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-8087"]
+[15:32:30:164] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting service [Tomcat]
+[15:32:30:165] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.37]
+[15:32:30:271] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+[15:32:30:271] [INFO] - org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.prepareWebApplicationContext(ServletWebServerApplicationContext.java:285) - Root WebApplicationContext: initialization completed in 1145 ms
+[15:32:31:273] [WARN] - com.alibaba.druid.pool.DruidAbstractDataSource.setDriverClassName(DruidAbstractDataSource.java:1176) - oracle.jdbc.driver.OracleDriver is deprecated.Having use oracle.jdbc.OracleDriver.
+[15:32:31:616] [INFO] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods(PropertySourcedRequestMappingHandlerMapping.java:69) - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[15:32:31:678] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.initialize(ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+[15:32:31:818] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-8087"]
+[15:32:31:840] [INFO] - org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:220) - Tomcat started on port(s): 8087 (http) with context path '/secdev'
+[15:32:31:841] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:160) - Context refreshed
+[15:32:31:856] [INFO] - springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:163) - Found 1 custom documentation plugin(s)
+[15:32:31:887] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
+[15:32:31:904] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 3.127 seconds (JVM running for 4.9)
+[15:32:31:999] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[15:32:31:999] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+[15:32:32:003] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
+[15:32:33:548] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:32:33:999] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
+[15:33:43:310] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+[15:33:43:320] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed

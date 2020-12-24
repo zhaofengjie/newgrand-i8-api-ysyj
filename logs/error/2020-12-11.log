@@ -1,0 +1,132 @@
+[15:19:46:209] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:19:58:651] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:21:17:535] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:21:32:787] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:21:53:804] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
+[15:23:28:146] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+T1.phid,
+T2.cname as jBR,
+T1.user_htbm as hTBM,
+T1.cnt_org_sum_vat_fc as cntMoney,
+T1.title,
+'' as contractPrice,
+T1.user_jbbm as deptId,T3.oname as deptName,
+T1.remarks,
+T4.compname as recCompName,senemp as recEmp,user_yfdblxfs as recLink,
+T5.compname as senCompName,phid_senemp as senEmp,user_jfdblxfs as senLink,
+T1.phid_pc as projectId,T6.project_name as projectName,T1.signDt,
+T1.user_ygmbsymj as estimateArea,
+T1.user_ygzhntjcmj as estimateAllBetonArea,
+T1.user_mbyjsycs as estimateTemplateTier
+from pcm3_cnt_m T1
+left join hr_epm_main T2 on T2.phid = T1.user_jbr
+left join fg_orglist T3 on T3.phid = T1.user_jbbm
+left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
+left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
+left join project_table T6 on T6.phid = T1.phid_pcwhere T1.phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
+
