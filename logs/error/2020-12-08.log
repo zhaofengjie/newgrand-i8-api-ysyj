@@ -1,8 +1,8 @@
 [13:36:22:575] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
 	at com.newgrand.secdev.controller.LM.TokenHelper.Token(TokenHelper.java:48) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
+	at ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
+	at ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -62,8 +62,8 @@ java.net.MalformedURLException: no protocol: [grant_type=password, scope=trust, 
 	at java.net.URL.<init>(URL.java:497) ~[?:1.8.0_221]
 	at java.net.URL.<init>(URL.java:446) ~[?:1.8.0_221]
 	at com.newgrand.secdev.controller.LM.TokenHelper.Token2(TokenHelper.java:77) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
+	at ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
+	at ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -120,8 +120,8 @@ java.net.MalformedURLException: no protocol: [grant_type=password, scope=trust, 
 [14:02:18:324] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
 	at com.newgrand.secdev.controller.LM.TokenHelper.Token(TokenHelper.java:57) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
+	at ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
+	at ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -178,8 +178,8 @@ java.lang.NullPointerException: null
 [14:11:17:670] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
 	at com.newgrand.secdev.controller.LM.TokenHelper.Token(TokenHelper.java:57) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
+	at ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
+	at ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -236,8 +236,8 @@ java.lang.NullPointerException: null
 [14:37:58:716] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
 	at com.newgrand.secdev.controller.LM.TokenHelper.Token(TokenHelper.java:68) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
+	at ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
+	at ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -294,8 +294,8 @@ java.lang.NullPointerException: null
 [14:38:30:921] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
 	at com.newgrand.secdev.controller.LM.TokenHelper.Token(TokenHelper.java:68) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
+	at ShippingInfoController.getJsonObject(ShippingInfoController.java:33) ~[classes/:?]
+	at ShippingInfoController.syncShippingInfo(ShippingInfoController.java:28) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -369,7 +369,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -403,7 +403,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -437,7 +437,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -471,7 +471,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -505,7 +505,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -539,7 +539,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -573,7 +573,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -607,7 +607,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -641,7 +641,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -675,7 +675,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -709,7 +709,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -743,7 +743,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -777,7 +777,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'LM.TokenUrl' in value "${LM.TokenUrl}"
 	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.8.RELEASE.jar:5.2.8.RELEASE]

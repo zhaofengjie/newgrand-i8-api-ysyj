@@ -80,7 +80,7 @@
 [15:19:45:408] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:19:45:420] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 12 ms
 [15:19:45:446] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:19:45:545] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:19:45:545] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:19:45:555] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -103,7 +103,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']
 [15:19:45:638] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[15:19:46:209] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:19:46:209] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -126,7 +126,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
 [15:19:55:448] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:19:58:627] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:19:58:627] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:19:58:633] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -148,7 +148,7 @@ left join fg_orglist T3 on T3.phid = T1.user_jbbm
 left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']
-[15:19:58:651] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:19:58:651] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -171,7 +171,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
 [15:20:11:491] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:20:12:739] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:20:12:739] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:20:13:555] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -194,7 +194,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']
 [15:21:17:535] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[15:21:17:535] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:21:17:535] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -269,7 +269,7 @@ left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001'
 [15:21:30:279] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:21:30:289] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 10 ms
 [15:21:30:318] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:21:32:155] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:21:32:155] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:21:32:168] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -292,7 +292,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']
 [15:21:32:242] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[15:21:32:787] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:21:32:787] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -315,7 +315,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
 [15:21:44:201] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:21:47:502] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:21:47:502] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:21:48:132] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -337,7 +337,7 @@ left join fg_orglist T3 on T3.phid = T1.user_jbbm
 left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']
-[15:21:53:804] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:21:53:804] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -412,7 +412,7 @@ left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001'
 [15:22:21:269] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:22:21:282] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 12 ms
 [15:22:21:312] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:22:22:600] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:22:22:600] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:22:24:314] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -435,7 +435,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere T1.phid = '548201113000001']
 [15:22:24:501] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[15:23:28:146] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:23:28:146] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -511,7 +511,7 @@ left join project_table T6 on T6.phid = T1.phid_pcwhere T1.phid = '5482011130000
 [15:23:44:825] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:23:44:836] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 11 ms
 [15:23:44:862] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:23:46:894] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:23:46:894] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:23:47:638] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -716,7 +716,7 @@ where T1.phid = '548201113000001']
 [15:28:27:741] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:28:27:752] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 10 ms
 [15:28:27:776] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:28:29:738] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:28:29:738] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:28:31:870] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -919,7 +919,7 @@ where T1.phid = '548201113000001']
 [15:29:26:090] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:29:26:099] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 9 ms
 [15:29:26:125] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:29:28:662] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:29:28:662] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:29:29:138] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -1070,7 +1070,7 @@ where T1.phid = '548201113000001']
 [15:29:43:365] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-1: set socket timeout to 0
 [15:29:43:365] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [15:29:52:657] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:29:53:845] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:29:53:845] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:29:54:752] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -1220,7 +1220,7 @@ where T1.phid = '548201113000001']
 [15:30:11:397] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-3: set socket timeout to 0
 [15:30:11:398] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 3][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [15:30:14:181] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:30:17:343] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:30:17:343] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:30:18:398] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -1424,7 +1424,7 @@ where T1.phid = '548201113000001']
 [15:32:31:999] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:32:32:003] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
 [15:32:32:015] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:32:33:548] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
+[15:32:33:548] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:67) - 推送周材租入合同数据开始
 [15:32:33:961] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,

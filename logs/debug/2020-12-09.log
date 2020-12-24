@@ -43,24 +43,24 @@
 [09:40:28:353] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [09:40:28:358] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
 [09:40:28:369] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[09:40:28:441] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {}
-[09:40:28:442] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:40:28:441] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {}
+[09:40:28:442] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
 [09:40:35:521] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[09:40:38:899] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {}
-[09:40:41:171] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:40:38:899] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {}
+[09:40:41:171] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
 [09:40:53:374] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[09:40:53:376] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {}
-[09:40:55:734] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:40:53:376] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {}
+[09:40:55:734] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
 [09:41:05:003] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[09:41:05:004] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {}
+[09:41:05:004] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {}
 [09:41:16:375] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[09:41:29:059] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:41:29:059] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
 [09:41:49:830] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[09:41:49:831] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {"pcNo":"01"}
-[09:42:10:426] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:41:49:831] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {"pcNo":"01"}
+[09:42:10:426] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
 [09:42:29:062] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [09:42:29:769] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[09:42:29:770] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {"mst":{"pcNo":"01"}}
+[09:42:29:770] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {"mst":{"pcNo":"01"}}
 [09:42:45:650] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
 [09:43:06:718] [ERROR] - com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2471) - create connection SQLException, url: jdbc:oracle:thin:@172.16.23.84:1521/ngsoft.ynjt.com, errorCode 17002, state 08006
 java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
@@ -141,11 +141,11 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
 	... 10 more
 [09:43:32:077] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[09:43:32:077] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - StatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+[09:43:32:077] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - StatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
 
 [09:43:32:079] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[09:43:32:079] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {"mst":{"pcNo":"01"}}
-[09:43:33:856] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - StatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+[09:43:32:079] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {"mst":{"pcNo":"01"}}
+[09:43:33:856] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - StatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
 
 [09:51:43:161] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [09:51:43:690] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
@@ -240,9 +240,9 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [09:51:58:112] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [09:51:58:117] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
 [09:51:58:128] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[09:51:58:199] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {"mst":{"pcNo":"01"}}
+[09:51:58:199] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:48) - {"mst":{"pcNo":"01"}}
 [09:52:01:257] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[09:52:02:897] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - PreparedStatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+[09:52:02:897] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - PreparedStatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
 
 [09:52:11:261] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [09:52:11:263] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
@@ -294,18 +294,18 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:02:35:631] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:02:35:639] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [10:02:35:651] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:02:35:716] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
-[10:02:41:871] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:02:35:716] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
+[10:02:41:871] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
 [10:02:49:662] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:02:49:663] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
-[10:02:51:152] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:02:49:663] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
+[10:02:51:152] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
 [10:03:03:808] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:03:03:809] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
+[10:03:03:809] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
 [10:03:40:784] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[10:03:40:784] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:03:40:784] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
 [10:03:42:678] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:03:42:678] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
-[10:04:27:137] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:03:42:678] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
+[10:04:27:137] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
 [10:04:27:621] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:04:27:623] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [10:04:27:623] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -355,8 +355,8 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:04:36:529] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:04:36:533] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
 [10:04:36:544] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:04:36:615] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
-[10:04:43:364] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:04:36:615] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
+[10:04:43:364] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
 [10:04:48:408] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:04:48:409] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [10:04:48:410] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -406,8 +406,8 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:20:56:126] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:20:56:133] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [10:20:56:146] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:20:56:219] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
-[10:21:07:916] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:20:56:219] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
+[10:21:07:916] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
 [10:21:08:415] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:21:08:416] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [10:21:08:417] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -457,8 +457,8 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:21:48:060] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:21:48:065] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
 [10:21:48:076] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:21:48:143] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
-[10:21:52:773] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:21:48:143] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:49) - {"mst":{"pcNo":"01"}}
+[10:21:52:773] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
 [10:21:56:998] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:21:56:999] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [10:21:57:000] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -508,11 +508,11 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:45:28:360] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:45:28:367] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [10:45:28:379] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:45:28:451] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
+[10:45:28:451] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
 [10:45:32:341] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667) - Executing prepared SQL query
 [10:45:32:343] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609) - Executing prepared SQL statement [select phid from projet_table where pc_no = '01']
 [10:45:32:481] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[10:45:52:399] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - PreparedStatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+[10:45:52:399] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - PreparedStatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
 
 [10:45:52:864] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:45:52:866] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
@@ -564,12 +564,12 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:46:00:874] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:46:00:881] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [10:46:00:900] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:46:00:974] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
+[10:46:00:974] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
 [10:46:04:023] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667) - Executing prepared SQL query
 [10:46:04:026] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609) - Executing prepared SQL statement [select phid from project_table where pc_no = '01']
 [10:46:04:172] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
 [10:52:24:079] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[10:52:24:079] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
+[10:52:24:079] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
 [10:52:24:681] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:52:24:683] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [10:52:24:683] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -662,11 +662,11 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:52:33:695] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:52:33:704] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 9 ms
 [10:52:33:734] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:52:33:845] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
+[10:52:33:845] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
 [10:52:37:285] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667) - Executing prepared SQL query
 [10:52:37:287] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609) - Executing prepared SQL statement [select phid from project_table where pc_no = '01']
 [10:52:37:433] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[10:52:40:606] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
+[10:52:40:606] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
 [10:52:41:135] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:52:41:136] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [10:52:41:136] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -717,12 +717,12 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:55:52:174] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:55:52:179] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
 [10:55:52:191] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:55:52:258] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
+[10:55:52:258] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
 [10:56:00:553] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:667) - Executing prepared SQL query
 [10:56:00:554] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:609) - Executing prepared SQL statement [select phid from project_table where pc_no = '01']
 [10:56:00:698] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
 [10:57:14:924] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[10:57:14:924] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
+[10:57:14:924] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
 [10:57:15:469] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:57:15:471] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [10:57:15:471] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -773,10 +773,10 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [10:57:27:752] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [10:57:27:757] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
 [10:57:27:767] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[10:57:27:834] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
+[10:57:27:834] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"mst":{"pcNo":"01"}}
 [10:57:31:273] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [10:57:31:423] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[10:57:38:593] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - null
+[10:57:38:593] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - null
 [10:57:39:085] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [10:57:39:086] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [10:57:39:087] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -829,10 +829,10 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [17:44:07:357] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [17:44:07:367] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 9 ms
 [17:44:07:389] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[17:44:07:513] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"dtl":[{}],"mst":{"pcNo":"01"}}
+[17:44:07:513] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"dtl":[{}],"mst":{"pcNo":"01"}}
 [17:44:10:813] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [17:44:10:999] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[17:44:47:486] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - com.alibaba.fastjson.JSONArray cannot be cast to com.alibaba.fastjson.JSONObject
+[17:44:47:486] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - com.alibaba.fastjson.JSONArray cannot be cast to com.alibaba.fastjson.JSONObject
 [17:44:47:487] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [17:44:47:956] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [17:44:47:958] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
@@ -886,10 +886,10 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [17:45:20:070] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [17:45:20:079] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 9 ms
 [17:45:20:102] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[17:45:20:225] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"dtl":[{}],"mst":{"pcNo":"01"}}
+[17:45:20:225] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"dtl":[{}],"mst":{"pcNo":"01"}}
 [17:45:20:229] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [17:45:20:289] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[17:46:06:508] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:46:06:508] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - syntax error, expect [, actual {, pos 0, fieldName null
 [17:46:06:990] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [17:46:06:992] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [17:46:06:993] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -942,10 +942,10 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [17:46:15:422] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [17:46:15:432] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 10 ms
 [17:46:15:455] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[17:46:31:215] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"dtl":[{}],"mst":{"pcNo":"01"}}
+[17:46:31:215] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:50) - {"dtl":[{}],"mst":{"pcNo":"01"}}
 [17:46:33:338] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [17:46:33:516] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[17:46:39:233] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:46:39:233] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - syntax error, expect [, actual {, pos 0, fieldName null
 [17:46:39:798] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [17:46:39:800] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [17:46:39:801] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -998,30 +998,30 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [17:49:09:093] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [17:49:09:100] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [17:49:09:120] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[17:49:09:244] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{}],"mst":{"pcNo":"01"}}
+[17:49:09:244] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{}],"mst":{"pcNo":"01"}}
 [17:49:12:634] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [17:49:12:848] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[17:49:17:968] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:49:17:968] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [17:49:36:045] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[17:49:36:046] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{}],"mst":{"pcNo":"01"}}
+[17:49:36:046] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{}],"mst":{"pcNo":"01"}}
 [17:49:37:827] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
-[17:50:24:396] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:50:24:396] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [17:50:24:397] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [17:50:24:397] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[17:50:24:398] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"}],"mst":{"pcNo":"01"}}
+[17:50:24:398] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"}],"mst":{"pcNo":"01"}}
 [17:50:24:860] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
-[17:50:35:491] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:50:35:491] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [17:53:54:253] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [17:53:56:990] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[17:53:56:991] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"}],"mst":{"pcNo":"01"}}
+[17:53:56:991] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"}],"mst":{"pcNo":"01"}}
 [17:53:59:052] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
-[17:54:40:009] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:54:40:009] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [17:54:54:265] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [17:54:57:251] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[17:54:57:252] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[17:54:57:252] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [17:54:59:986] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:00:05:252] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[18:00:05:254] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:00:05:254] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:00:05:777] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [18:00:05:778] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [18:00:05:779] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -1116,10 +1116,10 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:00:16:172] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:00:16:180] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 8 ms
 [18:00:16:199] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:00:16:322] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:00:16:322] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:00:18:069] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:00:18:254] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[18:00:20:290] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:00:20:290] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:00:22:812] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [18:00:22:814] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [18:00:22:815] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -1172,16 +1172,16 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:01:04:290] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [18:01:04:308] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
 [18:01:04:308] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 3.494 seconds (JVM running for 4.876)
-[18:01:04:456] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:01:04:456] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:01:06:710] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:01:06:901] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[18:01:55:994] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:01:55:994] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:01:58:668] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:01:58:669] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:01:58:669] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:02:04:098] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [18:02:04:561] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:04:54:821] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[18:04:54:822] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:04:54:822] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:04:55:276] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [18:04:55:278] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [18:04:55:278] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -1234,10 +1234,10 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:05:07:260] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:05:07:268] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 8 ms
 [18:05:07:289] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:05:07:404] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:05:07:404] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:05:12:306] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:05:12:484] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[18:05:50:044] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:05:50:044] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:05:50:506] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [18:05:50:508] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [18:05:50:508] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -1290,10 +1290,10 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:05:59:873] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:05:59:879] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
 [18:05:59:905] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:06:00:050] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:06:00:050] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:06:02:424] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:06:02:493] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[18:06:05:256] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:06:05:256] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:06:05:751] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [18:06:05:752] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [18:06:05:753] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -1346,20 +1346,20 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:18:58:881] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:18:58:888] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [18:18:58:907] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:18:59:024] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:18:59:024] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:19:03:994] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:19:04:178] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[18:19:48:562] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:19:48:562] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:19:48:563] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [18:19:51:431] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:19:51:433] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:19:51:433] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:19:53:675] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:20:49:153] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[18:20:49:153] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:20:49:153] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:20:51:241] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:20:51:242] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:20:51:242] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:20:51:990] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
-[18:21:17:746] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:21:17:746] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
 [18:21:49:167] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [18:22:49:179] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [18:23:38:297] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
@@ -1414,10 +1414,10 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:23:49:439] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:23:49:447] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 8 ms
 [18:23:49:465] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:23:49:581] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:23:49:581] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:23:49:585] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:23:49:637] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[18:24:00:356] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - list长度与模板不相等
+[18:24:00:356] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - list长度与模板不相等
 [18:24:00:831] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [18:24:00:832] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [18:24:00:833] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -1470,29 +1470,29 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:25:43:237] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:25:43:247] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 9 ms
 [18:25:43:268] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:25:43:409] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:25:43:409] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:25:43:416] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:25:43:481] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[18:25:54:136] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:25:54:136] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
 [18:26:05:749] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:26:05:751] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:26:05:751] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:26:05:751] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
-[18:26:08:430] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:26:08:430] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
 [18:26:28:033] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:26:28:034] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:26:28:034] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:26:28:034] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
-[18:26:29:194] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:26:29:194] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
 [18:26:40:820] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [18:26:59:439] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:26:59:440] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:26:59:440] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:26:59:441] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
-[18:27:32:877] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:27:32:877] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
 [18:28:06:301] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [18:28:08:302] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:28:08:303] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:28:08:303] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:28:08:303] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:29:14:077] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[18:29:14:080] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:29:14:080] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
 [18:29:14:849] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [18:29:14:850] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [18:29:14:851] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -1545,7 +1545,7 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:34:39:538] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:34:39:549] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 11 ms
 [18:34:39:578] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:34:39:717] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:34:39:717] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:34:39:723] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:34:39:800] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
 [18:35:06:308] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
@@ -1735,7 +1735,7 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:35:34:622] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:35:34:632] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 10 ms
 [18:35:34:650] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:35:34:761] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:35:34:761] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:35:34:766] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:35:34:818] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
 [18:35:51:010] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
@@ -1925,7 +1925,7 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:36:49:276] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:36:49:284] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 8 ms
 [18:36:49:305] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:36:49:431] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:36:49:431] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:36:49:436] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:36:49:491] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
 [18:36:53:469] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
@@ -2116,7 +2116,7 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [18:38:36:608] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [18:38:36:616] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [18:38:36:636] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /dbjgApi/dbInfo
-[18:38:36:744] [INFO] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
+[18:38:36:744] [INFO] - FBDBController.syncFBDBJGInfo(FBDBController.java:51) - {"dtl":[{"lineid":"1"},{"lineid":"2"}],"mst":{"pcNo":"01"}}
 [18:38:36:748] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select phid from project_table where pc_no = '01']
 [18:38:36:792] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
 [18:38:37:132] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default

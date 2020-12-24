@@ -8,14 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="secdev" />
+        <module name="newgrand-i8-AM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="newgrand-i8-AM" target="1.8" />
       <module name="secdev" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="newgrand-i8-AM" options="-parameters" />
       <module name="secdev" options="-parameters" />
     </option>
   </component>

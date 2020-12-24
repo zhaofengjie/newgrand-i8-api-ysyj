@@ -2242,8 +2242,8 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [11:32:43:136] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [11:32:43:148] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -2407,8 +2407,8 @@ java.lang.NullPointerException: null
 [11:32:53:922] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 3][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [11:33:07:612] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -2572,8 +2572,8 @@ java.lang.NullPointerException: null
 [11:33:14:495] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 5][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [11:33:22:996] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -2782,8 +2782,8 @@ java.lang.NullPointerException: null
 [11:35:42:178] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [11:35:44:244] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -2991,8 +2991,8 @@ java.lang.NullPointerException: null
 [11:36:03:737] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [11:36:25:208] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -3200,8 +3200,8 @@ java.lang.NullPointerException: null
 [11:37:05:236] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [11:37:10:928] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -3409,8 +3409,8 @@ java.lang.NullPointerException: null
 [11:37:46:283] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [11:38:08:611] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -4126,7 +4126,7 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [14:46:22:818] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [14:46:22:824] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
 [14:46:22:840] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[14:46:22:891] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[14:46:22:891] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [14:46:22:897] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -4150,7 +4150,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and phid = '635201217000004']
 [14:46:22:943] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[14:46:24:698] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:110) - StatementCallback; bad SQL grammar [select 
+[14:46:24:698] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:110) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -4220,7 +4220,7 @@ where T1.bill_type = '11' and phid = '635201217000004']; nested exception is jav
 [14:47:21:637] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [14:47:21:643] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
 [14:47:21:658] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[14:47:21:694] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[14:47:21:694] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [14:47:21:699] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -4244,7 +4244,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
 [14:47:21:736] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[14:47:22:136] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:110) - StatementCallback; bad SQL grammar [select 
+[14:47:22:136] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:110) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -4313,7 +4313,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']; nested exception is 
 [14:48:03:361] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [14:48:03:366] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
 [14:48:03:377] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[14:48:03:412] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[14:48:03:412] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [14:48:03:417] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -4337,7 +4337,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
 [14:48:03:453] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[14:48:04:015] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":null,"estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[14:48:04:015] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":null,"estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [14:48:04:034] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
 [14:48:04:048] [DEBUG] - org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
 [14:48:04:051] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://106.13.120.58:8899][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
@@ -4453,9 +4453,9 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [14:48:05:960] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 1][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [14:48:05:960] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-1: set socket timeout to 0
 [14:48:05:960] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[14:48:05:960] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":401,"msg":"签名校验失败","data":null,"time":"2020-12-17T06:47:04.369+0000"}
+[14:48:05:960] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":401,"msg":"签名校验失败","data":null,"time":"2020-12-17T06:47:04.369+0000"}
 [14:48:34:845] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[14:48:34:846] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[14:48:34:846] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [14:48:34:846] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -4478,7 +4478,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
-[14:48:37:238] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":null,"estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[14:48:37:238] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":null,"estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [14:48:37:778] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
 [14:48:37:779] [DEBUG] - org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
 [14:48:37:780] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://106.13.120.58:8899][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
@@ -4594,7 +4594,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [14:48:52:583] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 3][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [14:48:52:584] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-3: set socket timeout to 0
 [14:48:52:584] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 3][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[14:48:53:221] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":401,"msg":"签名校验失败","data":null,"time":"2020-12-17T06:47:48.339+0000"}
+[14:48:53:221] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":401,"msg":"签名校验失败","data":null,"time":"2020-12-17T06:47:48.339+0000"}
 [14:49:01:558] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [14:50:01:565] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [14:51:01:577] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
@@ -6368,7 +6368,7 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [15:18:40:782] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 0][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [15:18:40:783] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-0: set socket timeout to 0
 [15:18:40:783] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 0][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[15:18:40:783] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
+[15:18:40:783] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
 <head><title>404 Not Found</title></head>
 <body>
 <center><h1>404 Not Found</h1></center>
@@ -6428,8 +6428,8 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [15:18:41:017] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [15:18:41:025] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -6537,7 +6537,7 @@ java.lang.NullPointerException: null
 [15:19:08:219] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 2][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [15:19:08:219] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-2: set socket timeout to 0
 [15:19:08:219] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 2][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[15:19:08:219] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
+[15:19:08:219] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
 <head><title>404 Not Found</title></head>
 <body>
 <center><h1>404 Not Found</h1></center>
@@ -6597,8 +6597,8 @@ java.lang.NullPointerException: null
 [15:19:08:449] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 3][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
 [15:19:08:449] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -6706,7 +6706,7 @@ java.lang.NullPointerException: null
 [15:19:29:148] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 4][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [15:19:29:149] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-4: set socket timeout to 0
 [15:19:29:149] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 4][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[15:19:29:150] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
+[15:19:29:150] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
 <head><title>404 Not Found</title></head>
 <body>
 <center><h1>404 Not Found</h1></center>
@@ -6767,8 +6767,8 @@ java.lang.NullPointerException: null
 [15:19:40:250] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [15:20:03:339] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -6920,7 +6920,7 @@ java.lang.NullPointerException: null
 [15:20:25:711] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 0][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [15:20:25:712] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-0: set socket timeout to 0
 [15:20:25:712] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 0][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[15:20:25:712] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
+[15:20:25:712] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
 <head><title>404 Not Found</title></head>
 <body>
 <center><h1>404 Not Found</h1></center>
@@ -7023,7 +7023,7 @@ java.lang.NullPointerException: null
 [15:44:45:624] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:44:45:631] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [15:44:45:645] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:44:45:684] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[15:44:45:684] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [15:44:45:690] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -7047,7 +7047,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
 [15:44:45:734] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[15:44:48:314] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[15:44:48:314] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [15:44:48:332] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
 [15:44:48:343] [DEBUG] - org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
 [15:44:48:345] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://106.13.120.58:8899][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
@@ -7163,9 +7163,9 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [15:44:49:948] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 1][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [15:44:49:948] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-1: set socket timeout to 0
 [15:44:49:948] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[15:44:49:948] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":500,"msg":"\n### Error updating database.  Cause: java.sql.SQLException: #HY000\n### The error may exist in com/zhirui/lmwy/project/projectContract/dao/ProjectContractMapper.java (best guess)\n### The error may involve com.zhirui.lmwy.project.projectContract.dao.ProjectContractMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO pj_project_contract  ( id, project_id, contract_name,  contract_money, part_a, part_a_contacts, part_a_contacts_phone, part_b, part_b_contacts, part_b_contacts_phone,  agent, estimate_template_tier, estimate_area,      description,   create_time,    tenant_id, estimate_all_beton_area,  contract_sign_dept_name, contract_sign_dept_id, sign_date, is_third )  VALUES  ( ?, ?, ?,  ?, ?, ?, ?, ?, ?, ?,  ?, ?, ?,      ?,   ?,    ?, ?,  ?, ?, ?, ? )\n### Cause: java.sql.SQLException: #HY000\n; #HY000; nested exception is java.sql.SQLException: #HY000","data":null,"time":"2020-12-17T07:43:48.378+0000"}
+[15:44:49:948] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":500,"msg":"\n### Error updating database.  Cause: java.sql.SQLException: #HY000\n### The error may exist in com/zhirui/lmwy/project/projectContract/dao/ProjectContractMapper.java (best guess)\n### The error may involve com.zhirui.lmwy.project.projectContract.dao.ProjectContractMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO pj_project_contract  ( id, project_id, contract_name,  contract_money, part_a, part_a_contacts, part_a_contacts_phone, part_b, part_b_contacts, part_b_contacts_phone,  agent, estimate_template_tier, estimate_area,      description,   create_time,    tenant_id, estimate_all_beton_area,  contract_sign_dept_name, contract_sign_dept_id, sign_date, is_third )  VALUES  ( ?, ?, ?,  ?, ?, ?, ?, ?, ?, ?,  ?, ?, ?,      ?,   ?,    ?, ?,  ?, ?, ?, ? )\n### Cause: java.sql.SQLException: #HY000\n; #HY000; nested exception is java.sql.SQLException: #HY000","data":null,"time":"2020-12-17T07:43:48.378+0000"}
 [15:44:53:593] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[15:44:53:594] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[15:44:53:594] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [15:44:53:595] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -7188,7 +7188,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
-[15:44:54:884] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[15:44:54:884] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [15:44:55:074] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
 [15:44:55:076] [DEBUG] - org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
 [15:44:55:077] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://106.13.120.58:8899][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
@@ -7304,7 +7304,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [15:45:12:261] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 3][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [15:45:12:262] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-3: set socket timeout to 0
 [15:45:12:263] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 3][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[15:45:26:468] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":500,"msg":"\n### Error updating database.  Cause: java.sql.SQLException: #HY000\n### The error may exist in com/zhirui/lmwy/project/projectContract/dao/ProjectContractMapper.java (best guess)\n### The error may involve com.zhirui.lmwy.project.projectContract.dao.ProjectContractMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO pj_project_contract  ( id, project_id, contract_name,  contract_money, part_a, part_a_contacts, part_a_contacts_phone, part_b, part_b_contacts, part_b_contacts_phone,  agent, estimate_template_tier, estimate_area,      description,   create_time,    tenant_id, estimate_all_beton_area,  contract_sign_dept_name, contract_sign_dept_id, sign_date, is_third )  VALUES  ( ?, ?, ?,  ?, ?, ?, ?, ?, ?, ?,  ?, ?, ?,      ?,   ?,    ?, ?,  ?, ?, ?, ? )\n### Cause: java.sql.SQLException: #HY000\n; #HY000; nested exception is java.sql.SQLException: #HY000","data":null,"time":"2020-12-17T07:44:02.044+0000"}
+[15:45:26:468] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":500,"msg":"\n### Error updating database.  Cause: java.sql.SQLException: #HY000\n### The error may exist in com/zhirui/lmwy/project/projectContract/dao/ProjectContractMapper.java (best guess)\n### The error may involve com.zhirui.lmwy.project.projectContract.dao.ProjectContractMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO pj_project_contract  ( id, project_id, contract_name,  contract_money, part_a, part_a_contacts, part_a_contacts_phone, part_b, part_b_contacts, part_b_contacts_phone,  agent, estimate_template_tier, estimate_area,      description,   create_time,    tenant_id, estimate_all_beton_area,  contract_sign_dept_name, contract_sign_dept_id, sign_date, is_third )  VALUES  ( ?, ?, ?,  ?, ?, ?, ?, ?, ?, ?,  ?, ?, ?,      ?,   ?,    ?, ?,  ?, ?, ?, ? )\n### Cause: java.sql.SQLException: #HY000\n; #HY000; nested exception is java.sql.SQLException: #HY000","data":null,"time":"2020-12-17T07:44:02.044+0000"}
 [15:46:30:791] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [15:47:30:800] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
 [15:48:30:803] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
@@ -7355,7 +7355,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:01:05:319] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [16:01:05:326] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
 [16:01:05:342] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[16:01:05:388] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:01:05:388] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [16:01:05:396] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -7379,7 +7379,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:01:05:441] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[16:01:08:094] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:01:08:094] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [16:01:08:149] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
 [16:01:08:185] [DEBUG] - org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
 [16:01:08:193] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://106.13.120.58:8899][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
@@ -7495,9 +7495,9 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:01:10:098] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 1][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [16:01:10:098] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-1: set socket timeout to 0
 [16:01:10:099] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[16:01:10:100] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:01:10:100] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
 [16:01:24:440] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[16:01:24:441] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:01:24:441] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [16:01:24:441] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -7521,9 +7521,9 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:03:50:554] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.closeExpiredConnections(PoolingHttpClientConnectionManager.java:448) - Closing expired connections
-[16:03:50:554] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:03:50:554] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [16:03:50:556] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[16:03:50:557] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:03:50:557] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [16:03:50:557] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -7553,7 +7553,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:03:50:559] [DEBUG] - org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:234) - Opening connection {}->http://106.13.120.58:8899
 [16:03:50:560] [DEBUG] - org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:139) - Connecting to /106.13.120.58:8899
 [16:03:50:627] [DEBUG] - org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:146) - Connection established 10.101.10.218:30000<->106.13.120.58:8899
-[16:03:50:628] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:03:50:628] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [16:03:50:628] [DEBUG] - org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:255) - Executing request POST /lmwy-kebao/api/oauth/oauth/token?grant_type=password&scope=trust&username=13825002825&password=lmwy-zhirui888 HTTP/1.1
 [16:03:50:628] [DEBUG] - org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:266) - Proxy auth state: UNCHALLENGED
 [16:03:50:628] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.onRequestSubmitted(LoggingManagedHttpClientConnection.java:133) - http-outgoing-2 >> POST /lmwy-kebao/api/oauth/oauth/token?grant_type=password&scope=trust&username=13825002825&password=lmwy-zhirui888 HTTP/1.1
@@ -7756,7 +7756,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:03:52:414] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 5][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [16:03:52:414] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-5: set socket timeout to 0
 [16:03:52:415] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 5][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[16:03:52:415] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:03:52:415] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
 [16:03:52:421] [DEBUG] - org.apache.http.impl.conn.Wire.wire(Wire.java:73) - http-outgoing-4 << "HTTP/1.1 200 OK[\r][\n]"
 [16:03:52:421] [DEBUG] - org.apache.http.impl.conn.Wire.wire(Wire.java:73) - http-outgoing-4 << "Server: nginx/1.16.1[\r][\n]"
 [16:03:52:421] [DEBUG] - org.apache.http.impl.conn.Wire.wire(Wire.java:73) - http-outgoing-4 << "Date: Thu, 17 Dec 2020 08:02:50 GMT[\r][\n]"
@@ -7778,9 +7778,9 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:03:52:423] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 4][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [16:03:52:423] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-4: set socket timeout to 0
 [16:03:52:423] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 4][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[16:03:52:423] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:03:52:423] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
 [16:04:06:932] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[16:04:06:933] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:04:06:933] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [16:04:06:933] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -7803,7 +7803,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
-[16:04:06:970] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:04:06:970] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [16:04:06:973] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
 [16:04:06:973] [DEBUG] - org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
 [16:04:06:973] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://106.13.120.58:8899][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
@@ -7919,7 +7919,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:04:08:524] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 7][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [16:04:08:525] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-7: set socket timeout to 0
 [16:04:08:525] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 7][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[16:04:08:525] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:04:08:525] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
 [16:04:08:562] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [16:04:08:564] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [16:04:08:564] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -7966,7 +7966,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:04:32:455] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [16:04:32:461] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
 [16:04:32:473] [DEBUG] - springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.lookupHandlerMethod(PropertySourcedRequestMappingHandlerMapping.java:108) - looking up handler for path: /lmApi/postZCCntM
-[16:04:32:508] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:04:32:508] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [16:04:32:514] [DEBUG] - org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:427) - Executing SQL query [select 
 T1.phid,
 T2.cname as jBR,
@@ -7990,7 +7990,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:04:32:549] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[16:04:35:068] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:04:35:068] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
 [16:04:35:081] [DEBUG] - org.apache.http.client.protocol.RequestAddCookies.process(RequestAddCookies.java:123) - CookieSpec selected: default
 [16:04:35:088] [DEBUG] - org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:77) - Auth cache not set in the context
 [16:04:35:090] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.requestConnection(PoolingHttpClientConnectionManager.java:267) - Connection request: [route: {}->http://106.13.120.58:8899][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
@@ -8106,7 +8106,7 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']
 [16:04:36:784] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:344) - Connection [id: 1][route: {}->http://106.13.120.58:8899] can be kept alive indefinitely
 [16:04:36:784] [DEBUG] - org.apache.http.impl.conn.LoggingManagedHttpClientConnection.setSocketTimeout(LoggingManagedHttpClientConnection.java:88) - http-outgoing-1: set socket timeout to 0
 [16:04:36:784] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.releaseConnection(PoolingHttpClientConnectionManager.java:351) - Connection released: [id: 1][route: {}->http://106.13.120.58:8899][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-[16:04:36:784] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:04:36:784] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
 [16:04:56:623] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [16:04:56:625] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:411) - Connection manager is shutting down
 [16:04:56:626] [DEBUG] - org.apache.http.impl.conn.PoolingHttpClientConnectionManager.shutdown(PoolingHttpClientConnectionManager.java:434) - Connection manager shut down
@@ -8620,10 +8620,10 @@ java.sql.SQLRecoverableException: 关闭的连接
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:490) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.MainForm(ZczrRecBackController.java:160) [classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.sendDataToApp(ZczrRecBackController.java:123) [classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:95) [classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) [classes/:?]
+	at ZczrRecBackController.MainForm(ZczrRecBackController.java:160) [classes/:?]
+	at ZczrRecBackController.sendDataToApp(ZczrRecBackController.java:123) [classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:95) [classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) [classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]

@@ -281,8 +281,8 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [11:32:39:956] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 8 ms
 [11:32:43:148] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -338,8 +338,8 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [11:33:07:612] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -395,8 +395,8 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [11:33:22:996] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -473,8 +473,8 @@ java.lang.NullPointerException: null
 [11:34:42:062] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
 [11:35:44:244] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -551,8 +551,8 @@ java.lang.NullPointerException: null
 [11:35:58:371] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
 [11:36:25:208] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -629,8 +629,8 @@ java.lang.NullPointerException: null
 [11:37:00:361] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
 [11:37:10:928] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -707,8 +707,8 @@ java.lang.NullPointerException: null
 [11:37:42:065] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
 [11:38:08:611] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -894,9 +894,9 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [14:46:22:818] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [14:46:22:818] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [14:46:22:824] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
-[14:46:22:891] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[14:46:22:891] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [14:46:22:943] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[14:46:24:698] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:110) - StatementCallback; bad SQL grammar [select 
+[14:46:24:698] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:110) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -941,9 +941,9 @@ where T1.bill_type = '11' and phid = '635201217000004']; nested exception is jav
 [14:47:21:636] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [14:47:21:637] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [14:47:21:643] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
-[14:47:21:694] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[14:47:21:694] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [14:47:21:736] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[14:47:22:136] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:110) - StatementCallback; bad SQL grammar [select 
+[14:47:22:136] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:110) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -988,13 +988,13 @@ where T1.bill_type = '11' and T1.phid = '635201217000004']; nested exception is 
 [14:48:03:361] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [14:48:03:361] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [14:48:03:366] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 4 ms
-[14:48:03:412] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[14:48:03:412] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [14:48:03:453] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[14:48:04:015] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":null,"estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[14:48:05:960] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":401,"msg":"签名校验失败","data":null,"time":"2020-12-17T06:47:04.369+0000"}
-[14:48:34:846] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
-[14:48:37:238] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":null,"estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[14:48:53:221] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":401,"msg":"签名校验失败","data":null,"time":"2020-12-17T06:47:48.339+0000"}
+[14:48:04:015] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":null,"estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[14:48:05:960] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":401,"msg":"签名校验失败","data":null,"time":"2020-12-17T06:47:04.369+0000"}
+[14:48:34:846] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[14:48:37:238] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":null,"estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[14:48:53:221] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":401,"msg":"签名校验失败","data":null,"time":"2020-12-17T06:47:48.339+0000"}
 [14:53:02:451] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [14:53:02:521] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
 [14:55:24:683] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 24028 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
@@ -1195,7 +1195,7 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 [15:18:37:417] [INFO] - springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan(ApiListingReferenceScanner.java:41) - Scanning for api listing references
 [15:18:37:422] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
 [15:18:37:437] [INFO] - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:61) - Started SecdevApplication in 3.499 seconds (JVM running for 5.37)
-[15:18:40:783] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
+[15:18:40:783] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
 <head><title>404 Not Found</title></head>
 <body>
 <center><h1>404 Not Found</h1></center>
@@ -1205,8 +1205,8 @@ Caused by: java.net.SocketException: Connection reset by peer: socket write erro
 
 [15:18:41:025] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -1260,7 +1260,7 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_221]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
-[15:19:08:219] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
+[15:19:08:219] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
 <head><title>404 Not Found</title></head>
 <body>
 <center><h1>404 Not Found</h1></center>
@@ -1270,8 +1270,8 @@ java.lang.NullPointerException: null
 
 [15:19:08:449] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -1325,7 +1325,7 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_221]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
-[15:19:29:150] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
+[15:19:29:150] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
 <head><title>404 Not Found</title></head>
 <body>
 <center><h1>404 Not Found</h1></center>
@@ -1335,8 +1335,8 @@ java.lang.NullPointerException: null
 
 [15:20:03:339] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:93) ~[classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -1411,7 +1411,7 @@ java.lang.NullPointerException: null
 [15:20:25:347] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [15:20:25:348] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:20:25:353] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 5 ms
-[15:20:25:712] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
+[15:20:25:712] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = syntax error, pos 1, line 1, column 2<html>
 <head><title>404 Not Found</title></head>
 <body>
 <center><h1>404 Not Found</h1></center>
@@ -1440,13 +1440,13 @@ java.lang.NullPointerException: null
 [15:44:45:624] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [15:44:45:624] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [15:44:45:631] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
-[15:44:45:684] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[15:44:45:684] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [15:44:45:734] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[15:44:48:314] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[15:44:49:948] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":500,"msg":"\n### Error updating database.  Cause: java.sql.SQLException: #HY000\n### The error may exist in com/zhirui/lmwy/project/projectContract/dao/ProjectContractMapper.java (best guess)\n### The error may involve com.zhirui.lmwy.project.projectContract.dao.ProjectContractMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO pj_project_contract  ( id, project_id, contract_name,  contract_money, part_a, part_a_contacts, part_a_contacts_phone, part_b, part_b_contacts, part_b_contacts_phone,  agent, estimate_template_tier, estimate_area,      description,   create_time,    tenant_id, estimate_all_beton_area,  contract_sign_dept_name, contract_sign_dept_id, sign_date, is_third )  VALUES  ( ?, ?, ?,  ?, ?, ?, ?, ?, ?, ?,  ?, ?, ?,      ?,   ?,    ?, ?,  ?, ?, ?, ? )\n### Cause: java.sql.SQLException: #HY000\n; #HY000; nested exception is java.sql.SQLException: #HY000","data":null,"time":"2020-12-17T07:43:48.378+0000"}
-[15:44:53:594] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
-[15:44:54:884] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[15:45:26:468] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":500,"msg":"\n### Error updating database.  Cause: java.sql.SQLException: #HY000\n### The error may exist in com/zhirui/lmwy/project/projectContract/dao/ProjectContractMapper.java (best guess)\n### The error may involve com.zhirui.lmwy.project.projectContract.dao.ProjectContractMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO pj_project_contract  ( id, project_id, contract_name,  contract_money, part_a, part_a_contacts, part_a_contacts_phone, part_b, part_b_contacts, part_b_contacts_phone,  agent, estimate_template_tier, estimate_area,      description,   create_time,    tenant_id, estimate_all_beton_area,  contract_sign_dept_name, contract_sign_dept_id, sign_date, is_third )  VALUES  ( ?, ?, ?,  ?, ?, ?, ?, ?, ?, ?,  ?, ?, ?,      ?,   ?,    ?, ?,  ?, ?, ?, ? )\n### Cause: java.sql.SQLException: #HY000\n; #HY000; nested exception is java.sql.SQLException: #HY000","data":null,"time":"2020-12-17T07:44:02.044+0000"}
+[15:44:48:314] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[15:44:49:948] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":500,"msg":"\n### Error updating database.  Cause: java.sql.SQLException: #HY000\n### The error may exist in com/zhirui/lmwy/project/projectContract/dao/ProjectContractMapper.java (best guess)\n### The error may involve com.zhirui.lmwy.project.projectContract.dao.ProjectContractMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO pj_project_contract  ( id, project_id, contract_name,  contract_money, part_a, part_a_contacts, part_a_contacts_phone, part_b, part_b_contacts, part_b_contacts_phone,  agent, estimate_template_tier, estimate_area,      description,   create_time,    tenant_id, estimate_all_beton_area,  contract_sign_dept_name, contract_sign_dept_id, sign_date, is_third )  VALUES  ( ?, ?, ?,  ?, ?, ?, ?, ?, ?, ?,  ?, ?, ?,      ?,   ?,    ?, ?,  ?, ?, ?, ? )\n### Cause: java.sql.SQLException: #HY000\n; #HY000; nested exception is java.sql.SQLException: #HY000","data":null,"time":"2020-12-17T07:43:48.378+0000"}
+[15:44:53:594] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[15:44:54:884] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":null,"contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[15:45:26:468] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"code":500,"msg":"\n### Error updating database.  Cause: java.sql.SQLException: #HY000\n### The error may exist in com/zhirui/lmwy/project/projectContract/dao/ProjectContractMapper.java (best guess)\n### The error may involve com.zhirui.lmwy.project.projectContract.dao.ProjectContractMapper.insert-Inline\n### The error occurred while setting parameters\n### SQL: INSERT INTO pj_project_contract  ( id, project_id, contract_name,  contract_money, part_a, part_a_contacts, part_a_contacts_phone, part_b, part_b_contacts, part_b_contacts_phone,  agent, estimate_template_tier, estimate_area,      description,   create_time,    tenant_id, estimate_all_beton_area,  contract_sign_dept_name, contract_sign_dept_id, sign_date, is_third )  VALUES  ( ?, ?, ?,  ?, ?, ?, ?, ?, ?, ?,  ?, ?, ?,      ?,   ?,    ?, ?,  ?, ?, ?, ? )\n### Cause: java.sql.SQLException: #HY000\n; #HY000; nested exception is java.sql.SQLException: #HY000","data":null,"time":"2020-12-17T07:44:02.044+0000"}
 [15:49:37:968] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [15:49:37:988] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
 [16:00:36:115] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 14300 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
@@ -1469,19 +1469,19 @@ java.lang.NullPointerException: null
 [16:01:05:319] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [16:01:05:319] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [16:01:05:326] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 7 ms
-[16:01:05:388] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:01:05:388] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [16:01:05:441] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[16:01:08:094] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[16:01:10:100] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
-[16:01:24:441] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
-[16:03:50:554] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[16:03:50:557] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
-[16:03:50:628] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[16:03:52:415] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
-[16:03:52:423] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
-[16:04:06:933] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
-[16:04:06:970] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[16:04:08:525] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:01:08:094] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:01:10:100] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:01:24:441] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:03:50:554] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:03:50:557] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:03:50:628] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:03:52:415] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:03:52:423] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:04:06:933] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:04:06:970] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:04:08:525] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
 [16:04:08:562] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [16:04:08:627] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
 [16:04:26:187] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 8596 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
@@ -1504,10 +1504,10 @@ java.lang.NullPointerException: null
 [16:04:32:454] [INFO] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
 [16:04:32:455] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
 [16:04:32:461] [INFO] - org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:547) - Completed initialization in 6 ms
-[16:04:32:508] [INFO] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
+[16:04:32:508] [INFO] - ZCCntMController.sendFBInfo(ZCCntMController.java:72) - 推送周材租入合同数据开始
 [16:04:32:549] [INFO] - com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:930) - {dataSource-1} inited
-[16:04:35:068] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
-[16:04:36:784] [INFO] - com.newgrand.secdev.helper.LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
+[16:04:35:068] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:124) - 推送数据的的报文 = {"agent":"钱鹏","contractCode":"202012170004","contractMoney":"0","contractName":"周材推送铝模测试数据","contractPrice":null,"contractSignDeptId":"438201029000007","contractSignDeptName":"信息中心","description":"QWERTY有空","estimateAllBetonArea":"2000","estimateArea":"2000","estimateTemplateTier":"1000","id":"635201217000004","partA":"云南省建设投资控股集团有限公司","partAContacts":"陈兰","partAContactsPhone":"13015484873","partB":"测试供应商111","partBContacts":"钱鹏","partBContactsPhone":"13015484872","projectId":"DJE010081906060001","projectName":"泸水市人民医院建设项目","signDate":"2020-12-17 00:00:00.0"}
+[16:04:36:784] [INFO] - LMRequestHelper.SendPost(LMRequestHelper.java:164) - 接收反馈的报文 = {"result":true,"code":"1","message":"接收成功","data":null}
 [16:04:56:623] [INFO] - org.springframework.scheduling.concurrent.ExecutorConfigurationSupport.shutdown(ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
 [16:04:56:662] [INFO] - com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1825) - {dataSource-1} closed
 [17:04:38:464] [INFO] - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:55) - Starting SecdevApplication on DESKTOP-CI7DF64 with PID 23816 (D:\Java\云南建投代码\newgrand-i8-AM\secdev\target\classes started by zhaof in D:\Java\云南建投代码\newgrand-i8-AM)
@@ -1619,10 +1619,10 @@ java.sql.SQLRecoverableException: 关闭的连接
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:452) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:462) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:490) [spring-jdbc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.MainForm(ZczrRecBackController.java:160) [classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.sendDataToApp(ZczrRecBackController.java:123) [classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:95) [classes/:?]
-	at com.newgrand.secdev.controller.LM.ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) [classes/:?]
+	at ZczrRecBackController.MainForm(ZczrRecBackController.java:160) [classes/:?]
+	at ZczrRecBackController.sendDataToApp(ZczrRecBackController.java:123) [classes/:?]
+	at ZczrRecBackController.getDataFromYSYJ(ZczrRecBackController.java:95) [classes/:?]
+	at ZczrRecBackController.syncZczrRecBackInfo(ZczrRecBackController.java:56) [classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]

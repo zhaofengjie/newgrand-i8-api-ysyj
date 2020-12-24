@@ -6,7 +6,7 @@ com.alibaba.fastjson.JSONException: syntax error, pos 1, line 1, column 2org.apa
 	at com.alibaba.fastjson.JSON.parse(JSON.java:192) ~[fastjson-1.2.73.jar:?]
 	at com.alibaba.fastjson.JSON.parse(JSON.java:148) ~[fastjson-1.2.73.jar:?]
 	at com.alibaba.fastjson.JSON.parseObject(JSON.java:253) ~[fastjson-1.2.73.jar:?]
-	at com.newgrand.secdev.controller.LM.SSOWLController.index(SSOWLController.java:21) ~[classes/:?]
+	at SSOWLController.index(SSOWLController.java:21) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
@@ -82,7 +82,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'LMRequestHelper': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder ' wl.wlSSOUrl' in value "${ wl.wlSSOUrl}"
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -143,7 +143,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'LMRequestHelper': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder ' wl.wlSSOUrl' in value "${ wl.wlSSOUrl}"
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -204,7 +204,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'LMRequestHelper': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder ' wl.wlSSOUrl' in value "${ wl.wlSSOUrl}"
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -265,7 +265,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'LMRequestHelper': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder ' wl.wlSSOUrl' in value "${ wl.wlSSOUrl}"
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -326,7 +326,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.3.RELEASE.jar:2.3.3.RELEASE]
-	at com.newgrand.secdev.SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
+	at SecdevApplication.main(SecdevApplication.java:12) [classes/:?]
 Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'LMRequestHelper': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder ' wl.wlSSOUrl' in value "${ wl.wlSSOUrl}"
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.8.RELEASE.jar:5.2.8.RELEASE]
@@ -367,7 +367,7 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder ' w
 	... 20 more
 [17:33:34:067] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -424,7 +424,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:36:13:131] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -481,7 +481,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:38:28:850] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -538,7 +538,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:40:58:076] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -595,7 +595,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:40:58:076] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -652,7 +652,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:41:08:941] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -709,7 +709,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:41:36:387] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -766,7 +766,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:42:09:524] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -823,7 +823,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:44:49:524] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -880,7 +880,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:54:48:022] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -937,7 +937,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [17:59:38:267] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:401) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
@@ -994,7 +994,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [18:10:03:714] [ERROR] - org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [/secdev] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.newgrand.secdev.helper.LMRequestHelper.GetWLUrl(LMRequestHelper.java:405) ~[classes/:?]
+	at LMRequestHelper.GetWLUrl(LMRequestHelper.java:405) ~[classes/:?]
 	at com.newgrand.secdev.controller.LM.SsoWLController.index(SsoWLController.java:35) ~[classes/:?]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]

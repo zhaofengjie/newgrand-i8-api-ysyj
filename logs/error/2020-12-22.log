@@ -1,9 +1,9 @@
-[09:09:31:647] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
-[09:11:32:951] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
-[09:12:05:923] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
-[09:12:50:269] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
-[09:13:49:381] [ERROR] - com.newgrand.secdev.helper.LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
-[13:52:01:469] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:116) - StatementCallback; bad SQL grammar [select 
+[09:09:31:647] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
+[09:11:32:951] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
+[09:12:05:923] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
+[09:12:50:269] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
+[09:13:49:381] [ERROR] - LMRequestHelper.Token(LMRequestHelper.java:229) - 铝模系统token获取异常，原因 = Connect to 106.13.120.58:8899 [/106.13.120.58] failed: Connection refused: connect
+[13:52:01:469] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:116) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.bill_no as hTBM,
@@ -26,7 +26,7 @@ left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp
 left join project_table T6 on T6.phid = T1.phid_pc
 where T1.bill_type = '11' T1.phid = 635201217000004]; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
-[13:53:47:546] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:117) - StatementCallback; bad SQL grammar [select 
+[13:53:47:546] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:117) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.bill_no as hTBM,

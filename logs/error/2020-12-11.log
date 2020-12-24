@@ -1,4 +1,4 @@
-[15:19:46:209] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:19:46:209] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -20,7 +20,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
-[15:19:58:651] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:19:58:651] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -42,7 +42,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
-[15:21:17:535] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:21:17:535] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -64,7 +64,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
-[15:21:32:787] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:21:32:787] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -86,7 +86,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
-[15:21:53:804] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:21:53:804] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,
@@ -108,7 +108,7 @@ left join fg3_enterprise T4 on T4.phid = T1.phid_reccomp
 left join fg3_enterprise T5 on T5.phid = T1.phid_sencomp 
 left join project_table T6 on T6.phid = T1.phid_pcwhere phid = '548201113000001']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00933: SQL 命令未正确结束
 
-[15:23:28:146] [ERROR] - com.newgrand.secdev.controller.LM.ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select 
+[15:23:28:146] [ERROR] - ZCCntMController.sendFBInfo(ZCCntMController.java:102) - StatementCallback; bad SQL grammar [select
 T1.phid,
 T2.cname as jBR,
 T1.user_htbm as hTBM,

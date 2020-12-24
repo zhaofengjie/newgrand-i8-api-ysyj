@@ -1,8 +1,8 @@
-[09:40:28:442] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
-[09:40:41:171] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
-[09:40:55:734] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
-[09:41:29:059] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
-[09:42:10:426] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:40:28:442] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:40:41:171] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:40:55:734] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:41:29:059] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
+[09:42:10:426] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - null
 [09:43:06:718] [ERROR] - com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2471) - create connection SQLException, url: jdbc:oracle:thin:@172.16.23.84:1521/ngsoft.ynjt.com, errorCode 17002, state 08006
 java.sql.SQLRecoverableException: IO 错误: The Network Adapter could not establish the connection
 	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
@@ -81,44 +81,44 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
 	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340) ~[ojdbc6-11.2.0.4.jar:11.2.0.4.0]
 	... 10 more
-[09:43:32:077] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - StatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+[09:43:32:077] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - StatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
 
-[09:43:33:856] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - StatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+[09:43:33:856] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - StatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
 
-[09:52:02:897] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:79) - PreparedStatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+[09:52:02:897] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:79) - PreparedStatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
 
-[10:02:41:871] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
-[10:02:51:152] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
-[10:03:40:784] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
-[10:04:27:137] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
-[10:04:43:364] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
-[10:21:07:916] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
-[10:21:52:773] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
-[10:45:52:399] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - PreparedStatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
+[10:02:41:871] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:02:51:152] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:03:40:784] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:04:27:137] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:04:43:364] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:21:07:916] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:21:52:773] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:80) - null
+[10:45:52:399] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - PreparedStatementCallback; bad SQL grammar [select phid from projet_table where pc_no = '01']; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 表或视图不存在
 
-[10:52:24:079] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
-[10:52:40:606] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
-[10:57:14:924] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
-[10:57:38:593] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - null
-[17:44:47:486] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - com.alibaba.fastjson.JSONArray cannot be cast to com.alibaba.fastjson.JSONObject
-[17:46:06:508] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - syntax error, expect [, actual {, pos 0, fieldName null
-[17:46:39:233] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:81) - syntax error, expect [, actual {, pos 0, fieldName null
-[17:49:17:968] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[17:50:24:396] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[17:50:35:491] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[17:54:40:009] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:00:05:254] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:00:20:290] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:01:55:994] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:04:54:822] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:05:50:044] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:06:05:256] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:19:48:562] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:20:49:153] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:21:17:746] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
-[18:24:00:356] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - list长度与模板不相等
-[18:25:54:136] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
-[18:26:08:430] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
-[18:26:29:194] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
-[18:27:32:877] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
-[18:29:14:080] [ERROR] - com.newgrand.secdev.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[10:52:24:079] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
+[10:52:40:606] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
+[10:57:14:924] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - Incorrect result size: expected 1, actual 0
+[10:57:38:593] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - null
+[17:44:47:486] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - com.alibaba.fastjson.JSONArray cannot be cast to com.alibaba.fastjson.JSONObject
+[17:46:06:508] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:46:39:233] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:81) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:49:17:968] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:50:24:396] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:50:35:491] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[17:54:40:009] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:00:05:254] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:00:20:290] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:01:55:994] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:04:54:822] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:05:50:044] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:06:05:256] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:19:48:562] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:20:49:153] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:21:17:746] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - syntax error, expect [, actual {, pos 0, fieldName null
+[18:24:00:356] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - list长度与模板不相等
+[18:25:54:136] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:26:08:430] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:26:29:194] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:27:32:877] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
+[18:29:14:080] [ERROR] - FBDBController.syncFBDBJGInfo(FBDBController.java:83) - Index: 1, Size: 1
