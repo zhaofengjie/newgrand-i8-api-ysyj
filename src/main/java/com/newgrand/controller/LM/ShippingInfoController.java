@@ -2,13 +2,11 @@ package com.newgrand.controller.LM;
 
 
 import com.newgrand.domain.LM.ResultModel;
-import com.newgrand.helper.EntityConverter;
 import com.newgrand.helper.IJdbcTemplate;
 import com.newgrand.helper.SnowflakeIdWorker;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.newgrand.helper.I8Request;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -21,19 +19,13 @@ import java.util.Date;
 
 @Slf4j
 @RestController
-@RequestMapping("/shippingInfoApi")
+@RequestMapping("/lmApi")
 @Api("发货信息接收API接口")
 public class ShippingInfoController {
 
     @Autowired
     @Resource(name = "jdbcTemplateOrcle")
     private IJdbcTemplate jdbcTemplate;
-
-    @Autowired
-    private I8Request i8Request;
-
-    @Autowired
-    private EntityConverter entityConverter;
 
     @ApiOperation(value = "接收铝模发货信息", notes = "接收铝模发货信息", produces = "application/json")
     @RequestMapping(value = "/shippingInfo", method = RequestMethod.POST)

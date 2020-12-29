@@ -15,15 +15,16 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class Swagger2Configuration {
 
     //api接口包扫描路径
-    public static final String SWAGGER_SCAN_BASE_PACKAGE = "com.newgrand.secdev.controller.*";
-    public static final String VERSION = "1.0.0";
+    public final String SWAGGER_SCAN_BASE_PACKAGE = "com.newgrand.controller";
+    public final String VERSION = "1.0.0";
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage(SWAGGER_SCAN_BASE_PACKAGE))
-                .paths(PathSelectors.ant("/api/*")) // 可以根据url路径设置哪些请求加入文档，忽略哪些请求
+                //.paths(PathSelectors.ant("/shippingInfoApi/*")) // 可以根据url路径设置哪些请求加入文档，忽略哪些请求
+                //.paths(PathSelectors.ant("/lmApi/*"))
                 .build();
     }
 

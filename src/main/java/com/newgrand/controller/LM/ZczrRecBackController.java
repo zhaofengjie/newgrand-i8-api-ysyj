@@ -13,11 +13,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import lombok.var;
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.annotation.MergedAnnotationPredicates;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -31,9 +28,6 @@ import java.util.*;
 public class ZczrRecBackController {
 
     @Autowired
-    private I8Request i8Request;
-
-    @Autowired
     private LMRequestHelper getData;
 
     @Autowired
@@ -43,9 +37,6 @@ public class ZczrRecBackController {
     @Autowired
     private EntityConverter entityConverter;
 
-    /**
-     * 发货信息获取方法名
-     */
     @Value("${lm.getWLInfoFunc}")
     private String getWLInfoFunc;
 
