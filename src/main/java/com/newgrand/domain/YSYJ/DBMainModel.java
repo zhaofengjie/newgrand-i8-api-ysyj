@@ -11,7 +11,7 @@ public class DBMainModel {
     /**
      * 单据主键
      */
-    @JSONField(name = "phId")
+    @JSONField(name = "phid")
     private String phId;
 
     /**
@@ -34,7 +34,7 @@ public class DBMainModel {
     /**
      * 项目编码
      */
-    @JSONField(name = "pcNo")
+    @JSONField(name = "pcCode")
     private String pcNo;
 
     /**
@@ -143,6 +143,24 @@ public class DBMainModel {
      * 经办部门
      */
     @JSONField(name = "dept")
-    private String dept;
+    private String jbbm;
+
+    /**
+     * 分包方式
+     */
+    @JSONField(name = "fbfs")
+    private String billType;
+
+    /**
+     * 制单人
+     */
+    @JSONField(name = "zdr")
+    private String zdr;
+
+    /**
+     * 制单日期
+     */
+    @JSONField(name = "zdrq")
+    private String zdrq;
 }
 

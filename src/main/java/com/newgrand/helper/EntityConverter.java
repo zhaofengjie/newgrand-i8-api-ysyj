@@ -20,6 +20,7 @@ public class EntityConverter {
     public String SetField(String baseData, HashMap<String,Object> map){
         JSONObject root = JSON.parseObject(baseData);
         JSONObject form = root.getJSONObject("form").getJSONObject("newRow");
+        if(form==null)form= root.getJSONObject("form").getJSONObject("modifiedRow");
         for (String key : map.keySet()) {
             form.put(key,map.get(key));
         }
@@ -50,6 +51,23 @@ public class EntityConverter {
             rvarr.add(joo);
         }
         return "{\"table\":{\"key\":\"PhId\",\"newRow\":" + rvarr.toJSONString()+ "},\"isChanged\":true}";
+    }
+
+    public String SetTableRow(String rowDataTmp, ArrayList<HashMap<String,Object>> list ,String rowStatus) throws Exception {
+        if(list.size()==0)return rowDataTmp;
+        JSONArray rvarr = new JSONArray();
+        JSONArray jaa = JSON.parseArray(rowDataTmp);
+        JSONObject jo= jaa.getJSONObject(0).getJSONObject("row");
+        for(int i=0;i<list.size();i++){
+
+            for (String key: list.get(i).keySet()) {
+                jo.put(key,list.get(i).get(key));
+            }
+            JSONObject joo= new JSONObject();
+            joo.put("row",jo);
+            rvarr.add(joo);
+        }
+        return "{\"table\":{\"key\":\"PhId\",\""+rowStatus+"\":" + rvarr.toJSONString()+ "},\"isChanged\":true}";
     }
 
     public JSONArray SetTableRowEx(String rowDataTmp, ArrayList<HashMap<String,Object>> list) throws Exception {

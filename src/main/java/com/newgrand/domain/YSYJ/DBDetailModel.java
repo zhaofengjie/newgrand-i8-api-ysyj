@@ -11,7 +11,7 @@ public class DBDetailModel {
     /**
      * 明细主键
      */
-    @JSONField(name = "phId")
+    @JSONField(name = "phid")
     private String phId;
 
     /**

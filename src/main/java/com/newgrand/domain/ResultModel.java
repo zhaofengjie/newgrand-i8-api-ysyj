@@ -1,11 +1,11 @@
-package com.newgrand.domain.LM;
+package com.newgrand.domain;
+
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
-
 public class ResultModel {
 
     public ResultModel(String result,String code,String message)
