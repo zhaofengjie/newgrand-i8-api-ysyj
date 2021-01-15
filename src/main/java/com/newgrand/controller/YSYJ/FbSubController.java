@@ -1,5 +1,6 @@
 package com.newgrand.controller.YSYJ;
 
+import com.alibaba.druid.util.StringUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.newgrand.domain.BackMsgModel;
@@ -74,6 +75,10 @@ public class FbSubController {
      * @return
      */
     private String MainSQL(String PhId) {
+        String filter = "";
+        if(!StringUtils.isEmpty(PhId)){
+
+        }
         var sql = "select " +
                 "t1.phid,t1.bill_no as billNo,t1.bill_title as title, " +
                 "t1.bill_dt as billDt,t2.project_name as pcName, " +
@@ -121,7 +126,7 @@ public class FbSubController {
                 "t1.user_qzrgfdjws as qzrgfdjws,t1.user_qzrgfdjhs as qzrgfdjhs, " +
                 "t1.origin_amt as originAmt,t1.vat_amt as vatAmt,t1.character, " +
                 "t1.user_qzrgfjews as qzrgfjews,t1.user_qzrgfjehs as qzrgfjehs, " +
-                "t1.Tax_Rate as TaxRate,t1.Tax_Amt as TaxAmt, " +
+                "t1.Tax_Rate*100 as TaxRate,t1.Tax_Amt as TaxAmt, " +
                 "t1.user_jlgz as jlgz,t1.user_gznr as gznr, " +
                 "t1.user_clgyjpp as clgyjpp,t3.cbs_code as cbs, " +
                 "t1.user_mbcbze as mbcbze,t1.user_mbcbye as mbcbye, " +
