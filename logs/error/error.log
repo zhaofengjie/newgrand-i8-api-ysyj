@@ -86,3 +86,17 @@ java.lang.RuntimeException: statusCode : 500
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
 [14:52:23:999] [ERROR] - com.newgrand.controller.YSYJ.FBDBController.syncFBDBJGInfo(FBDBController.java:142) - null
+[15:38:50:541] [ERROR] - org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter.report(LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9080 or configure this application to listen on another port.
+
