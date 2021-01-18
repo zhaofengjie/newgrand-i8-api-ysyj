@@ -109,8 +109,13 @@ public class FBDBController {
                     re.put("sucess", "Y");;
                     re.put("message", "新增保存成功");
                 } else {
-                    re.put("sucess", "N");;
-                    re.put("message", "新增保存失败，" + i8rvJson.getString(""));
+                    re.put("sucess", "N");
+                    ;
+                    if (i8rv.length() == 0) {
+                        re.put("message", "新增保存失败，" + "请求i8未获得返回值");
+                    } else {
+                        re.put("message", "新增保存失败，" + i8rvJson);
+                    }
                 }
             } else {
                 String mstFormData = mstFormData(fbInfo, oldPhId, jfdw, yfdw, fbPhId,mstFormStrModilfy);
@@ -151,7 +156,7 @@ public class FBDBController {
         HashMap<String, Object> map = new HashMap<String, Object>();
 
         String defineNum = mst.getString("defineNum");//定标结果单号
-        //String title = mst.getString("title");//定标结果名称
+        String title = mst.getString("title");//定标结果名称
         String instanceId = mst.getString("instanceId");//唯一标识主键
         String projectNum = mst.getString("projectNum");//项目编号
         String dutyNum = mst.getString("dutyNum");//分包申请编码
@@ -184,7 +189,7 @@ public class FBDBController {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
         map.put("u_ysyjid", instanceId);//云上营家ID
         map.put("bill_dt", df.format(new Date()));//单据日期
-        map.put("title", "-定标结果");//标题
+        map.put("title", title);//标题
         map.put("phid", oldPhId);//phid（主键）
         map.put("key", oldPhId);//key
         map.put("u_xmbm", projectNum);//项目编码
@@ -243,6 +248,7 @@ public class FBDBController {
 
             map.put("phid",oldDtPhId);//明细phid
             map.put("key",oldDtPhId);//明细phid
+            map.put("m_code",oldPhId);//表头phid
 
             map.put("u_ysyjmxid",headerId);//定标头ID
             map.put("lineid",lineId);//行号
@@ -263,6 +269,7 @@ public class FBDBController {
             map.put("u_qzrgfdjhs", artificialPrice);//其中人工费单价（含税）
             map.put("u_hshs", winTaxAmount);//合价（含税）
             map.put("u_qzrgfhjhs", artificialAmount);//其中人工费合价（含税）
+            map.put("u_bz", quoteRemarks);//备注
             map.put("u_bz", quoteRemarks);//备注
             list.add(map);
         }
