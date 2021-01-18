@@ -270,7 +270,7 @@ public class FBDBController {
             map.put("u_hshs", winTaxAmount);//合价（含税）
             map.put("u_qzrgfhjhs", artificialAmount);//其中人工费合价（含税）
             map.put("u_bz", quoteRemarks);//备注
-            map.put("u_bz", quoteRemarks);//备注
+            //map.put("u_bz", quoteRemarks);//备注
             list.add(map);
         }
         return entityConverter.SetTableRow(dtlFormStr, list, rowStatus);
