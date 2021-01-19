@@ -82,8 +82,6 @@ public class FBDBController {
                 re.put("message", "保存失败,原因: 乙方单位{" + supplierCompanyCode + "}，不存在");
                 return re;
             }
-
-
             JSONArray dtl = fbInfo.getJSONArray("line"); //获取到定标结果明细
 
             //查询发货单据phid
@@ -106,11 +104,12 @@ public class FBDBController {
                 String i8rv = i8Request.PostFormSync("/SUP/CustomPC/save", urlParameters);
                 JSONObject i8rvJson = JSON.parseObject(i8rv);
                 if (i8rvJson != null && i8rvJson.getString("Status").equals("OK")) {
+                    re.put("instanceId", instanceId);
                     re.put("sucess", "Y");;
                     re.put("message", "新增保存成功");
                 } else {
+                    re.put("instanceId", instanceId);
                     re.put("sucess", "N");
-                    ;
                     if (i8rv.length() == 0) {
                         re.put("message", "新增保存失败，" + "请求i8未获得返回值");
                     } else {
@@ -134,11 +133,17 @@ public class FBDBController {
                 String i8rv = i8Request.PostFormSync("/SUP/CustomPC/save", urlParameters);
                 JSONObject i8rvJson = JSON.parseObject(i8rv);
                 if (i8rvJson != null && i8rvJson.getString("Status").equals("OK")) {
+                    re.put("instanceId", instanceId);
                     re.put("sucess", "Y");
                     re.put("message", "修改保存成功");
                 } else {
-                    re.put("sucess", "N");;
-                    re.put("message", "修改保存失败");
+                    re.put("instanceId", instanceId);
+                    re.put("sucess", "N");
+                    if (i8rv.length() == 0) {
+                        re.put("message", "修改保存失败，" + "请求i8未获得返回值");
+                    } else {
+                        re.put("message", "修改保存失败，" + i8rvJson);
+                    }
                 }
             }
         } catch (Exception ex) {
@@ -222,11 +227,11 @@ public class FBDBController {
         for(int i=0;i<dtl.size();i++) {
             String lineId = dtl.getJSONObject(i).getString("lineId");//行id
             String headerId = dtl.getJSONObject(i).getString("headerId");//定标头id
-            String materialCode = dtl.getJSONObject(i).getString("lineId");//分项工程编码
-            String materialName = dtl.getJSONObject(i).getString("lineId");//分项工程名称
+            String materialCode = dtl.getJSONObject(i).getString("materialCode");//分项工程编码
+            String materialName = dtl.getJSONObject(i).getString("materialName");//分项工程名称
             String uomCode = dtl.getJSONObject(i).getString("uomCode");//单位
             String jobContent = dtl.getJSONObject(i).getString("jobContent");//工作内容
-            String supplier = dtl.getJSONObject(i).getString("lineId");//材料设备供应及品牌
+            String supplier = dtl.getJSONObject(i).getString("supplier");//材料设备供应及品牌
             String measurementRules = dtl.getJSONObject(i).getString("measurementRules");//计量规则
             String allottedQuantity = dtl.getJSONObject(i).getString("allottedQuantity");//量
             String netPrice = dtl.getJSONObject(i).getString("netPrice");//不含税单价
@@ -244,7 +249,7 @@ public class FBDBController {
             String msunit = getPhIdHelper.GetPhIdByCode("msunit", "msunit", uomCode);
 
             //明细Phid
-            String oldDtPhId = getPhIdHelper.GetPhIdByCode("p_form_fbgl_fbdbjg_d","u_gclqdbh",materialCode);
+            String oldDtPhId = getPhIdHelper.GetCodeByFilter("p_form_fbgl_fbdbjg_d","phid", " m_code = '"+oldPhId+"' and lineid = '"+lineId+"'");
 
             map.put("phid",oldDtPhId);//明细phid
             map.put("key",oldDtPhId);//明细phid

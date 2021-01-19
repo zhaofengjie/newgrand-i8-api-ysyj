@@ -113,13 +113,21 @@ public class YSYJRequestHelper {
                 //log.info("接收反馈的报文 = " + body);
                 JSONObject strObj = JSON.parseObject(body);
                 //if (strObj.getString("failed") == "false" && strObj.getString("code").equals("sucess")) {
-                if(strObj.getString("statusCode") == "OK"){
-                    backMsg.setCode("1");
-                    backMsg.setMessage("推送数据成功");
-                    backMsg.setResult("true");
+                if(strObj.getString("status").equals("200")){
+                    JSONObject resMsg = strObj.getJSONObject("payload");
+                    if(resMsg.getString("failed").equals("true")){
+                        backMsg.setCode("1");
+                        backMsg.setMessage("数据推送云上营家成功");
+                        backMsg.setResult("true");
+                    }
+                    else {
+                        backMsg.setCode("0");
+                        backMsg.setMessage("数据推送云上营家失败，原因："+ resMsg.getString("message"));
+                        backMsg.setResult("true");
+                    }
                 } else {
                     backMsg.setCode("0");
-                    backMsg.setMessage("推送数据失败,原因:"+ strObj.getString("message"));
+                    backMsg.setMessage("数据推送云上营家失败,请求失败原因:"+ strObj.getString("message"));
                     backMsg.setResult("false");
                 }
             }

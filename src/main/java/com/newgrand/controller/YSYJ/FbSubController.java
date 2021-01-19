@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.List;
 
@@ -42,9 +43,9 @@ public class FbSubController {
 
     @ApiOperation(value = "推送分包申请到云上营家", notes = "推送分包申请到云上营家", produces = "application/json")
     @RequestMapping(value = "/postFbSub", method = RequestMethod.POST)
-    public ResultModel syncProCount(@RequestBody String str) throws IOException {
-        JSONObject fbInfo = JSON.parseObject(str);
-        String PhId = fbInfo.getString("PhId");//唯一标识主键
+    public ResultModel syncProCount(HttpServletRequest request) throws IOException {
+        //JSONObject fbInfo = JSON.parseObject(str);
+        String PhId = request.getParameter("Phid");//唯一标识主键
         String mainSQL = MainSQL(PhId);
         RowMapper<DBMainModel> rowMapper = new BeanPropertyRowMapper(DBMainModel.class);
         List<DBMainModel> mainDt = jdbcTemplate.query(mainSQL, rowMapper);
@@ -79,15 +80,16 @@ public class FbSubController {
         if(!StringUtils.isEmpty(PhId)){
 
         }
+        //when 1 then '专业分包' when 2 then '劳务分包' end
         var sql = "select " +
                 "t1.phid,t1.bill_no as billNo,t1.bill_title as title, " +
-                "t1.bill_dt as billDt,t2.project_name as pcName, " +
+                "t1.bill_dt as billDt,t2.project_name as pcName, t2.pc_no as pcNo," +
                 "t3.item_name as ysfl,t4.type_no as zyfl, " +
                 "t5.cname as zbEmp,t6.compname as jsdw, " +
-                "t7.c_name as zbfs,t8.compno as zbdw, " +
-                "t9.c_name as pbbf,t1.user_jhgq as planDt, " +
+                "t7.c_no as zbfs,t8.compno as zbdw, " +
+                "t9.c_no as pbbf,t1.user_jhgq as planDt, " +
                 "t1.user_zbkzjws as zbkzjWs,t1.user_zbkzjhs as zbkzjHs, " +
-                "t1.user_jhzbrq as jhzbrq,t10.c_name as bjfs, " +
+                "t1.user_jhzbrq as jhzbrq,t10.c_no as bjfs, " +
                 "t1.user_fblyjsm as fblyjs, " +
                 "t1.user_fktk as fktk, " +
                 "t1.user_jstk as jstk, " +
@@ -95,7 +97,7 @@ public class FbSubController {
                 "t12.oname as jbbm, " +
                 "t1.user_zdr as zdr, " +
                 "t1.bill_dt as zdrq, " +
-                "case t1.bill_type when 1 then '专业分包' when 2 then '劳务分包' end  billType " +
+                "t1.bill_type as billType " +
                 "from pms3_fb_subj_m t1 " +
                 "left join project_table t2 on t2.phid = t1.phid_pc " +
                 "left join bs_data t3 on t3.phid = t1.phid_budget_type " +
