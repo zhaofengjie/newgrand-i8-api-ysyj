@@ -56,9 +56,6 @@ public class FBDBController {
             JSONObject fbInfo = JSON.parseObject(str);
             String instanceId = fbInfo.getString("instanceId");//唯一标识主键
             re.put("instanceId", instanceId);
-
-            //log.info(fbInfo.toString());
-            //JSONObject mst = fbInfo.getJSONObject("mst"); //定标结果表头
             String dutyNum = fbInfo.getString("dutyNum");//分包申请编码
             String bidUnit = fbInfo.getString("bidUnit");//甲方单位
             //分包申请phId
@@ -241,6 +238,7 @@ public class FBDBController {
             String winTaxAmount = dtl.getJSONObject(i).getString("winTaxAmount");//含税金额
             String artificialAmount = dtl.getJSONObject(i).getString("artificialAmount");//含税人工费
             String quoteRemarks = dtl.getJSONObject(i).getString("quoteRemarks");//备注
+            String lydjID = dtl.getJSONObject(i).getString("phid");//来源单据id
 
             //通过编码获取对应表phid
             String msunit = getPhIdHelper.GetPhIdByCode("msunit", "msunit", uomCode);
@@ -272,7 +270,7 @@ public class FBDBController {
             map.put("u_hshs", winTaxAmount);//合价（含税）
             map.put("u_qzrgfhjhs", artificialAmount);//其中人工费合价（含税）
             map.put("u_bz", quoteRemarks);//备注
-            //map.put("u_bz", quoteRemarks);//备注
+            map.put("u_lydjid", lydjID);//来源明细单据id
             list.add(map);
         }
         return entityConverter.SetTableRow(dtlFormStr, list, rowStatus);
