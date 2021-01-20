@@ -162,5 +162,11 @@ public class DBMainModel {
      */
     @JSONField(name = "zdrq")
     private String zdrq;
+
+    /**
+     * 经济数据库ID(回传用)
+     */
+    @JSONField(name = "jjsjkId")
+    private String jjsjkId;
 }
 

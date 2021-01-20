@@ -1,5 +1,6 @@
 package com.newgrand.helper;
 
+import com.alibaba.druid.util.StringUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.newgrand.domain.BackMsgModel;
@@ -77,7 +78,7 @@ public class YSYJRequestHelper {
             BackMsgModel tokenBack = Token();
             if(tokenBack.getResult() == "false"){
                 backMsg.setResult("false");
-                backMsg.setMessage("获取数据失败,原因:" + tokenBack.getMessage());
+                backMsg.setMessage("获取数据失败,原因: token获取失败," + tokenBack.getMessage());
                 backMsg.setCode("0");
                 return backMsg;
             }
@@ -182,6 +183,12 @@ public class YSYJRequestHelper {
                 body = EntityUtils.toString(entity2);
                 JSONObject str = JSON.parseObject(body);
                 token = str.getString("access_token");
+                if(StringUtils.isEmpty(token)){
+                    back.setResult("false");
+                    back.setMessage("获取token数据失败，");
+                    back.setData(token);
+                    return back;
+                }
                 back.setResult("true");
                 back.setMessage("获取token数据成功");
                 back.setData(token);

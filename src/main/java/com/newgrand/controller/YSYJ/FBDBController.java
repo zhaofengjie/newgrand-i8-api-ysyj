@@ -54,10 +54,11 @@ public class FBDBController {
         JSONObject re = new JSONObject();
         try {
             JSONObject fbInfo = JSON.parseObject(str);
-            //log.info(fbInfo.toString());
-
-            //JSONObject mst = fbInfo.getJSONObject("mst"); //定标结果表头
             String instanceId = fbInfo.getString("instanceId");//唯一标识主键
+            re.put("instanceId", instanceId);
+
+            //log.info(fbInfo.toString());
+            //JSONObject mst = fbInfo.getJSONObject("mst"); //定标结果表头
             String dutyNum = fbInfo.getString("dutyNum");//分包申请编码
             String bidUnit = fbInfo.getString("bidUnit");//甲方单位
             //分包申请phId
@@ -104,11 +105,9 @@ public class FBDBController {
                 String i8rv = i8Request.PostFormSync("/SUP/CustomPC/save", urlParameters);
                 JSONObject i8rvJson = JSON.parseObject(i8rv);
                 if (i8rvJson != null && i8rvJson.getString("Status").equals("OK")) {
-                    re.put("instanceId", instanceId);
                     re.put("sucess", "Y");;
                     re.put("message", "新增保存成功");
                 } else {
-                    re.put("instanceId", instanceId);
                     re.put("sucess", "N");
                     if (i8rv.length() == 0) {
                         re.put("message", "新增保存失败，" + "请求i8未获得返回值");
@@ -133,11 +132,9 @@ public class FBDBController {
                 String i8rv = i8Request.PostFormSync("/SUP/CustomPC/save", urlParameters);
                 JSONObject i8rvJson = JSON.parseObject(i8rv);
                 if (i8rvJson != null && i8rvJson.getString("Status").equals("OK")) {
-                    re.put("instanceId", instanceId);
                     re.put("sucess", "Y");
                     re.put("message", "修改保存成功");
                 } else {
-                    re.put("instanceId", instanceId);
                     re.put("sucess", "N");
                     if (i8rv.length() == 0) {
                         re.put("message", "修改保存失败，" + "请求i8未获得返回值");

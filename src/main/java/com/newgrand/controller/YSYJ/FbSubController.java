@@ -43,9 +43,11 @@ public class FbSubController {
 
     @ApiOperation(value = "推送分包申请到云上营家", notes = "推送分包申请到云上营家", produces = "application/json")
     @RequestMapping(value = "/postFbSub", method = RequestMethod.POST)
-    public ResultModel syncProCount(HttpServletRequest request) throws IOException {
-        //JSONObject fbInfo = JSON.parseObject(str);
+    public void syncProCount(HttpServletRequest request) throws IOException {
         String PhId = request.getParameter("Phid");//唯一标识主键
+        if(StringUtils.isEmpty(PhId)){
+            return;
+        }
         String mainSQL = MainSQL(PhId);
         RowMapper<DBMainModel> rowMapper = new BeanPropertyRowMapper(DBMainModel.class);
         List<DBMainModel> mainDt = jdbcTemplate.query(mainSQL, rowMapper);
@@ -65,9 +67,10 @@ public class FbSubController {
             data.put("operation","create");
             JSONObject dataBosy = new JSONObject();
             dataBosy.put("payload", data.toJSONString());
-            backmsg = requestHelper.SendPost(JSONObject.toJSONString(dataBosy));
+            //backmsg = requestHelper.SendPost(JSONObject.toJSONString(dataBosy));
+            requestHelper.SendPost(JSONObject.toJSONString(dataBosy));
         }
-        return backmsg;
+        //return backmsg;
     }
 
     /**
@@ -97,7 +100,8 @@ public class FbSubController {
                 "t12.oname as jbbm, " +
                 "t1.user_zdr as zdr, " +
                 "t1.bill_dt as zdrq, " +
-                "t1.bill_type as billType " +
+                "t1.bill_type as billType," +
+                "t1.USER_JJSJKID as jjsjkId " +
                 "from pms3_fb_subj_m t1 " +
                 "left join project_table t2 on t2.phid = t1.phid_pc " +
                 "left join bs_data t3 on t3.phid = t1.phid_budget_type " +
