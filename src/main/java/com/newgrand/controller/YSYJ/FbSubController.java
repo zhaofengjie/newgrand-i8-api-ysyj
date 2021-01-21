@@ -43,14 +43,14 @@ public class FbSubController {
 
     @ApiOperation(value = "推送分包申请到云上营家", notes = "推送分包申请到云上营家", produces = "application/json")
     @RequestMapping(value = "/postFbSub", method = RequestMethod.POST)
-    public ResultModel syncProCount(HttpServletRequest request) throws IOException {
+    public String syncProCount(HttpServletRequest request) throws IOException {
         String PhId = request.getParameter("Phid");//唯一标识主键
         ResultModel backmsg = new ResultModel();
         if(StringUtils.isEmpty(PhId)){
             backmsg.setResult("false");
             backmsg.setMessage("推送云上营家失败，原因分包申请主键Phid值为空");
             backmsg.setCode("0");
-            return backmsg;
+            return backmsg.getMessage();
         }
         String mainSQL = MainSQL(PhId);
         RowMapper<DBMainModel> rowMapper = new BeanPropertyRowMapper(DBMainModel.class);
@@ -71,8 +71,9 @@ public class FbSubController {
             JSONObject dataBosy = new JSONObject();
             dataBosy.put("payload", data.toJSONString());
             backmsg = requestHelper.SendPost(JSONObject.toJSONString(dataBosy));
+            jdbcTemplate.update("update pms3_fb_subj_m set user_ysyj_msg = '"+backmsg.getMessage()+"' where phid = '"+PhId+"'");
         }
-        return backmsg;
+        return backmsg.getMessage();
     }
 
     /**
@@ -89,7 +90,7 @@ public class FbSubController {
                 "t5.cno as zbEmp,t6.compno as jsdw, " +
                 "t7.c_no as zbfs,t2.user_zh as zbdw, " +
                 "t9.c_no as pbbf,t1.user_jhgq as planDt, " +
-                "t1.user_zbkzjws as zbkzjWs,t1.user_zbkzjhs as zbkzjHs, " +
+                "trim(to_char(t1.user_zbkzjws,'99999999999999.9999')) as zbkzjWs,trim(to_char(t1.user_zbkzjhs,'99999999999999.9999')) as zbkzjHs, " +
                 "t1.user_jhzbrq as jhzbrq,t10.c_no as bjfs, " +
                 "t1.user_fblyjsm as fblyjs, " +
                 "t1.user_fktk as fktk, " +
@@ -125,12 +126,19 @@ public class FbSubController {
      */
     private String DetailSQL(String mainPhId) {
         var dtlsql = "select t1.phid,t1.pphid,t1.code,t1.cname, " +
-                "t2.msunit as msunit,t1.origin_qty as originQty, " +
-                "t1.origin_price as originPrice,t1.vat_price as vatPrice, " +
-                "t1.user_qzrgfdjws as qzrgfdjws,t1.user_qzrgfdjhs as qzrgfdjhs, " +
-                "t1.origin_amt as originAmt,t1.vat_amt as vatAmt,t1.character, " +
-                "t1.user_qzrgfjews as qzrgfjews,t1.user_qzrgfjehs as qzrgfjehs, " +
-                "trim(to_char(t1.Tax_Rate * 100,'99999999999999.99')) as TaxRate,t1.Tax_Amt as TaxAmt, " +
+                "t2.msunit as msunit, " +
+                "trim(to_char(t1.origin_qty,'99999999999999.9999')) as originQty, " +
+                "trim(to_char(t1.origin_price,'99999999999999.9999')) as originPrice, " +
+                "trim(to_char(t1.vat_price,'99999999999999.9999')) as vatPrice, " +
+                "trim(to_char(t1.user_qzrgfdjws,'99999999999999.9999')) as qzrgfdjws, " +
+                "trim(to_char(t1.user_qzrgfdjhs,'99999999999999.9999')) as qzrgfdjhs, " +
+                "trim(to_char(t1.origin_amt,'99999999999999.99')) as originAmt, " +
+                "trim(to_char(t1.vat_amt,'99999999999999.99')) as vatAmt, " +
+                "t1.character, " +
+                "trim(to_char(t1.user_qzrgfjews,'99999999999999.99')) as qzrgfjews, " +
+                "trim(to_char(t1.user_qzrgfjehs,'99999999999999.99')) as qzrgfjehs, " +
+                "trim(to_char(t1.Tax_Rate * 100,'99999999999999.99')) as TaxRate, " +
+                "trim(to_char(t1.Tax_Amt,'99999999999999.99')) as TaxAmt, " +
                 "t1.user_jlgz as jlgz,t1.user_gznr as gznr, " +
                 "t1.user_clgyjpp as clgyjpp,t3.cbs_code as cbs, " +
                 "t1.user_mbcbze as mbcbze,t1.user_mbcbye as mbcbye, " +

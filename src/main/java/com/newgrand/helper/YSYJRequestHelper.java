@@ -17,9 +17,11 @@ import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -82,8 +84,6 @@ public class YSYJRequestHelper {
      */
     @Value("${ysyj.clientSecret}")
     private String clientSecret;
-
-
 
     /**
      * 分包申请信息推送请求
