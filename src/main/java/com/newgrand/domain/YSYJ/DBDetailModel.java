@@ -35,8 +35,8 @@ public class DBDetailModel {
     /**
      * 计量单位
      */
-    @JSONField(name = "msuint")
-    private String msuint;
+    @JSONField(name = "msunit")
+    private String msunit;
 
     /**
      * 数量
@@ -157,4 +157,12 @@ public class DBDetailModel {
      */
     @JSONField(name = "remarks")
     private String remarks;
+
+
+    /**
+     * 经济数据库ID(回传用)
+     */
+     @JSONField(name = "jjsjid")
+     private String jjsjkId;
+
 }

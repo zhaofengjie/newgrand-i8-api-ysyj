@@ -113,9 +113,12 @@ public class FBDBController {
                     }
                 }
             } else {
-                String mstFormData = mstFormData(fbInfo, oldPhId, jfdw, yfdw, fbPhId,mstFormStrModilfy);
+                re.put("sucess", "N");;
+                re.put("message", "修改保存失败,原因: 定标结果不支持修改或删除");
+                return re;
+                /**不支持修改删除*/
+                /** String mstFormData = mstFormData(fbInfo, oldPhId, jfdw, yfdw, fbPhId,mstFormStrModilfy);
                 String dtlFormData = dtlFormData(dtl, oldPhId, "modifiedRow");
-                /*修改*/
                 List<NameValuePair> urlParameters = new ArrayList<>();
                 urlParameters.add(new BasicNameValuePair("otype", "edit"));//单据类型
                 urlParameters.add(new BasicNameValuePair("isContinue", "0"));
@@ -138,7 +141,7 @@ public class FBDBController {
                     } else {
                         re.put("message", "修改保存失败，" + i8rvJson);
                     }
-                }
+                }*/
             }
         } catch (Exception ex) {
             re.put("sucess", "N");
@@ -231,6 +234,7 @@ public class FBDBController {
             String netPrice = dtl.getJSONObject(i).getString("netPrice");//不含税单价
             String noTaxArtificialPrice = dtl.getJSONObject(i).getString("noTaxArtificialPrice");//不含税人工费单价
             String taxRate = dtl.getJSONObject(i).getString("taxRate");//税率
+            String tax_amount = dtl.getJSONObject(i).getString("tax_amount");//税额
             String taxPrice = dtl.getJSONObject(i).getString("taxPrice");//含税单价
             String artificialPrice = dtl.getJSONObject(i).getString("artificialPrice");//含税人工费单价
             String noTaxArtificialAmount = dtl.getJSONObject(i).getString("noTaxArtificialAmount");//不含税人工费金额
@@ -238,7 +242,8 @@ public class FBDBController {
             String winTaxAmount = dtl.getJSONObject(i).getString("winTaxAmount");//含税金额
             String artificialAmount = dtl.getJSONObject(i).getString("artificialAmount");//含税人工费
             String quoteRemarks = dtl.getJSONObject(i).getString("quoteRemarks");//备注
-            String lydjID = dtl.getJSONObject(i).getString("phid");//来源单据id
+            String lydjID = dtl.getJSONObject(i).getString("mxPhId");//来源单据id
+            String jjsjkId = dtl.getJSONObject(i).getString("mxPhId");//经济数据库id
 
             //通过编码获取对应表phid
             String msunit = getPhIdHelper.GetPhIdByCode("msunit", "msunit", uomCode);
@@ -265,12 +270,14 @@ public class FBDBController {
             map.put("u_hsws", winNetAmount);//合价（无税）
             map.put("u_qzrgfhjws", noTaxArtificialAmount);//其中人工费合价（无税）
             map.put("u_sl", taxRate);//税率
+            map.put("u_se", tax_amount);//税额
             map.put("u_djhs", taxPrice);//单价（含税）
             map.put("u_qzrgfdjhs", artificialPrice);//其中人工费单价（含税）
             map.put("u_hshs", winTaxAmount);//合价（含税）
             map.put("u_qzrgfhjhs", artificialAmount);//其中人工费合价（含税）
             map.put("u_bz", quoteRemarks);//备注
             map.put("u_lydjid", lydjID);//来源明细单据id
+            map.put("u_jjsjkid", jjsjkId);//经济数据库id
             list.add(map);
         }
         return entityConverter.SetTableRow(dtlFormStr, list, rowStatus);

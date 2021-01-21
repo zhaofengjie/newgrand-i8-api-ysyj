@@ -66,6 +66,26 @@ public class YSYJRequestHelper {
 
 
     /**
+     * 获取token参数
+     */
+    @Value("${ysyj.grantType}")
+    private String grantType;
+
+    /**
+     * 获取token参数
+     */
+    @Value("${ysyj.clientId}")
+    private String clientId;
+
+    /**
+     * 获取token参数
+     */
+    @Value("${ysyj.clientSecret}")
+    private String clientSecret;
+
+
+
+    /**
      * 分包申请信息推送请求
      * @param param    请求报文
      * @return
@@ -111,19 +131,17 @@ public class YSYJRequestHelper {
             if (entity2 != null) {
                 //转换报文对象
                 String body = EntityUtils.toString(entity2);
-                //log.info("接收反馈的报文 = " + body);
                 JSONObject strObj = JSON.parseObject(body);
-                //if (strObj.getString("failed") == "false" && strObj.getString("code").equals("sucess")) {
                 if(strObj.getString("status").equals("200")){
                     JSONObject resMsg = strObj.getJSONObject("payload");
                     if(resMsg.getString("failed").equals("true")){
-                        backMsg.setCode("1");
-                        backMsg.setMessage("数据推送云上营家成功");
-                        backMsg.setResult("true");
-                    }
-                    else {
                         backMsg.setCode("0");
                         backMsg.setMessage("数据推送云上营家失败，原因："+ resMsg.getString("message"));
+                        backMsg.setResult("false");
+                    }
+                    else {
+                        backMsg.setCode("1");
+                        backMsg.setMessage("数据推送云上营家成功");
                         backMsg.setResult("true");
                     }
                 } else {
@@ -167,9 +185,9 @@ public class YSYJRequestHelper {
 
             //添加请求头
             List<NameValuePair> urlParameters = new ArrayList<>();
-            urlParameters.add(new BasicNameValuePair("grant_type", "client_credentials"));
-            urlParameters.add(new BasicNameValuePair("client_id", "xg-client"));
-            urlParameters.add(new BasicNameValuePair("client_secret", "xg-client"));
+            urlParameters.add(new BasicNameValuePair("grant_type", grantType));
+            urlParameters.add(new BasicNameValuePair("client_id", clientId));
+            urlParameters.add(new BasicNameValuePair("client_secret", clientSecret));
 
             HttpEntity entity = new UrlEncodedFormEntity(urlParameters,"utf-8");
             httpPost.setEntity(entity);
